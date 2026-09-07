@@ -14,7 +14,7 @@
 
 - **Python 3.12，64 位元**：資料下載、資料論文各圖和電網模擬。[Python 下載](https://www.python.org/downloads/)
 - **MATLAB R2026a 或更新版本及 Optimization Toolbox**：方法論文和澳洲電池策略最佳化。
-- 首次下載需連線；全部原始資料解壓後約 1.2 GB，建議預留至少 4 GB 空間給環境、暫存與結果。
+- 首次下載需連線；全部原始資料解壓後約 1.2 GB，建議預留至少 4 GB 空間給 Python 環境、暫存與結果。MATLAB 的安裝空間另計。
 
 <a id="mac"></a>
 
