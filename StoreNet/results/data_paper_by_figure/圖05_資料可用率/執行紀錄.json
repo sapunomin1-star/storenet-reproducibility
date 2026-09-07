@@ -1,0 +1,42 @@
+{
+  "figure": "圖05_資料可用率",
+  "completed_utc": "2026-09-07T06:35:00.544929+00:00",
+  "note": "圖 5：20 戶的資料可用率；百分比可與論文標示的小數點後兩位核對。",
+  "input_sha256": {
+    "data/raw/H1_W.csv": "5f1aecbcba4a9c41c8c42c8a07ac490958607646f93ec9796d19178acf1ee21c",
+    "data/raw/H2_W.csv": "9a6c0b4e87f156d71a7f2e97954dcc6835468917caadf06e688356d9ed926b8f",
+    "data/raw/H3_W.csv": "a1e06f05ead2e2d171d7344569ca8e1333af065a88be59c1f9bc7d4c966a3a89",
+    "data/raw/H4_W.csv": "ff7a73a9b544cd4c204709f09b59986a8eb4bbf2cd35ef197d7f59f143b4517b",
+    "data/raw/H5_W.csv": "3b7ac29afe378cc4f4f03ac366ead46850d4b3edb3a06aa4baf72fcbdb263ad5",
+    "data/raw/H6_W.csv": "cb2a94e2641fa5abae90df37b42bb7bdb923715aa09bc3d7c35f94e39bdad2c5",
+    "data/raw/H7_W.csv": "520a07049ad90662c136506a1e4790537c8b0be8f87df32f0f52920380c819c1",
+    "data/raw/H8_W.csv": "7428f3e804a89c9e23f6a96563029aa2fd96ce95c7f788ad2c23142897a6877d",
+    "data/raw/H9_W.csv": "47ef617b379cc2be2acf2c72cd1ca2522d7736009edb2712060cb7591f41a350",
+    "data/raw/H10_W.csv": "50b94d5294f29a25456e14a1183291df9d2783f674678b6244545c0970a7ec53",
+    "data/raw/H11_W.csv": "69fc639e62ed2377a96b96e776db035368acdb2c479708d9ee4d27e30de785ec",
+    "data/raw/H12_W.csv": "9115bcc92cbf2402fef937fad72df85ece5459e10c14a54006be3e89d1491614",
+    "data/raw/H13_W.csv": "b4a272cfaba5e61c3c00e41f62ad94156b4f10d14445755a02cdd8f2a1f2676e",
+    "data/raw/H14_W.csv": "6cae6cd46e8d987e3f4788ac2c13be613a5ea7d85c8931643065dd583b2143c3",
+    "data/raw/H15_W.csv": "cbe2725e771475f1947ef1091bee9e4f7d8574e818f18e58e97e345346ad47b3",
+    "data/raw/H16_W.csv": "0b5d5d7c869e6829175298fb0acc97e1032f31e21da020cccc1043a836c6a0dc",
+    "data/raw/H17_W.csv": "7432d0fc3f417964158e3585bf93f351895eb38736ea78b2debd7fbeef45ec81",
+    "data/raw/H18_W.csv": "df5f8e63ccec382692471c114386ca28a3658eb4cc27807297c37bab1e155a44",
+    "data/raw/H19_W.csv": "1cbce140e06aaac4898c9ca3315312be71337d4a60c625996cd5facec62e2284",
+    "data/raw/H20_W.csv": "f2915ab3a5647ab1e402cf70a5f7fcf63c220652db63e8c23546e0c1f9e6eac0",
+    "reference/data_paper_fig5_availability.csv": "82fa8c3007d452f23d60f142648294b1a2705fe1c682a4cbeb7793f287e84337"
+  },
+  "code_sha256": {
+    "src/data_paper_figures/figure05_availability.py": "63afd023c4382590563740222e8867e63c495cd6880822464db1a3564637ad54",
+    "src/data_paper_figures/_common.py": "656008cbdf140b4a26aad3c02cc7c9c8fe487e57cffe8f3b26d6bd6ffbe7f279",
+    "src/reproduce_data_paper_figures.py": "1f4b9a9e88ea755630266e1d0ea9699ea462c108c497bbb03b84ca3dbfefe499"
+  },
+  "python": "3.12.14",
+  "numpy": "2.4.3",
+  "pandas": "2.3.3",
+  "matplotlib": "3.10.8",
+  "output_sha256": {
+    "00_結果說明.md": "475dcfcfda5b308a0e84b34d61768757fd824333e0bf482161dfdf9b02b0cdcc",
+    "圖05_資料可用率.csv": "24787a08061b8d484e476577ba9a3f96e7670543f5de00a6d43a4514d7c2e7e8",
+    "圖05_資料可用率.png": "cab639edce0874f67f96ae0d7f24441de2a85eb6664f3914d83668a86e0baf6d"
+  }
+}

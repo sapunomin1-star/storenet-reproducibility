@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/ieee-pes-amps/dtf-dev",
+  "commit": "030a22772c3e8ef5d55bebcec1960fd4325ce44f",
+  "files": [
+    {
+      "file": "LineCodes.csv",
+      "url": "https://raw.githubusercontent.com/ieee-pes-amps/dtf-dev/030a22772c3e8ef5d55bebcec1960fd4325ce44f/European%20LV%20Test%20Feeder/Additional%20Information/European_LV_CSV/LineCodes.csv",
+      "sha256": "45e1aa8e5a5f7d9082273ec62958848109b2de61e9c61ae71bd8197c23d75999"
+    },
+    {
+      "file": "Lines.csv",
+      "url": "https://raw.githubusercontent.com/ieee-pes-amps/dtf-dev/030a22772c3e8ef5d55bebcec1960fd4325ce44f/European%20LV%20Test%20Feeder/Additional%20Information/European_LV_CSV/Lines.csv",
+      "sha256": "41c799ca42f5fda809517026bc17b3505c69e171a002e8acf4667ea97b66d462"
+    },
+    {
+      "file": "Loads.csv",
+      "url": "https://raw.githubusercontent.com/ieee-pes-amps/dtf-dev/030a22772c3e8ef5d55bebcec1960fd4325ce44f/European%20LV%20Test%20Feeder/Additional%20Information/European_LV_CSV/Loads.csv",
+      "sha256": "2bc0aef3e662dbc48bdde03a5814b6c0c4a6a8a0985e3de1822a6107ee292c75"
+    },
+    {
+      "file": "Transformer.csv",
+      "url": "https://raw.githubusercontent.com/ieee-pes-amps/dtf-dev/030a22772c3e8ef5d55bebcec1960fd4325ce44f/European%20LV%20Test%20Feeder/Additional%20Information/European_LV_CSV/Transformer.csv",
+      "sha256": "a220b7887950325844ba13eae2df631767752babf07e262021dd039f10a6e50f"
+    },
+    {
+      "file": "Source.csv",
+      "url": "https://raw.githubusercontent.com/ieee-pes-amps/dtf-dev/030a22772c3e8ef5d55bebcec1960fd4325ce44f/European%20LV%20Test%20Feeder/Additional%20Information/European_LV_CSV/Source.csv",
+      "sha256": "864b80c5b62a2b2245f3b8b82ad67e7c1712debb9b9aff2515d2ffd7076ea8e7"
+    }
+  ]
+}

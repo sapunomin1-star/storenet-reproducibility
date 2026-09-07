@@ -1,0 +1,7 @@
+Name,Value,SolverObjective,Allowance,AllowanceApplied,ExitFlag,RelativeGap,FinalRecomputedValue,Message
+billEUR,28.1974446151325,28.1974446151325,2.81974446151325e-06,1,1,0,28.197447434877,"Optimal solution found.
+
+Intlinprog stopped at the root node because the objective value is within a gap tolerance of the optimal value, options.AbsoluteGapTolerance = 1e-06. The intcon variables are integer within tolerance, options.ConstraintTolerance = 1e-08."
+batteryThroughputKWh,176.300082078735,176.300082078735,NaN,0,1,0,176.300082078735,"Optimal solution found.
+
+Intlinprog stopped at the root node because the objective value is within a gap tolerance of the optimal value, options.AbsoluteGapTolerance = 1e-06. The intcon variables are integer within tolerance, options.ConstraintTolerance = 1e-08."

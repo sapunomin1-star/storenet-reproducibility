@@ -1,0 +1,68 @@
+{
+  "schemaVersion": "StoreNet-cross-environment-spec-v1",
+  "datasetId": "ausgrid-solar-home-2012-2013",
+  "title": "Residential load and rooftop PV generation: an Australian distribution network dataset",
+  "datasetPaperDoi": "10.1080/14786451.2015.1100196",
+  "officialMetadataUrl": "https://data.gov.au/data/en/dataset/nsw-solar-home-electricty-data",
+  "archiveUrl": "https://pierreh.eu/downloads/Ausgrid_solar_home_data.zip",
+  "archiveLicense": "CC BY 3.0 AU",
+  "releaseManifestPath": "StoreNet/data/AUSGRID_MANIFEST.sha256",
+  "sourceFile": "Solar home 2012-2013.csv",
+  "sourceFileSha256": "e4be46b3c9991c65735a9545319a2f1c33be8e639c75a17a88e0323a8e5098be",
+  "sourceIntervalMinutes": 30,
+  "timestampBasis": "naive Sydney local wall clock as released; interval-end labels",
+  "energyUnit": "kWh per 30-minute interval",
+  "loadDefinition": "GC + optional CL",
+  "pvDefinition": "GG; separately metered inverter-AC gross generation",
+  "publishedCleanCustomerIds": [
+    2, 13, 14, 20, 33, 35, 38, 39, 56, 69, 73, 74, 75, 82, 87, 88,
+    101, 104, 106, 109, 110, 119, 124, 130, 137, 141, 144, 152, 153,
+    157, 161, 169, 176, 184, 188, 189, 193, 201, 202, 204, 206, 207,
+    210, 211, 212, 214, 218, 244, 246, 253, 256, 273, 276, 297
+  ],
+  "excludedCustomerIds": [2],
+  "exclusionReason": "Customer 2 has 81 days without GC and GG in the selected year; exclusion was fixed before optimization.",
+  "analysisCustomerIds": [
+    13, 14, 20, 33, 35, 38, 39, 56, 69, 73, 74, 75, 82, 87, 88,
+    101, 104, 106, 109, 110, 119, 124, 130, 137, 141, 144, 152, 153,
+    157, 161, 169, 176, 184, 188, 189, 193, 201, 202, 204, 206, 207,
+    210, 211, 212, 214, 218, 244, 246, 253, 256, 273, 276, 297
+  ],
+  "qualityContract": {
+    "requiredCategories": ["GC", "GG"],
+    "optionalCategories": ["CL"],
+    "acceptedRowQuality": "blank only",
+    "imputation": "none",
+    "rejectWholeCommunityDay": true
+  },
+  "fixedPolicyTransfer": {
+    "batteryCapacityKWhPerHome": 10.0,
+    "batteryPowerKWPerHome": 3.3,
+    "etaPvAC": 1.0,
+    "etaPvDC": 0.95,
+    "etaBatteryCharge": 0.95,
+    "etaBatteryDischarge": 0.95,
+    "transferLossFraction": 0.07,
+    "nightPrice": 0.091,
+    "dayPrice": 0.194,
+    "dayStartHour": 10,
+    "dayEndHour": 22,
+    "feedInPrice": 0.0
+  },
+  "primarySelection": {
+    "method": "one robust central day per calendar month",
+    "features": "48 aggregate-load plus 48 aggregate-PV values",
+    "standardization": "coordinate-wise median and MAD within month",
+    "tieBreak": "earliest date",
+    "optimizationOutcomesUsed": false
+  },
+  "primaryStrategies": ["SH_BM", "VPP_BM", "IMPROVED_PEAK_GUARD"],
+  "frontierMonths": [3, 6, 9, 12],
+  "frontierCapFractionsFromMinimumToBaseline": [1.0, 0.75, 0.5, 0.25, 0.0],
+  "acceptanceTolerances": {
+    "energyBalanceResidualKW": 1e-6,
+    "terminalSocErrorKWh": 1e-6,
+    "simultaneousChargeDischargeKW": 1e-7,
+    "peakCapViolationKW": 1e-6
+  }
+}

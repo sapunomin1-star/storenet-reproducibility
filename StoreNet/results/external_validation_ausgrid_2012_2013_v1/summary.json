@@ -1,0 +1,40 @@
+{
+  "criteria": {
+    "tolerancesValid": true,
+    "primarySchemaValid": true,
+    "primaryPanelComplete": true,
+    "primaryAllRowsFeasible": true,
+    "peakGuardCapCompliant": true,
+    "peakGuardMedianSavingsPositive": true,
+    "peakGuardQ1SavingsPositive": true,
+    "pairedMedianPeakDeltaNegative": true,
+    "frontierSchemaValid": true,
+    "frontierPanelComplete": true,
+    "frontierAllRowsFeasible": true,
+    "frontierRequestedCapsTighten": true,
+    "frontierPeakMonotonic": true,
+    "frontierBillMonotonic": true
+  },
+  "statistics": {
+    "primaryRowCount": 36,
+    "primaryMonthCount": 12,
+    "peakGuardRowCount": 12,
+    "peakGuardCapPassCount": 12,
+    "peakGuardMedianSavingsPercent": 60.828560460430552,
+    "peakGuardQ1SavingsPercent": 47.510950097804226,
+    "pairedMonthCount": 12,
+    "pairedMedianPeakDeltaKW": -1.2939152631578921,
+    "frontierRowCount": 20,
+    "frontierMonthCount": 4,
+    "frontierPeakCapPassCount": 20,
+    "frontierComparisonCount": 16,
+    "frontierRequestedCapMonotonicPassCount": 16,
+    "frontierPeakMonotonicPassCount": 16,
+    "frontierBillMonotonicPassCount": 16,
+    "frontierMaximumRequestedCapIncreaseKW": 0,
+    "frontierMaximumPeakIncreaseKW": 0,
+    "frontierMaximumBillDecreaseEUR": 2.4868995751603507E-14
+  },
+  "failureReasons": [],
+  "overallCrossEnvironmentRobust": true
+}

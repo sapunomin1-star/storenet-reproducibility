@@ -1,0 +1,13 @@
+{
+  "IEEELinesMatched": 905,
+  "IEEECustomerConnectionsMatched": 55,
+  "BalancedCircuitVUFPercent": 6.505444745621613e-09,
+  "UnbalancedCircuitVUFPercent": 0.5195527941864462,
+  "KnownBatteryArbitrageCheck": "pass",
+  "PowerFlows": 48,
+  "AllConverged": true,
+  "MaxPowerBalanceResidualKW": 7.942799079563301e-08,
+  "MaxVUFSequenceDifference": 2.968458812091512e-14,
+  "MaxLPResidual": 7.105427357601002e-15,
+  "MaxSimultaneousChargeDischargeKW": 0.0
+}

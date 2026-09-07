@@ -1,0 +1,93 @@
+{
+  "classification": "independent_simulation_not_published_figure_reproduction",
+  "dates": {
+    "winter": "2020-01-19",
+    "summer": "2020-06-21"
+  },
+  "source_inputs_sha256": {
+    "H1_Wh.csv": "4bcce1b9956a0c0a2d532e065b7ac6a52a25481be45f8420532a1b847e5d407e",
+    "H2_Wh.csv": "ba6ddece061e6cd1e4ef2efe2540427c832b3462cc11e4cc6b8b78ba416cbd5a",
+    "H3_Wh.csv": "bc9ac7831ddf5806ab8af4118e91b3d08a8864318e9147d575a29dd0f8f6e2b5",
+    "H4_Wh.csv": "95b3a5202ef1788e1d840784a0b60a4f9e7802d6863f301b2ae13dc8b1375cba",
+    "H5_Wh.csv": "3433edfa4ec797194c51f822bc31c772d40d750aa93a10710b74c37f9b27966d",
+    "H6_Wh.csv": "3759e5c954a72cac059f925e419de9acfdb520aad8c2e9fbb59ce5714208454d",
+    "H7_Wh.csv": "8557165f6f29cf7ec589e09e44fd76f4fecb194cd5ee3e2b2cdbd92b6fc5d7c4",
+    "H8_Wh.csv": "7f97239fca322bf5dcf50362c32f6ab4289fedd68d1579ffcbdc7f961be37976",
+    "H9_Wh.csv": "81ae93e0fc890cd3cf1d4a683d7a2ae294bfd97f58843a1344e57bec93537c01",
+    "H10_Wh.csv": "1b055605d0b4ee8a2861f4082745405f425e7a793bad54fa4057d1bf3f4dbd92",
+    "H11_Wh.csv": "00c8d24a8a5f528719765d8ba6bb4672568d3b0888a5197e2d6fa164dba00105",
+    "H12_Wh.csv": "9d679be96a431c99397f369e06fbe751736ee386e64d24227a30faa96af4e43d",
+    "H13_Wh.csv": "521442533e37b83c704f2b2b1b1b87d92d9bc0c4ca6879a5961dde8c04902193",
+    "H14_Wh.csv": "9f45b4905a729c86ffd87700dc0512383c1be669f1d59cd87b6a922b50dc627f",
+    "H15_Wh.csv": "3a7752a761c11c75c9456c7ace813e6a2ef25d50e0d844f21bab011066852ea9",
+    "H16_Wh.csv": "6cc1c0344c06a9c47b3f0b88119a74f31edcde7c1558d6c99db899969f7b9d78",
+    "H17_Wh.csv": "50485b23bf92218e9d2f1b937f728778ff0c99c5a5db792d5af6f36c3d2c73e2",
+    "H18_Wh.csv": "292930a879587d2a4444866bfa921284dfc2cc4ff2a7468335439f84fb2140a2",
+    "H19_Wh.csv": "446f2a4feef483710ca80cb2d853fd63f189e3d79602fdce399248bff14016b1",
+    "H20_Wh.csv": "5d5f1e63a7d72a8a4eb225b5b9fa6a714dae3ed743fb8ec5db3d0a5dc8257bd1"
+  },
+  "code_sha256": "7e27d3afbd8abd16187b766bbb92572b8ea278a422b2b7e3f6a47281c46adf43",
+  "config_sha256": "cf3f546e987d604efb29a57eec8df743e256efa228fc7f9b50b76e17f4192eac",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "engine": "DSS C-API Library version 0.14.5 revision 87d85c2622c8281b92255335bc7c09b11191b21d based on OpenDSS SVN 3723 [FPC 3.2.2] (64-bit build) MVMULT INCREMENTAL_Y CONTEXT_API PM 20240329033829; License Status: Open \nDSS-Python version: 0.15.7\nOpenDSSDirect.py version: 0.9.4",
+  "packages": {
+    "OpenDSSDirect.py": "0.9.4",
+    "dss-python": "0.15.7",
+    "dss-python-backend": "0.14.5",
+    "scipy": "1.17.1",
+    "numpy": "2.4.3",
+    "pandas": "2.3.3",
+    "matplotlib": "3.10.8"
+  },
+  "feeder_provenance": {
+    "retrieved": "2026-09-06",
+    "repository": "https://github.com/tshort/OpenDSS",
+    "commit": "5005c668a72d20775f4c2d060feebb2866ba1d38",
+    "note": "IEEE European LV OpenDSS implementation from historical EPRI source mirror; upstream files unmodified. Load shapes omitted because actual StoreNet profiles replace them.",
+    "files": [
+      {
+        "file": "Master.dss",
+        "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/Master.dss",
+        "sha256": "959fd0f0e9f033c269b3c66228db444138dfbdbc40d39d11d88656cb2b5e9853"
+      },
+      {
+        "file": "Lines.txt",
+        "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/Lines.txt",
+        "sha256": "adc097cf570a32d9190c977dbcca1a66ceb7d8d2517d39b0690e319c67e3311d"
+      },
+      {
+        "file": "LineCode.txt",
+        "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/LineCode.txt",
+        "sha256": "0702d4a8a0b7f31adabe9a58e576c641614e59d1e181f96ad9589345071e4da4"
+      },
+      {
+        "file": "Loads.txt",
+        "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/Loads.txt",
+        "sha256": "c07b99a8b8ebd4ed5339689c7d43637443a09fac4334b1c427e9e4be484b7f6e"
+      },
+      {
+        "file": "Transformers.txt",
+        "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/Transformers.txt",
+        "sha256": "d951d5bd01b13eb6a1e92abc6b90d45c9c546b13c87237025e0eb0a5026dd1d1"
+      },
+      {
+        "file": "Buscoords.txt",
+        "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/Buscoords.txt",
+        "sha256": "b9fff83078dc6905962a5659ed76a13677b70251c142c3d34e76efcfe727570d"
+      }
+    ]
+  },
+  "outputs_sha256": {
+    "00_結果說明.md": "577f1ecf82d094e1c8bb165eb85464de0f5d9dfefbfc244d23c496d1d9c299b9",
+    "55戶與電網節點映射.csv": "481a2e49e8cb5ffbaa2b56e0c8b032b0fcfc4e8d7e3999dc9e2cfc1492e3b3b7",
+    "三相電壓與VUF.csv": "55a9c8461be4b04d78c777df2bf1b5bf60f17d9411284e6711386df4d24c11ed",
+    "代表日選擇與資料完整性.csv": "dec817ed701c733967b3508bb000f02e71ff7120b8789045cfbef5e81d3ddc5e",
+    "來源20戶_每小時負載與太陽能.csv": "7db72f7838b92a577417ad463b3d397dc59fea94fe164932d6d57350b6ff9783",
+    "圖10_電壓不平衡模擬.png": "6a90a689cd5a1c18f0ad82624e3183a525ec352f8fadf4f308fbb8f7656a1bec",
+    "模擬設定.json": "acac26cfe00dddf50ace2923403c5cbfa2334ca047ddb9f04a1cb3e57c3c732e",
+    "結果摘要.csv": "5f11722d6f39a63c8db12b8920a1b44fe81810c0206477fb06f3b91aca70bb01",
+    "電池排程.csv": "12edaae39b8fd4a8f2246f9fc8994eb6f284c5e77bcd258c1a42ab682dca8073",
+    "電網功率與損失.csv": "7113d34412d7df88cac2410bda51f71dcdac27fa638d69b7106542d24092a6d7",
+    "驗證結果.json": "54bc8fc20b7ee2cae70aba958dd11c7d81c6e93d731a97638da325c6bdc3b3ae"
+  }
+}

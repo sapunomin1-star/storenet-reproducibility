@@ -1,0 +1,387 @@
+{
+  "schemaVersion": "StoreNet-run-manifest-v1",
+  "createdAtUtc": "2026-08-31T16:30:20.169Z",
+  "experiment": {
+    "runType": "capacity_power_sensitivity",
+    "runId": "sensitivity_20200824_vppbm",
+    "days": "2020-08-24",
+    "qualityMode": "exclude_flagged_pv",
+    "intervalMinutes": 30,
+    "intervalConvention": "interval end; calendar day D uses (D 00:00, D+1 00:00]",
+    "strategy": "VPP_BM",
+    "capacityRatios": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1
+    ],
+    "powerRatios": [
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1
+    ],
+    "scalingDefinition": [
+      "batteryCapacityKWh = nominal capacity * capacity ratio; ",
+      "SoC endpoints/bounds retain fractions of scaled capacity; ",
+      "batteryPowerKW = nominal power * power ratio"
+    ],
+    "nominalConfiguration": {
+      "releaseName": "StoreNet Figshare processed release",
+      "releaseIsImmutable": true,
+      "dataMode": "processed-release",
+      "dataRoot": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/../data/raw",
+      "timestampBasis": "naive local wall-clock (timezone is not encoded)",
+      "whTimestampConvention": "interval end; calendar day D uses (D 00:00, D+1 00:00]",
+      "homes": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9",
+        "H10",
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17",
+        "H18",
+        "H19",
+        "H20"
+      ],
+      "nHomes": 20,
+      "pvHomes": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H7",
+        "H10",
+        "H11",
+        "H13",
+        "H17"
+      ],
+      "pvHomeMask": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "intervalMinutes": 30,
+      "dtHours": 0.5,
+      "qualityModeRequested": "exclude_flagged_pv",
+      "qualityMode": "exclude_flagged_pv",
+      "throwOnQualityFailure": false,
+      "quality": {
+        "maxPhysicalMissingMinuteFraction": 0,
+        "maxMissingStatusRunMinutes": 2,
+        "maxMissingStatusFraction": 0.005,
+        "pvActiveFractionOfDailyMaximum": 0.05,
+        "pvWindowToleranceHours": 0.5,
+        "dingleLatitudeDegrees": 52.14
+      },
+      "etaPvAC": 0.95,
+      "etaPvDC": 0.95,
+      "etaBatteryCharge": 0.95,
+      "etaBatteryDischarge": 0.95,
+      "transferLossFraction": 0.07,
+      "batteryCapacityKWh": 10,
+      "batteryPowerKW": 3.3,
+      "socInitialFraction": 0.1,
+      "socMinFraction": 0.1,
+      "socMaxFraction": 0.9,
+      "socTerminalFraction": 0.1,
+      "nightPrice": 0.091,
+      "dayPrice": 0.194,
+      "feedInPrice": 0,
+      "dayStartHour": 10,
+      "dayEndHour": 22,
+      "mipRelativeGap": 1E-6,
+      "constraintTolerance": 1E-8,
+      "lexicographicTolerance": 1E-7
+    },
+    "qualitySummary": {
+      "qualityPassed": true,
+      "qualityReasons": [],
+      "pvLongWindowAnomaly": false,
+      "pvWindowHours": 11.75,
+      "astronomicalDayLengthHours": 13.80732447897396,
+      "maximumMissingStatusRunMinutes": 2
+    },
+    "statuses": [
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.2,
+        "PowerRatio": 0.2,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 6.359923875
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.2,
+        "PowerRatio": 0.4,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.34908975
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.2,
+        "PowerRatio": 0.6,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.6420000416666665
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.2,
+        "PowerRatio": 0.8,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 6.2322453333333332
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.2,
+        "PowerRatio": 1,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.864821
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.4,
+        "PowerRatio": 0.2,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 10.149167083333333
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.4,
+        "PowerRatio": 0.4,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 10.898664625
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.4,
+        "PowerRatio": 0.6,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.59302875
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.4,
+        "PowerRatio": 0.8,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 8.0488000833333331
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.4,
+        "PowerRatio": 1,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 7.8136455833333329
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.6,
+        "PowerRatio": 0.2,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.4463313333333332
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.6,
+        "PowerRatio": 0.4,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.3312714583333332
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.6,
+        "PowerRatio": 0.6,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.2863204166666664
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.6,
+        "PowerRatio": 0.8,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.73057375
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.6,
+        "PowerRatio": 1,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.4615984166666669
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.8,
+        "PowerRatio": 0.2,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.1621405
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.8,
+        "PowerRatio": 0.4,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.862978375
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.8,
+        "PowerRatio": 0.6,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.008025
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.8,
+        "PowerRatio": 0.8,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.2456873333333331
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 0.8,
+        "PowerRatio": 1,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.2179395
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 1,
+        "PowerRatio": 0.2,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.0711409583333333
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 1,
+        "PowerRatio": 0.4,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.8282267083333332
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 1,
+        "PowerRatio": 0.6,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 6.9108400416666669
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 1,
+        "PowerRatio": 0.8,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.991983625
+      },
+      {
+        "Day": "24-Aug-2020",
+        "CapacityRatio": 1,
+        "PowerRatio": 1,
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.539398375
+      }
+    ]
+  },
+  "code": {
+    "repositoryRoot": "/Users/guichenxiang/Desktop/電力專案",
+    "commit": "173d8147b2ca6fd9ece36fe763ef3dcd6e48f9e8",
+    "trackedFilesDirty": false,
+    "statusAvailable": true,
+    "untrackedFilesExcluded": true,
+    "statusScope": "tracked files only; generated and other untracked files are excluded"
+  },
+  "runtime": {
+    "version": "26.2.0.3281582 (R2026b) Prerelease Update 1",
+    "release": "2026b",
+    "computer": "MACA64"
+  },
+  "solver": {
+    "name": "intlinprog",
+    "interface": "MATLAB problem-based optimization",
+    "toolboxVersion": "26.2"
+  },
+  "release": {
+    "manifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/../data/RELEASE_MANIFEST.sha256",
+    "manifestExists": true,
+    "manifestSha256": "a3d901b627546061b63264c438b361674ac6cd11df60eff919a6258dfd35ecec"
+  }
+}

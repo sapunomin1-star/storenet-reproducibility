@@ -1,0 +1,41 @@
+{
+  "paper": {
+    "title": "Comprehensive Dataset on Electrical Load Profiles for Energy Community in Ireland",
+    "doi": "10.1038/s41597-024-03454-2",
+    "data_doi": "10.6084/m9.figshare.c.6829134.v1"
+  },
+  "figure5": {
+    "paper_denominator_rows_text": 527039,
+    "author_plot_denominator_rows": 527040,
+    "h10_missing_rows_text": 2317
+  },
+  "figure6": {
+    "house_id": "H4",
+    "paper_pearson": 1.0,
+    "paper_caption_claims_log_axes": true,
+    "released_plot_code_uses_log_axes": false,
+    "released_plot_code_uses_log_count_colours": true
+  },
+  "figure7": {
+    "paper_caption_mean_annual_kwh": 5025.64,
+    "paper_temperature_correlation": -0.31,
+    "author_daily_series_unit": "mean aggregate Wh per minute",
+    "paper_daily_axis_label": "kWh/day"
+  },
+  "figure8": {
+    "pv_house_order": ["H10", "H11", "H13", "H17", "H1", "H2", "H3", "H4", "H5", "H7"],
+    "paper_text_production_range_kwh": [1800, 2000]
+  },
+  "figure9": {
+    "house_id": "H4",
+    "start_inclusive": "2020-12-07 00:00:00",
+    "end_exclusive": "2020-12-14 00:00:00",
+    "expected_minutes": 10080
+  },
+  "figure10": {
+    "source_reference": 22,
+    "source_paper_figure": 13,
+    "source_doi": "10.1016/j.egyr.2023.05.005",
+    "classification": "structural_only_exact_inputs_unpublished"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "Equation": "FromGrid(Wh) + Production(Wh) + Discharge(Wh) - Consumption(Wh) - Charge(Wh) - FeedIn(Wh)",
+  "FiniteRows": 526979,
+  "MeanResidualWh": 0.0009305873668590135,
+  "MeanAbsoluteResidualWh": 0.0009305873668598943,
+  "MaximumAbsoluteResidualWh": 45.68,
+  "RowsAbsoluteResidualAbove1eMinus9Wh": 689,
+  "Classification": "internal_consistency_support_only_not_root_cause_proof",
+  "Caveat": "A balanced processed Wh table supports internal consistency, but does not prove that Wh is raw ground truth or that W alone caused the mismatch."
+}

@@ -1,0 +1,306 @@
+{
+  "contractId": "SR2020-IR-v2",
+  "figure_status": {
+    "5": "exact numeric reproduction",
+    "6": "general W/Wh consistency supported; H4 public release has diagnosed time/date assembly evidence, while the published H4 panel remains unreproduced",
+    "7a": "bar values exact; caption mean conflicts",
+    "7b": "legacy trend reproduced; released-grid-complete unit correction supplied",
+    "8": "released-data totals reproduced; textual range conflicts",
+    "9": "released-data week reproduced",
+    "10": "structural only; exact inputs unpublished"
+  },
+  "figure6_audit_schema": {
+    "schema_version": "2.0.0",
+    "comparison_scopes": {
+      "finite_release_same_timestamp": "finite released pairs at identical published timestamps",
+      "observed_both_endpoints": "finite pairs with released W status(t-1)==status(t)==1; status is an observation proxy, not proof of Wh ground truth"
+    },
+    "daily_lag_sign": "positive L compares W(t) with 60*Wh(t+L); integer L in [-1440,+1440]",
+    "daily_lag_minimum_finite_points": 60,
+    "daily_lag_interpretation": "diagnostic_only: lag search characterises release alignment and is not a repair, imputation rule, or data-acceptance gate",
+    "mapped_comparison_scope": {
+      "name": "source_and_mapped_target_w_status_both_endpoints",
+      "description": "finite mapped W/Wh pairs requiring the released W-status observation proxy at both endpoints on both the source W timestamps and mapped-target Wh timestamps; W status is not proof of Wh ground truth"
+    },
+    "alignment_boundary_policy": "same-date zero-offset uses 1440 labels; +60 core mappings use 1380 labels; same-date and transpose continuous-24h diagnostics use 1440 labels and are exported separately under the same source-and-mapped-target W-status proxy scope",
+    "alignment_rule": "frozen_rule_based_v2",
+    "alignment_candidate_pass_rule": "MatchedFinitePoints>=60 and PearsonR>0.99 for both signals",
+    "date_transpose_pass_rule": "MatchedFinitePoints>=60 and PearsonR>0.99 under the mapped comparison scope",
+    "alignment_category_days": {
+      "unaffected_same0": 146,
+      "unassessable_no_finite_W_pairs": 1,
+      "same_date_plus60_core": 135,
+      "actual_transpose_plus60_core": 42,
+      "diagonal_identity_plus60_control": 7,
+      "unresolved": 35
+    },
+    "unaffected_alignment_days": 146,
+    "unassessable_no_finite_W_pair_days": 1,
+    "affected_core_aligned_days": 184,
+    "affected_unresolved_days": 35,
+    "affected_core_alignment_caveat": "184 dates pass frozen within-target-day core checks; this is not a claim that their full 24-hour boundaries are solved or repaired",
+    "forensic_block_definition": "finite Unnamed: 6 rows split when adjacent finite index values differ by anything other than +1",
+    "forensic_blocks": 20,
+    "sidecars": [
+      "figure6_all_house_metrics.csv",
+      "figure6_h4_daily_diagnostics.csv",
+      "figure6_h4_monthly_summary.csv",
+      "figure6_h4_alignment_summary.csv",
+      "figure6_h4_anomaly_segments.csv",
+      "figure6_h4_date_transpose_diagnostics.csv",
+      "figure6_h4_cross_house_controls.csv",
+      "figure6_h4_wh_balance.json"
+    ]
+  },
+  "key_metrics": {
+    "figure5_rounded_matches": 20,
+    "figure6_h4_finite_release_production_pearson": 0.7321716904810616,
+    "figure6_h4_finite_release_consumption_pearson": 0.5219457715321641,
+    "figure6_scope_pass_counts": {
+      "finite_release_same_timestamp": {
+        "consumption_passes": 19,
+        "consumption_available": 20,
+        "production_passes": 9,
+        "production_available": 10,
+        "consumption_house_ids": [
+          "H1",
+          "H10",
+          "H11",
+          "H12",
+          "H13",
+          "H14",
+          "H15",
+          "H16",
+          "H17",
+          "H18",
+          "H19",
+          "H2",
+          "H20",
+          "H3",
+          "H4",
+          "H5",
+          "H6",
+          "H7",
+          "H8",
+          "H9"
+        ],
+        "consumption_failed_house_ids": [
+          "H4"
+        ],
+        "production_available_house_ids": [
+          "H1",
+          "H10",
+          "H11",
+          "H13",
+          "H17",
+          "H2",
+          "H3",
+          "H4",
+          "H5",
+          "H7"
+        ],
+        "production_failed_house_ids": [
+          "H4"
+        ],
+        "production_unavailable_house_ids": [
+          "H12",
+          "H14",
+          "H15",
+          "H16",
+          "H18",
+          "H19",
+          "H20",
+          "H6",
+          "H8",
+          "H9"
+        ]
+      },
+      "observed_both_endpoints": {
+        "consumption_passes": 19,
+        "consumption_available": 20,
+        "production_passes": 9,
+        "production_available": 10,
+        "consumption_house_ids": [
+          "H1",
+          "H10",
+          "H11",
+          "H12",
+          "H13",
+          "H14",
+          "H15",
+          "H16",
+          "H17",
+          "H18",
+          "H19",
+          "H2",
+          "H20",
+          "H3",
+          "H4",
+          "H5",
+          "H6",
+          "H7",
+          "H8",
+          "H9"
+        ],
+        "consumption_failed_house_ids": [
+          "H4"
+        ],
+        "production_available_house_ids": [
+          "H1",
+          "H10",
+          "H11",
+          "H13",
+          "H17",
+          "H2",
+          "H3",
+          "H4",
+          "H5",
+          "H7"
+        ],
+        "production_failed_house_ids": [
+          "H4"
+        ],
+        "production_unavailable_house_ids": [
+          "H12",
+          "H14",
+          "H15",
+          "H16",
+          "H18",
+          "H19",
+          "H20",
+          "H6",
+          "H8",
+          "H9"
+        ]
+      }
+    },
+    "figure6_h4_best_lag_60min_days": {
+      "Production": 141,
+      "Consumption": 142
+    },
+    "figure6_h4_unnamed6_blocks": 20,
+    "figure6_h4_unnamed6_populated_rows": 314742,
+    "figure6_h4_unnamed6_affected_days": 219,
+    "figure6_h4_date_transpose_core_passes": {
+      "Production": 49,
+      "Consumption": 49
+    },
+    "figure6_h4_date_transpose_continuous_passes": {
+      "Production": 49,
+      "Consumption": 29
+    },
+    "figure6_h4_date_transpose_continuous_consumption_aggregate_pearson": 0.9890878094902606,
+    "figure6_h4_same_date_plus60_consumption": {
+      "core_days_pass_r0p99": 135,
+      "continuous_24h_days_pass_r0p99": 131,
+      "continuous_24h_failure_dates": [
+        "2020-05-31",
+        "2020-06-30",
+        "2020-07-31",
+        "2020-08-31"
+      ]
+    },
+    "figure6_h4_alignment_category_days": {
+      "unaffected_same0": 146,
+      "unassessable_no_finite_W_pairs": 1,
+      "same_date_plus60_core": 135,
+      "actual_transpose_plus60_core": 42,
+      "diagonal_identity_plus60_control": 7,
+      "unresolved": 35
+    },
+    "figure6_h4_unresolved_all_candidate_pass_counts_zero": true,
+    "figure6_cross_house_max_absolute_pearson": 0.10705971050143546,
+    "figure6_cross_house_max_absolute_pearson_by_scope": {
+      "finite_release_same_timestamp": 0.10587862392504886,
+      "observed_both_endpoints": 0.10705971050143546
+    },
+    "figure6_h4_wh_balance": {
+      "Equation": "FromGrid(Wh) + Production(Wh) + Discharge(Wh) - Consumption(Wh) - Charge(Wh) - FeedIn(Wh)",
+      "FiniteRows": 526979,
+      "MeanResidualWh": 0.0009305873668590135,
+      "MeanAbsoluteResidualWh": 0.0009305873668598943,
+      "MaximumAbsoluteResidualWh": 45.68,
+      "RowsAbsoluteResidualAbove1eMinus9Wh": 689,
+      "Classification": "internal_consistency_support_only_not_root_cause_proof",
+      "Caveat": "A balanced processed Wh table supports internal consistency, but does not prove that Wh is raw ground truth or that W alone caused the mismatch."
+    },
+    "figure7a_recomputed_mean_kwh": 5003.1125275,
+    "figure7a_calendar_2020_mean_kwh": 5002.402163000001,
+    "figure7a_paper_caption_mean_kwh": 5025.64,
+    "figure7b_legacy_pearson": -0.31413070921892744,
+    "figure7b_released_grid_complete_days": 345,
+    "figure7b_released_grid_complete_pearson": -0.23394605050817563,
+    "figure9_rows": 10080,
+    "figure9_max_balance_residual_wh": 0.43
+  },
+  "required_gates": {
+    "figure5_published_percentages": true,
+    "figure6_all_house_both_scopes": true,
+    "figure6_h4_forensic_blocks": true,
+    "figure6_h4_date_transpose_policies": true,
+    "figure6_h4_daily_alignment_classification": true,
+    "figure6_cross_house_scope_control": true,
+    "figure6_h4_wh_internal_balance": true,
+    "figure6_normative_sidecars_present": true,
+    "figure7a_published_bars": true,
+    "figure7b_legacy_correlation": true,
+    "figure7b_released_grid_complete_days": true,
+    "figure8_pv_cohort": true,
+    "figure9_exact_minute_sequence": true
+  },
+  "claims": {
+    "paper": {
+      "title": "Comprehensive Dataset on Electrical Load Profiles for Energy Community in Ireland",
+      "doi": "10.1038/s41597-024-03454-2",
+      "data_doi": "10.6084/m9.figshare.c.6829134.v1"
+    },
+    "figure5": {
+      "paper_denominator_rows_text": 527039,
+      "author_plot_denominator_rows": 527040,
+      "h10_missing_rows_text": 2317
+    },
+    "figure6": {
+      "house_id": "H4",
+      "paper_pearson": 1.0,
+      "paper_caption_claims_log_axes": true,
+      "released_plot_code_uses_log_axes": false,
+      "released_plot_code_uses_log_count_colours": true
+    },
+    "figure7": {
+      "paper_caption_mean_annual_kwh": 5025.64,
+      "paper_temperature_correlation": -0.31,
+      "author_daily_series_unit": "mean aggregate Wh per minute",
+      "paper_daily_axis_label": "kWh/day"
+    },
+    "figure8": {
+      "pv_house_order": [
+        "H10",
+        "H11",
+        "H13",
+        "H17",
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H7"
+      ],
+      "paper_text_production_range_kwh": [
+        1800,
+        2000
+      ]
+    },
+    "figure9": {
+      "house_id": "H4",
+      "start_inclusive": "2020-12-07 00:00:00",
+      "end_exclusive": "2020-12-14 00:00:00",
+      "expected_minutes": 10080
+    },
+    "figure10": {
+      "source_reference": 22,
+      "source_paper_figure": 13,
+      "source_doi": "10.1016/j.egyr.2023.05.005",
+      "classification": "structural_only_exact_inputs_unpublished"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+Strategy,PaperPrintedSavingsPercent,LocalPaperLoadOnlySavingsPercent,DifferencePercentagePoints,LocalStatus,SourceNote
+SH_BM,36.41,38.4003112615972,1.99031126159722,ok,Figure 5a printed label
+VPP_BM,45.83,46.6664306157681,0.836430615768151,ok,Figure 5b printed label; Table I nominal says 45.85
+PS,15.3,20.744319436618,5.44431943661802,ok,Figure 5c printed label
+PSDT,43.63,46.6664306157682,3.03643061576818,ok,Figure 5d printed label
+LL,15.39,20.744316068486,5.35431606848599,ok,Figure 5e printed label
+SB_SC,23.72,15.8214190588816,-7.8985809411184,ok,Figure 5f measured proprietary benchmark

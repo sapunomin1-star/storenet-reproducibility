@@ -1,0 +1,20 @@
+.DS_Store
+._*
+__pycache__/
+*.py[cod]
+.venv*/
+.downloads/
+StoreNet/data/raw/
+StoreNet/data/prep/
+StoreNet/data/derived/
+StoreNet/data/external/ausgrid/raw/
+StoreNet/data/external/ieee_european_lv/ieee_primary_csv/*.csv
+*.asv
+matlab.log
+matlab_crash_dump*
+.validation/
+
+# Finder aliases are local conveniences; the Markdown guide works on both OSes.
+02_中文程式導覽/**
+!02_中文程式導覽/**/
+!02_中文程式導覽/**/*.md

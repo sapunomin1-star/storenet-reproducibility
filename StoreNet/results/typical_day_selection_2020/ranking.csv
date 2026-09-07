@@ -1,0 +1,346 @@
+Day,Score,QualityPassed,QualityStatus,QualityMessage,LoadEnergyKWh,PvEnergyKWh,LoadPeakKW,PvPeakKW,Selected
+10-Jun-2020,0.227437099056766,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-10 fails exclude_flagged_pv: status_run_exceeds_2min:H19.",265.061413189573,38.18711,20.08076,8.90532,0
+24-Aug-2020,0.242266698119992,1,passed,"",237.371525,39.003295,18.87078,7.16826,1
+07-Apr-2020,0.242712092090716,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-07 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H6,H9,H12,H13,H18,H19.",243.56057,60.949145,20.01468,9.00362,0
+09-Aug-2020,0.246942862463204,1,passed,"",281.36449,29.909995,21.81542,5.998,0
+09-Oct-2020,0.247624332862696,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-09 fails exclude_flagged_pv: status_run_exceeds_2min:H17; status_fraction_exceeds_0.005:H17.",242.306645,31.793805,21.241255,5.5385,0
+26-Jun-2020,0.248857072914354,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-26 fails exclude_flagged_pv: status_run_exceeds_2min:H5.",197.31821,46.537465,15.79108,6.7461,0
+10-Jan-2020,0.249316902591204,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-10 fails exclude_flagged_pv: pv_window_exceeds_astronomical_day_length_plus_0.5h.",236.665505,44.640965,16.07852,9.18298,0
+07-Jul-2020,0.253050205098804,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-07 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H12,H13,H15,H18.",231.603775,31.81161,17.82006,5.5743,0
+16-Sep-2020,0.25658493277636,1,passed,"",250.765125,47.16814,19.59598,10.63216,0
+15-Sep-2020,0.256610099244041,1,passed,"",276.248905,40.417295,20.08504,13.02878,0
+22-Jun-2020,0.257091755443106,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-22 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H3,H10,H11.",245.740045,39.55642,23.90698,6.98912,0
+08-Apr-2020,0.260758778158606,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-08 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H18,H19,H20; status_fraction_exceeds_0.005:H1,H2,H3,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H18,H19,H20.",214.342845,51.606525,14.77146,13.50176,0
+29-Jul-2020,0.26140627244862,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-29 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H17,H20; status_fraction_exceeds_0.005:H1,H17,H18,H20.",251.07197,35.697145,17.51276,5.35572,0
+16-Jun-2020,0.261919308182903,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-16 fails exclude_flagged_pv: status_run_exceeds_2min:H3.",241.09465,44.055045,19.95884,5.87454,0
+30-Jun-2020,0.262141674176945,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-30 fails exclude_flagged_pv: status_run_exceeds_2min:H12.",222.22083,43.47856,17.3547,7.23174,0
+29-Sep-2020,0.263342757836877,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-29 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H7; status_fraction_exceeds_0.005:H5,H7.",253.40226,39.557345,20.78978,11.23064,0
+20-Oct-2020,0.264972296839556,1,passed,"",265.107125,26.69437,21.6597,10.81908,0
+22-Oct-2020,0.265993150024893,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-22 fails exclude_flagged_pv: status_fraction_exceeds_0.005:H2.",247.80417,44.836365,19.67643,11.50666,0
+25-Aug-2020,0.26620683092309,1,passed,"",240.43752,44.66708,17.96778,7.4713,0
+28-Jan-2020,0.266729116445929,1,passed,"",294.976355,33.19752,21.10842,7.56582,0
+15-Jul-2020,0.267079430115156,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-15 fails exclude_flagged_pv: status_run_exceeds_2min:H16,H19; status_fraction_exceeds_0.005:H19.",237.941320844749,56.94596,16.74772,9.49474,0
+23-Jun-2020,0.268162463951543,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-23 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H3,H15,H16,H18; status_fraction_exceeds_0.005:H3.",238.29284,36.007595,23.3125,5.66516,0
+17-Jul-2020,0.268175207168486,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-17 fails exclude_flagged_pv: status_run_exceeds_2min:H6; status_fraction_exceeds_0.005:H6.",231.813408333333,33.162195,20.75698,5.24822,0
+29-Jun-2020,0.268424732227609,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-29 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H3,H10,H15,H18.",220.016045,43.8094,18.06802,6.8524,0
+31-Aug-2020,0.269981787780531,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-31 fails exclude_flagged_pv: status_run_exceeds_2min:H16.",259.010705,37.71567,20.84182,5.42238,0
+06-Sep-2020,0.27010036626164,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-06 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H10,H18; pv_window_exceeds_astronomical_day_length_plus_0.5h.",226.655125,53.501805,21.56378,10.1998,0
+13-Aug-2020,0.270780692841523,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-13 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H6; status_fraction_exceeds_0.005:H1,H3,H6,H7,H8,H9,H20.",260.58042,23.563445,18.77728,4.42432,0
+02-Apr-2020,0.273052808375972,1,passed,"",254.463315,48.776905,19.25274,11.5231,0
+06-Apr-2020,0.274276268770318,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-06 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H9,H12,H13,H20.",225.705505,34.7567,16.57784,5.02796,0
+08-Oct-2020,0.276909198398732,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-08 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H6,H12,H17,H18; status_fraction_exceeds_0.005:H3,H5,H6,H8,H11,H12,H13,H17,H18; pv_window_exceeds_astronomical_day_length_plus_0.5h.",263.315335,55.875095,18.01389,9.20862,0
+23-Jul-2020,0.277500874279544,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-23 fails exclude_flagged_pv: status_run_exceeds_2min:H17.",241.635515,66.60906,21.08906,11.18016,0
+21-Sep-2020,0.278905514635921,1,passed,"",244.786545,24.55873,20.45384,4.18626,0
+06-Jun-2020,0.279486864655652,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-06 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H12,H15.",231.832305,49.17246,19.40612,7.39604,0
+30-Sep-2020,0.279957627640599,1,passed,"",246.083385,41.68221,20.1546,12.8769,0
+21-Oct-2020,0.282819926599502,1,passed,"",256.05006,26.968315,22.44463,6.71176,0
+15-Aug-2020,0.282906397290722,1,passed,"",267.534295,44.20713,19.97334,7.48708,0
+18-May-2020,0.283422706592942,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-18 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H15,H18,H20.",246.06403,54.536495,18.2175,9.3782,0
+17-Apr-2020,0.285358763514905,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-17 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H9,H15.",252.043905,49.23345,22.05574,9.7208,0
+10-May-2020,0.287053238693414,1,passed,"",269.238385,31.983985,21.8182,8.34484,0
+02-May-2020,0.288164389951635,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-02 fails exclude_flagged_pv: status_run_exceeds_2min:H4.",249.5768,17.44405,19.93676,4.0416,0
+07-Jan-2020,0.288276490176505,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-07 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H12,H19; status_fraction_exceeds_0.005:H19; pv_window_exceeds_astronomical_day_length_plus_0.5h.",213.751315,57.877455,15.78264,10.27128,0
+14-Aug-2020,0.289168808049258,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-14 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H10,H11; status_fraction_exceeds_0.005:H9,H10.",242.62133,35.92288,16.1049,13.4281859459459,0
+27-Sep-2020,0.289432669402386,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-27 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H16; status_fraction_exceeds_0.005:H6,H8,H9,H11,H12,H20.",282.034405,33.25252,20.16328,6.73331,0
+10-Dec-2020,0.291024420531085,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-12-10 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H7,H8,H9,H11,H12,H18,H20; status_fraction_exceeds_0.005:H6,H7,H8,H9,H11,H12,H20; pv_window_exceeds_astronomical_day_length_plus_0.5h.",254.296089410132,58.800965,20.66814,13.13144,0
+25-May-2020,0.291252412094767,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-25 fails exclude_flagged_pv: status_run_exceeds_2min:H14,H17,H18.",239.600305,63.08231,19.00988,6.99344,0
+20-Jun-2020,0.291563182635625,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-20 fails exclude_flagged_pv: status_run_exceeds_2min:H10,H14,H17,H20.",259.0898,40.757005,22.48246,5.23026,0
+26-Apr-2020,0.292335356769805,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-26 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H6,H12,H18.",246.09837,16.699505,17.34716,3.10614,0
+07-Aug-2020,0.293840069996565,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-07 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H9,H10,H12,H13,H14,H15,H16,H17,H18; status_fraction_exceeds_0.005:H10,H14,H15,H17,H18.",241.25825,31.08467,18.58568,4.50288,0
+12-Jan-2020,0.295328596814214,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-12 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H6,H7,H8,H9,H11,H12,H13,H16,H20; status_fraction_exceeds_0.005:H6,H7,H8,H9,H11,H12,H13,H16,H20.",295.77062,21.988065,23.80304,8.47412,0
+15-Jan-2020,0.296124458371119,1,passed,"",316.764665,31.834,26.40408,10.86896,0
+24-Sep-2020,0.296760905531788,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-24 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H4,H5,H6,H10,H13,H14,H15,H18; status_fraction_exceeds_0.005:H1,H2,H3,H4,H5,H6,H8,H9,H10,H11,H12,H14,H15,H17,H18,H19,H20.",254.42619,56.045305,17.12349,13.51782,0
+08-May-2020,0.2970149429654,1,passed,"",244.91228,58.50355,22.82686,10.70964,0
+14-Jun-2020,0.297039917871871,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-14 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H15.",231.469765,50.002375,16.78212,10.97126,0
+08-Jan-2020,0.297558395019777,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-08 fails exclude_flagged_pv: status_run_exceeds_2min:H4; pv_window_exceeds_astronomical_day_length_plus_0.5h.",285.580571885246,58.936475,23.66248,11.47242,0
+10-Feb-2020,0.297795898638175,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-10 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H13; status_fraction_exceeds_0.005:H13; pv_window_exceeds_astronomical_day_length_plus_0.5h.",256.549745,68.048035,19.3820355760369,11.0546502304147,0
+17-Oct-2020,0.298449074654117,1,passed,"",258.160445,46.95264,18.2866,10.90308,0
+13-Jun-2020,0.298822710609302,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-13 fails exclude_flagged_pv: status_run_exceeds_2min:H12,H14,H15.",216.159975,54.90271,21.0403,10.21036,0
+22-Aug-2020,0.298955774347448,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-22 fails exclude_flagged_pv: status_run_exceeds_2min:H8; status_fraction_exceeds_0.005:H8.",254.600175,39.51657,21.07658,7.83026,0
+16-May-2020,0.299117637886879,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-16 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H10,H12,H15.",230.009615,52.986875,17.3641,9.39738,0
+11-Feb-2020,0.299251173178365,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-11 fails exclude_flagged_pv: status_run_exceeds_2min:H12,H15; status_fraction_exceeds_0.005:H12.",317.11085,27.080045,22.88858,7.15936,0
+26-Jul-2020,0.30014902118367,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-26 fails exclude_flagged_pv: status_run_exceeds_2min:H18; status_fraction_exceeds_0.005:H18.",257.929355,66.370055,19.33792,15.5577,0
+22-Jan-2020,0.300742886025736,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-22 fails exclude_flagged_pv: status_run_exceeds_2min:H20.",287.626805,32.35249,25.28002,11.22956,0
+02-Jan-2020,0.301062941219419,1,passed,"",270.03766,20.879625,22.74114,5.83496,0
+02-Mar-2020,0.302389227385383,1,passed,"",288.31879,27.987555,20.15406,8.92156,0
+28-Oct-2020,0.302532872236975,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-28 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H7,H8,H9,H10,H11,H12,H13,H14,H16,H17,H18,H19,H20; status_fraction_exceeds_0.005:H7,H10,H11,H12,H13,H19,H20.",286.05046,38.63969,24.93408,8.9896,0
+14-Jul-2020,0.303218626229359,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-14 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H19; status_fraction_exceeds_0.005:H5,H19.",201.492074589782,61.814645,14.70782,11.39644,0
+10-Apr-2020,0.303234262022336,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-10 fails exclude_flagged_pv: status_run_exceeds_2min:H13; status_fraction_exceeds_0.005:H13.",262.402917,27.37346,17.62632,6.06102,0
+01-Mar-2020,0.303242678125102,1,passed,"",272.227255,31.76364,18.76322,8.99778,0
+11-Mar-2020,0.303717508799098,1,passed,"",293.513115,28.39524,22.74502,6.27494,0
+09-Feb-2020,0.304079127001452,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-09 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H17,H18,H19,H20; status_fraction_exceeds_0.005:H1,H2,H3,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H17,H18,H19,H20; pv_window_exceeds_astronomical_day_length_plus_0.5h.",273.72634,20.326205,21.98173,4.86356,0
+13-Nov-2020,0.304442421927529,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-13 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H4,H5,H16; status_fraction_exceeds_0.005:H1,H2,H3,H4,H5,H16.",283.217373157895,18.201455,22.9632531578947,5.2702,0
+24-Jul-2020,0.304444020204275,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-24 fails exclude_flagged_pv: status_run_exceeds_2min:H14,H18; status_fraction_exceeds_0.005:H14,H18.",248.646715,25.34446,21.4508507692308,8.82956,0
+30-Oct-2020,0.305271251317152,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-30 fails exclude_flagged_pv: status_run_exceeds_2min:H5.",271.4118,51.001425,23.90736,12.09948,0
+09-Jul-2020,0.306746751688842,1,passed,"",278.96795,20.180705,19.4818,3.25002,0
+30-Jan-2020,0.306870611231626,1,passed,"",262.225995,17.858775,16.23445,3.73632,0
+13-Sep-2020,0.307819645729333,1,passed,"",253.506885,54.267675,16.5362,13.62476,0
+13-Oct-2020,0.30808821258612,1,passed,"",253.31327,57.489185,18.69402,13.34337,0
+07-Mar-2020,0.308425156661611,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-07 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H13,H17,H18; pv_window_exceeds_astronomical_day_length_plus_0.5h.",245.33102,35.200215,22.27364,4.28576,0
+18-Nov-2020,0.308923291512883,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-18 fails exclude_flagged_pv: status_run_exceeds_2min:H16; status_fraction_exceeds_0.005:H16.",290.723675666667,28.18462,23.91638,8.68614,0
+02-Nov-2020,0.310166034774413,1,passed,"",275.758315,41.36594,19.91046,10.8085,0
+04-Dec-2020,0.310343663604685,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-12-04 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H12,H19; pv_window_exceeds_astronomical_day_length_plus_0.5h.",270.195145,52.703765,18.02452,13.71008,0
+04-Oct-2020,0.310572142060575,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-04 fails exclude_flagged_pv: status_run_exceeds_2min:H10,H14,H17.",267.44333,31.614565,22.02984,5.96624,0
+27-Jan-2020,0.311051370102673,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-27 fails exclude_flagged_pv: status_run_exceeds_2min:H4,H10,H14,H15,H17,H18,H19; status_fraction_exceeds_0.005:H10,H14,H15,H17,H18,H19.",287.26981,14.609965,22.81436,7.27782,0
+06-Jul-2020,0.311306953554126,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-06 fails exclude_flagged_pv: status_run_exceeds_2min:H10,H12,H14,H15,H20.",218.930285,47.610065,15.27656,10.00206,0
+23-Oct-2020,0.313574044808858,1,passed,"",246.727995,56.300385,20.73398,12.95574,0
+21-May-2020,0.314274981748692,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-21 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H12,H18.",252.061905,65.84169,22.11176,9.52206,0
+09-Nov-2020,0.314657806661318,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-09 fails exclude_flagged_pv: status_run_exceeds_2min:H9; status_fraction_exceeds_0.005:H9; pv_window_exceeds_astronomical_day_length_plus_0.5h.",254.284345,29.53534,21.28758,7.91666,0
+29-Jan-2020,0.31482617351636,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-29 fails exclude_flagged_pv: status_run_exceeds_2min:H4,H6,H7,H8,H9,H11,H12,H13,H16,H20; status_fraction_exceeds_0.005:H6,H7,H8,H9,H12,H13,H16,H20.",281.065645,15.31543,20.09756,3.90504,0
+14-Sep-2020,0.315941070084981,1,passed,"",259.444065,39.939855,18.8168,9.85702,0
+27-Oct-2020,0.316608491856637,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-27 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H4,H5,H14,H15; status_fraction_exceeds_0.005:H4,H5,H14.",287.798925,50.65455,24.8457,11.08998,0
+11-Sep-2020,0.317257749221088,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-11 fails exclude_flagged_pv: status_run_exceeds_2min:H16; status_fraction_exceeds_0.005:H16.",290.169055638446,29.625715,26.7867107564192,10.10064,0
+16-Aug-2020,0.318925421245084,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-16 fails exclude_flagged_pv: status_run_exceeds_2min:H16.",300.08461,44.72438,22.9819,10.05348,0
+19-Aug-2020,0.318948364277967,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-19 fails exclude_flagged_pv: status_run_exceeds_2min:H12; status_fraction_exceeds_0.005:H12.",246.259061911765,56.135715,18.9725,11.21198,0
+23-Apr-2020,0.319383861704438,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-23 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H7,H9,H10,H19; status_fraction_exceeds_0.005:H5.",245.608333461538,75.0505603846154,17.5975000404858,9.47428,0
+30-Aug-2020,0.319915431349983,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-30 fails exclude_flagged_pv: status_run_exceeds_2min:H1; status_fraction_exceeds_0.005:H1.",241.9962,66.503235,20.00734,11.2156,0
+24-Jan-2020,0.321853250764323,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-24 fails exclude_flagged_pv: status_run_exceeds_2min:H4.",282.1499,14.404575,20.93088,4.7037,0
+05-Jun-2020,0.32221397517203,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-05 fails exclude_flagged_pv: status_run_exceeds_2min:H13,H14,H15,H18.",243.690895,56.24301,20.7086,9.96816,0
+07-Dec-2020,0.322596578391829,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-12-07 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H12,H13,H16,H20; pv_window_exceeds_astronomical_day_length_plus_0.5h.",207.596048970588,52.347195,18.4655,8.01934,0
+06-Oct-2020,0.322911908526907,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-06 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H18,H20; pv_window_exceeds_astronomical_day_length_plus_0.5h.",213.04348,78.16874,18.46346,13.58984,0
+31-Jan-2020,0.323495817228594,1,passed,"",251.62664,11.09922,19.43184,2.5068,0
+04-Sep-2020,0.323547304757502,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-04 fails exclude_flagged_pv: status_run_exceeds_2min:H18.",262.65736,78.027665,19.88484,13.49062,0
+02-Feb-2020,0.323740720290559,1,passed,"",272.75483,18.33798,18.2435,5.84234,0
+26-Feb-2020,0.323746030668661,1,passed,"",308.169935,42.016815,25.0388,10.93042,0
+10-Jul-2020,0.325229263719802,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-10 fails exclude_flagged_pv: status_run_exceeds_2min:H12.",296.241490208189,15.54159,20.87852,4.34258,0
+17-Aug-2020,0.326935563313319,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-17 fails exclude_flagged_pv: status_run_exceeds_2min:H12; status_fraction_exceeds_0.005:H12.",261.932275,55.128365,20.3379959663866,9.55012,0
+12-Jun-2020,0.328126642998244,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-12 fails exclude_flagged_pv: status_run_exceeds_2min:H14; status_fraction_exceeds_0.005:H14.",315.553438407356,23.35246,21.5215432893824,7.07282,0
+17-May-2020,0.328722727650396,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-17 fails exclude_flagged_pv: status_run_exceeds_2min:H10,H15,H17,H18,H19.",242.05986,65.33124,20.69566,12.1412,0
+25-Feb-2020,0.328970807628203,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-25 fails exclude_flagged_pv: status_run_exceeds_2min:H4.",306.63045,45.01123,23.43748,12.49058,0
+22-Sep-2020,0.33048468147465,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-22 fails exclude_flagged_pv: status_run_exceeds_2min:H10,H19; status_fraction_exceeds_0.005:H1,H2,H3,H5,H6,H8,H9,H10,H11,H12,H13,H14,H17,H18,H19,H20.",248.308715,14.340075,17.53134,3.67322,0
+27-Jun-2020,0.330925185535765,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-27 fails exclude_flagged_pv: status_run_exceeds_2min:H15,H18.",227.900955,72.36921,16.39486,12.68158,0
+21-Jan-2020,0.330993861855048,1,passed,"",307.41301,12.73041,24.49606,3.14326,0
+26-Oct-2020,0.331159713651716,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-26 fails exclude_flagged_pv: status_run_exceeds_2min:H17.",293.75923,35.923305,23.00566,10.2337,0
+14-Feb-2020,0.331279415276591,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-14 fails exclude_flagged_pv: status_run_exceeds_2min:H2.",292.00426,29.25995,24.52136,7.16638,0
+22-Apr-2020,0.333452000720064,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-22 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H10,H15.",253.681395,77.18963,16.832,10.305,0
+10-Mar-2020,0.333564310978218,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-10 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H12,H13; status_fraction_exceeds_0.005:H13.",279.036134430951,45.547155,24.8968306176267,11.25576,0
+30-Mar-2020,0.333919751551957,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-30 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H10,H15,H17,H18,H19,H20; status_fraction_exceeds_0.005:H5.",289.57847,71.61272,23.34378,11.71226,0
+17-Jun-2020,0.334295555044048,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-17 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H7,H13,H15.",232.87248,84.24183,16.11962,12.0642,0
+04-Apr-2020,0.335540678216641,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-04 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H8,H11,H18,H19.",278.71284,61.48378,21.58446,12.82456,0
+20-Jan-2020,0.33569159508107,1,passed,"",313.69261,19.72487,24.22104,5.31328,0
+29-Nov-2020,0.336006574164596,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-29 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H10,H14; status_fraction_exceeds_0.005:H5.",321.641755,31.811995,23.84033,7.97179,0
+11-Oct-2020,0.336191186350272,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-11 fails exclude_flagged_pv: status_run_exceeds_2min:H4,H16; status_fraction_exceeds_0.005:H16.",284.450171263012,8.49704,21.3699465787648,2.50232,0
+04-May-2020,0.337013036024733,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-04 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H8,H11,H18,H19; status_fraction_exceeds_0.005:H6.",280.976325,22.84158,19.51192,3.5488,0
+01-Sep-2020,0.337492612256928,1,passed,"",310.243155,22.792205,21.09234,10.08912,0
+28-Feb-2020,0.338256236885262,1,passed,"",295.105030534351,26.14132,26.46758,8.18044,0
+11-May-2020,0.338435969220557,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-11 fails exclude_flagged_pv: status_run_exceeds_2min:H16; status_fraction_exceeds_0.005:H16.",262.544075333102,64.94552,21.1787491666667,11.69848,0
+01-Apr-2020,0.338530973988372,1,passed,"",285.446555,9.88408,22.21326,3.61174,0
+18-Oct-2020,0.339329768112643,1,passed,"",283.290515,15.012695,22.59996,5.40072,0
+27-Nov-2020,0.339495846099657,1,passed,"",287.009915,23.694475,24.35518,6.52974,0
+09-Jun-2020,0.340499234356327,1,passed,"",297.955485,29.58341,26.52042,7.21738,0
+10-Nov-2020,0.342535164615818,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-10 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H12; pv_window_exceeds_astronomical_day_length_plus_0.5h.",271.63014981263,39.127475,20.52304,10.64658,0
+09-Jan-2020,0.343403870787055,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-09 fails exclude_flagged_pv: status_run_exceeds_2min:H4; status_fraction_exceeds_0.005:H4; pv_window_exceeds_astronomical_day_length_plus_0.5h.",234.184478114754,78.79041,19.34904,14.904,0
+23-Mar-2020,0.343532240239173,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-23 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H9,H10,H13,H14,H18.",326.731375,38.04567,21.8631,6.6018,0
+05-Jul-2020,0.343846482280432,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-05 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H20; status_fraction_exceeds_0.005:H1,H2,H3,H5,H6,H7,H9,H10,H12,H13,H14,H15,H18,H20.",253.525235,68.050735,21.49408,12.37298,0
+18-Feb-2020,0.345339397902078,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-18 fails exclude_flagged_pv: status_run_exceeds_2min:H11.",269.291305,19.24046,22.77424,6.7403,0
+10-Aug-2020,0.345371274064931,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-10 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H4,H5,H9,H13,H16,H18; status_fraction_exceeds_0.005:H1,H2,H3,H4,H5,H9,H13,H16,H18.",254.693700621096,65.605995,19.14726,13.90344,0
+21-Nov-2020,0.345899359587784,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-21 fails exclude_flagged_pv: status_run_exceeds_2min:H19.",323.735505,36.27491,28.40038,10.65912,0
+31-Jul-2020,0.346563403659936,1,passed,"",240.916725,74.262205,17.19198,15.46404,0
+06-Aug-2020,0.347129999983563,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-06 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H10,H14,H15.",215.008115,76.65099,21.74446,13.22246,0
+24-Oct-2020,0.347388327684588,1,passed,"",275.704975,54.07715,20.5172,13.50984,0
+19-May-2020,0.347799091047659,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-19 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H15,H19.",261.153285,77.09316,18.91982,12.39682,0
+03-Aug-2020,0.348544568151643,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-03 fails exclude_flagged_pv: status_run_exceeds_2min:H3.",308.040255,59.58874,22.79234,14.21648,0
+26-Jan-2020,0.348770761788303,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-26 fails exclude_flagged_pv: status_run_exceeds_2min:H4; status_fraction_exceeds_0.005:H4.",299.90368,34.631895,21.36402,11.50656,0
+23-Jan-2020,0.348906579579617,1,passed,"",276.98366,4.775305,21.9478,1.4065,0
+20-Feb-2020,0.349441046681317,1,passed,"",302.148575,46.20617,20.94158,9.74818,0
+02-Dec-2020,0.349898564707412,1,passed,"",295.293485,23.90805,26.1767,9.7988,0
+18-Jun-2020,0.351787752585862,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-18 fails exclude_flagged_pv: status_run_exceeds_2min:H12.",215.281405,82.54068,20.81328,10.96554,0
+19-Oct-2020,0.35204482317984,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-19 fails exclude_flagged_pv: status_run_exceeds_2min:H4.",284.97028,4.967155,21.40795,1.181,0
+26-Nov-2020,0.353032583365993,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-26 fails exclude_flagged_pv: status_run_exceeds_2min:H17.",315.26867,35.11287,21.84776,11.03072,0
+02-Sep-2020,0.353166477968916,1,passed,"",303.63609,24.73853,21.1066,7.44982,0
+14-Jan-2020,0.353943113697903,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-14 fails exclude_flagged_pv: status_run_exceeds_2min:H16.",310.29969,13.29339,23.54912,5.37134,0
+08-Jun-2020,0.354021050513556,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-08 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H11,H13,H17,H18; status_fraction_exceeds_0.005:H3,H5,H6,H11,H12,H13,H14,H17,H18.",247.166245,74.47166,16.82467,14.93217,0
+17-Feb-2020,0.354116203212994,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-17 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20; status_fraction_exceeds_0.005:H1,H7,H11,H14.",274.21577,39.123275,23.23442,10.30888,0
+24-Feb-2020,0.35416338766614,1,passed,"",334.98314,42.29627,28.47376,12.01284,0
+25-Jan-2020,0.355135266459522,1,passed,"",269.453185,7.60756,24.26,1.7478,0
+09-Sep-2020,0.355340461439228,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-09 fails exclude_flagged_pv: status_run_exceeds_2min:H4,H16; status_fraction_exceeds_0.005:H4.",236.68091,74.30013,20.06036,15.18476,0
+12-Nov-2020,0.355561705967339,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-12 fails exclude_flagged_pv: status_run_exceeds_2min:H14; status_fraction_exceeds_0.005:H14.",283.002526738096,7.94627,23.698885426787,2.41982,0
+22-Nov-2020,0.355846088808845,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-22 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H17.",317.18135,36.11828,28.32202,9.08906,0
+21-Jul-2020,0.355937272690457,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-21 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H6,H17; status_fraction_exceeds_0.005:H2,H6,H18.",234.617571666667,90.4013483333333,20.01196,12.77644,0
+03-Jun-2020,0.356602872904627,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-03 fails exclude_flagged_pv: status_run_exceeds_2min:H16,H17.",288.18623,62.38039,20.76754,13.03916,0
+25-Mar-2020,0.35716382281927,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-25 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H10,H13,H14,H18,H19,H20.",325.13217,42.49295,20.68778,10.3665,0
+28-Aug-2020,0.357191813836943,1,passed,"",249.60686,83.463665,18.67452,14.13,0
+28-Mar-2020,0.358069629823761,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-28 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H15,H20.",282.97293,73.10918,19.61836,15.87754,0
+18-Apr-2020,0.36078072430825,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-18 fails exclude_flagged_pv: status_run_exceeds_2min:H10,H15,H18,H20.",268.45272,64.02834,18.69992,15.3832,0
+28-Nov-2020,0.361241734652129,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-28 fails exclude_flagged_pv: status_run_exceeds_2min:H5.",304.54202,8.860225,24.58256,2.97157,0
+17-Mar-2020,0.3620059162059,1,passed,"",320.82588,18.52123,21.57608,4.17754,0
+12-Aug-2020,0.363248702890265,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-12 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H14,H17; status_fraction_exceeds_0.005:H14.",331.405215832755,20.578765,27.4633711866759,5.7133,0
+09-Apr-2020,0.363619563497265,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-09 fails exclude_flagged_pv: status_run_exceeds_2min:H16.",238.292923,73.43522,20.21308,15.28344,0
+10-Oct-2020,0.363842354459435,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-10 fails exclude_flagged_pv: status_run_exceeds_2min:H6.",299.731094500347,15.84295,24.97834,3.1819,0
+20-Nov-2020,0.364081447734276,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-20 fails exclude_flagged_pv: status_run_exceeds_2min:H16; status_fraction_exceeds_0.005:H16.",323.070455,13.060695,22.70898,4.8915,0
+21-Apr-2020,0.365154496700598,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-21 fails exclude_flagged_pv: status_run_exceeds_2min:H13,H15.",254.42044,80.036695,17.17618,13.00716,0
+11-Jul-2020,0.365512745095214,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-11 fails exclude_flagged_pv: status_run_exceeds_2min:H16; status_fraction_exceeds_0.005:H16.",295.806367637058,6.64212,21.1986514781402,2.1975,0
+18-Mar-2020,0.367246692782476,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-18 fails exclude_flagged_pv: status_run_exceeds_2min:H10,H14,H15,H17,H18,H19; status_fraction_exceeds_0.005:H10,H14,H15,H17,H18,H19.",347.05776,29.321,27.90036,5.94138,0
+11-Apr-2020,0.367879368267374,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-11 fails exclude_flagged_pv: status_run_exceeds_2min:H12.",293.55361,40.2443,22.341,11.87982,0
+13-Jul-2020,0.367889095952639,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-13 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H7,H8,H9,H11,H12,H13,H19,H20; status_fraction_exceeds_0.005:H6,H7,H8,H9,H11,H12,H13,H19,H20.",216.959094565469,80.82229,21.227236825029,13.58654,0
+30-Nov-2020,0.368742685720775,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-30 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H3,H4,H5,H10,H14,H15,H17,H18,H19; status_fraction_exceeds_0.005:H1,H3,H4,H5,H10,H14,H15,H17,H18,H19; pv_window_exceeds_astronomical_day_length_plus_0.5h.",315.367805,5.48113,23.8395836111111,1.9958,0
+03-May-2020,0.369318100963,1,passed,"",319.21524,60.3214,22.36954,14.43154,0
+16-Feb-2020,0.370194924377734,1,passed,"",289.633565,20.66716,18.4773,6.42918,0
+01-Jun-2020,0.371447933905222,1,passed,"",338.05397,35.39224,26.16602,9.79828,0
+10-Sep-2020,0.371621230405417,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-10 fails exclude_flagged_pv: status_run_exceeds_2min:H10,H14,H15,H17,H18,H19; status_fraction_exceeds_0.005:H10,H14,H15,H17,H18,H19.",240.432054562804,56.055015,17.45098,13.27538,0
+25-Oct-2020,0.37254509347298,1,passed,"",296.389805,39.766005,22.23238,11.11132,0
+19-Jun-2020,0.373247503167637,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-19 fails exclude_flagged_pv: status_run_exceeds_2min:H14,H19.",226.27226,88.1126,16.28562,14.88758,0
+11-Jun-2020,0.374862554207625,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-11 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H16; status_fraction_exceeds_0.005:H16.",271.210313403071,41.80559,26.9537817251185,12.45716,0
+17-Nov-2020,0.376165624262305,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-17 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H7,H8,H9,H11,H12,H13,H16,H19,H20; status_fraction_exceeds_0.005:H6,H7,H8,H9,H11,H12,H13,H16,H19,H20.",297.305329210526,4.61499,26.4233031578947,1.79744,0
+03-Dec-2020,0.376878894107452,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-12-03 fails exclude_flagged_pv: pv_window_exceeds_astronomical_day_length_plus_0.5h.",333.60762,55.75618,24.11896,12.6783,0
+11-Nov-2020,0.377099181028298,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-11 fails exclude_flagged_pv: status_run_exceeds_2min:H16; status_fraction_exceeds_0.005:H16.",291.081329361554,7.02188,27.6152102012491,3.301,0
+02-Oct-2020,0.378100778897224,1,passed,"",331.16588,25.21349,27.59622,7.5988,0
+03-Mar-2020,0.378223327467866,1,passed,"",289.10434,64.028195,23.59448,13.8341,0
+25-Jun-2020,0.378370792877799,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-25 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H5,H7,H8,H16,H18.",213.314305,84.91794,13.51468,12.80326,0
+12-Apr-2020,0.378716874818353,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-12 fails exclude_flagged_pv: status_run_exceeds_2min:H8,H9,H10,H11,H14; status_fraction_exceeds_0.005:H8,H9,H10,H11,H14.",315.333955,6.25413,26.71123728223,2.90478,0
+31-Oct-2020,0.378927422316785,1,passed,"",329.409195,28.91779,27.3602,8.40782,0
+12-Mar-2020,0.380524554661706,1,passed,"",328.93217,14.98315,24.43204,8.6183,0
+24-Mar-2020,0.380727285045599,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-24 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H10,H12,H13,H14,H15,H16,H18,H20.",334.725885,26.69789,29.65812,5.61156,0
+28-Jun-2020,0.382042454556693,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-28 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H10,H18.",218.371835,88.945085,14.66898,16.08582,0
+12-Oct-2020,0.383118613065856,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-12 fails exclude_flagged_pv: status_run_exceeds_2min:H14,H16; status_fraction_exceeds_0.005:H14.",318.390944236641,3.9997,22.7811273282443,1.13482,0
+15-Nov-2020,0.384000229577763,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-15 fails exclude_flagged_pv: status_run_exceeds_2min:H16; status_fraction_exceeds_0.005:H16.",316.610033684211,27.716985,27.3333005263158,7.97182,0
+01-Oct-2020,0.385246362432744,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-01 fails exclude_flagged_pv: status_run_exceeds_2min:H1.",312.021045,7.23985,26.14016,2.38164,0
+05-May-2020,0.385405959371765,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-05 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H3,H6,H10,H12,H13,H17.",108.55834,32.996845,13.85032,5.82992,0
+07-Nov-2020,0.385944929117804,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-07 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H12,H17,H20; pv_window_exceeds_astronomical_day_length_plus_0.5h.",194.212475,96.15816,14.10816,12.48274,0
+19-Nov-2020,0.386242214982134,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-19 fails exclude_flagged_pv: status_run_exceeds_2min:H19; pv_window_exceeds_astronomical_day_length_plus_0.5h.",293.178555,5.65775,29.7985,1.64508,0
+15-Oct-2020,0.386710541555659,1,passed,"",237.7502,82.28005,17.11332,14.30494,0
+09-Mar-2020,0.38672977251684,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-09 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H4,H19; status_fraction_exceeds_0.005:H2.",249.597285569049,81.19669,16.35054,15.56418,0
+13-Feb-2020,0.387370146685913,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-13 fails exclude_flagged_pv: status_run_exceeds_2min:H4,H6,H8,H9,H10,H11,H17; status_fraction_exceeds_0.005:H6,H8,H9,H10,H11,H17.",274.80356,15.31259,24.36326,4.29338,0
+20-Sep-2020,0.387382657826662,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-20 fails exclude_flagged_pv: status_run_exceeds_2min:H15.",263.629925,84.16868,19.42156,12.02868,0
+24-Jun-2020,0.387491527898239,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-24 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H5,H15,H18.",223.330895,99.099285,19.29832,12.12126,0
+07-Feb-2020,0.387501759921568,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-07 fails exclude_flagged_pv: status_run_exceeds_2min:H9; pv_window_exceeds_astronomical_day_length_plus_0.5h.",229.20429,95.70427,15.72478,12.75784,0
+16-Nov-2020,0.388205354445036,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-16 fails exclude_flagged_pv: status_run_exceeds_2min:H10,H14,H15,H16,H17,H18,H19; status_fraction_exceeds_0.005:H10,H14,H15,H16,H17,H18.",305.413408947368,1.42493,26.7090637559809,0.47972,0
+20-Aug-2020,0.388619722538718,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-20 fails exclude_flagged_pv: status_run_exceeds_2min:H11; status_fraction_exceeds_0.005:H11.",257.061785,84.27201,17.9360632352941,13.23816,0
+24-Apr-2020,0.389729197888348,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-24 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H3,H5,H6,H18,H19,H20; status_fraction_exceeds_0.005:H5.",273.007461538461,89.4204196153846,19.2238,12.5432,0
+02-Jun-2020,0.391279134254486,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-02 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H17,H18,H19,H20; status_fraction_exceeds_0.005:H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H17,H18,H19,H20; pv_window_exceeds_astronomical_day_length_plus_0.5h.",246.615665,1.801865,19.64002,0.38888,0
+23-Aug-2020,0.391531678429389,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-23 fails exclude_flagged_pv: status_run_exceeds_2min:H10; status_fraction_exceeds_0.005:H10.",265.527485,77.83491,20.18548,15.15952,0
+04-Feb-2020,0.392501712568059,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-04 fails exclude_flagged_pv: status_run_exceeds_2min:H4,H6,H12,H15,H16,H19; pv_window_exceeds_astronomical_day_length_plus_0.5h.",289.849065,66.41297,18.77202,13.7334,0
+25-Nov-2020,0.392600811661689,1,passed,"",313.40639,33.180065,26.57316,9.07354,0
+03-Nov-2020,0.393155776234228,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-03 fails exclude_flagged_pv: pv_window_exceeds_astronomical_day_length_plus_0.5h.",344.704475,39.045525,29.89198,10.1414,0
+13-Jan-2020,0.393310971087063,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-13 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20; status_fraction_exceeds_0.005:H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20.",335.753475,9.987585,26.84015,3.35498,0
+27-Aug-2020,0.393430905514327,1,passed,"",249.51504,81.57545,19.26844,15.11124,0
+11-Aug-2020,0.39350701493604,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-11 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H16; status_fraction_exceeds_0.005:H16.",317.525678546148,13.128455,27.8055321998612,6.74802,0
+01-Aug-2020,0.394173568653865,1,passed,"",320.77577,7.09375,25.86626,2.67714,0
+02-Jul-2020,0.394198889232815,1,passed,"",288.72081,6.53153,26.85952,1.91968,0
+03-Jul-2020,0.394400652224621,1,passed,"",338.995529761905,14.89094,24.82372,2.76028,0
+23-Feb-2020,0.395022939516037,1,passed,"",323.534055,35.83533,22.41982,10.446,0
+18-Jan-2020,0.395651674970429,1,passed,"",323.51802,60.06882,25.18185,11.62258,0
+16-Apr-2020,0.395862988970537,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-16 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H9,H13,H15.",265.64384,93.48127,18.8014,12.73782,0
+14-Oct-2020,0.396037359206332,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-14 fails exclude_flagged_pv: status_run_exceeds_2min:H10.",268.284485,63.24946,26.4363,13.2673,0
+03-Sep-2020,0.396177144266503,1,passed,"",324.179755,6.00845,23.26732,1.20984,0
+20-May-2020,0.396972916430817,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-20 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H3,H10,H15,H18,H19.",247.278415,88.663305,18.60446,13.5504,0
+04-Nov-2020,0.396997994744647,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-04 fails exclude_flagged_pv: status_run_exceeds_2min:H5; pv_window_exceeds_astronomical_day_length_plus_0.5h.",286.54728,81.24772,19.74324,12.94866,0
+04-Mar-2020,0.397391044686347,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-04 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H14,H20; pv_window_exceeds_astronomical_day_length_plus_0.5h.",286.19377,68.7652,22.59346,14.47762,0
+24-Nov-2020,0.397870848949786,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-24 fails exclude_flagged_pv: status_run_exceeds_2min:H2; status_fraction_exceeds_0.005:H2; pv_window_exceeds_astronomical_day_length_plus_0.5h.",308.16669,3.624775,20.89802,1.0639,0
+21-Mar-2020,0.398594247862351,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-21 fails exclude_flagged_pv: status_run_exceeds_2min:H19.",333.381625,9.494345,23.89944,1.70652,0
+09-Dec-2020,0.399167013110597,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-12-09 fails exclude_flagged_pv: pv_window_exceeds_astronomical_day_length_plus_0.5h.",265.33584,75.59094,19.82934,15.00014,0
+06-Dec-2020,0.399211242666392,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-12-06 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H6,H9,H15,H18; pv_window_exceeds_astronomical_day_length_plus_0.5h.",212.771925,54.85026,15.81702,13.41096,0
+22-May-2020,0.401446122595496,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-22 fails exclude_flagged_pv: status_run_exceeds_2min:H11.",255.21854,95.23792,18.72608,14.0891,0
+23-Nov-2020,0.401848843358375,1,passed,"",317.381285,5.838975,30.40804,2.90342,0
+12-May-2020,0.402374082059607,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-12 fails exclude_flagged_pv: status_run_exceeds_2min:H14; status_fraction_exceeds_0.005:H14.",338.373529666898,10.76777,28.4051151977793,3.58018,0
+15-Feb-2020,0.403113832060654,1,passed,"",296.8564,9.17311,25.18614,5.39786,0
+06-Nov-2020,0.403234808266446,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-06 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H5,H6,H9,H18,H20; pv_window_exceeds_astronomical_day_length_plus_0.5h.",212.13487,89.55971,19.43084,15.35158,0
+29-Oct-2020,0.403985231858854,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-29 fails exclude_flagged_pv: status_run_exceeds_2min:H12,H15; pv_window_exceeds_astronomical_day_length_plus_0.5h.",293.00329,2.09138,20.0377,0.74682,0
+08-Feb-2020,0.404719903205475,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-08 fails exclude_flagged_pv: status_run_exceeds_2min:H17; status_fraction_exceeds_0.005:H17; pv_window_exceeds_astronomical_day_length_plus_0.5h.",249.108105,91.020315,18.8005949019608,13.2735,0
+25-Apr-2020,0.406278185054139,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-25 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H7,H9.",255.79607,82.52881,20.90022,14.52308,0
+30-Apr-2020,0.406334478098061,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-30 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H11,H13; status_fraction_exceeds_0.005:H2.",85.778795,59.96378,9.56432,8.98492,0
+29-Feb-2020,0.406534823563227,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-29 fails exclude_flagged_pv: status_run_exceeds_2min:H4; status_fraction_exceeds_0.005:H4.",332.312639465649,15.729195,25.2280349618321,4.15102,0
+19-Mar-2020,0.407256778419373,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-19 fails exclude_flagged_pv: status_run_exceeds_2min:H19.",322.396055,78.83078,21.72896,14.7769,0
+01-Feb-2020,0.408402662649687,1,passed,"",266.95328,3.6348,22.3034,0.88238,0
+03-Apr-2020,0.408534676253302,1,passed,"",300.336065,79.27428,23.508,14.22964,0
+19-Feb-2020,0.408683503368827,1,passed,"",314.771085,5.657565,26.84734,1.30354,0
+22-Feb-2020,0.408740879617961,1,passed,"",333.83166,13.08102,26.75036,3.0377,0
+03-Feb-2020,0.4089560207515,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-03 fails exclude_flagged_pv: status_run_exceeds_2min:H4.",304.321875,64.60922,27.25902,13.13832,0
+22-Jul-2020,0.410343376306884,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-22 fails exclude_flagged_pv: status_run_exceeds_2min:H2; status_fraction_exceeds_0.005:H2.",242.123423333333,75.7447066666667,20.36776,14.66844,0
+19-Apr-2020,0.411935532828927,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-19 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H3,H6,H14.",255.00845,82.40937,15.45616,13.71688,0
+01-Jul-2020,0.412547789565759,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-01 fails exclude_flagged_pv: pv_window_exceeds_astronomical_day_length_plus_0.5h.",310.60989,2.57052,23.2676,0.76732,0
+20-Apr-2020,0.413805547989595,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-20 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H6,H7,H12,H14,H15.",266.0812,91.71005,24.56602,12.10736,0
+13-Mar-2020,0.414643543093147,1,passed,"",373.399385,38.34833,30.41299,9.70882,0
+12-Feb-2020,0.414878685208878,1,passed,"",335.16456,8.710895,29.63526,2.91708,0
+29-Aug-2020,0.41691407614222,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-29 fails exclude_flagged_pv: status_run_exceeds_2min:H16.",253.98839,87.517325,17.97444,15.42346,0
+16-Oct-2020,0.417509186112681,1,passed,"",234.39949,85.52402,19.4717,14.9049,0
+01-Dec-2020,0.417844121330756,1,passed,"",346.819195,28.37388,29.3972,8.20156,0
+04-Jan-2020,0.418732255350836,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-04 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H8,H9,H18,H19; pv_window_exceeds_astronomical_day_length_plus_0.5h.",300.78587,79.58908,26.41584,14.4572,0
+03-Oct-2020,0.419132906493796,1,passed,"",350.47595,23.937805,31.16224,4.1315,0
+28-Sep-2020,0.41917831923463,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-28 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H7,H8,H9,H11,H12,H20; status_fraction_exceeds_0.005:H6,H7,H8,H9,H11,H12,H20.",238.707805,90.620655,19.34179,15.415,0
+07-May-2020,0.419688104088663,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-07 fails exclude_flagged_pv: status_run_exceeds_2min:H13,H14.",235.632425,96.87391,17.16288,16.2072,0
+26-Aug-2020,0.425155808484041,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-26 fails exclude_flagged_pv: status_run_exceeds_2min:H10.",266.9558,88.92065,21.17502,15.05674,0
+17-Jan-2020,0.426132762760242,1,passed,"",369.59802,20.26428,28.86322,9.51268,0
+03-Jan-2020,0.426487884687384,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-03 fails exclude_flagged_pv: status_run_exceeds_2min:H5; pv_window_exceeds_astronomical_day_length_plus_0.5h.",287.752215,68.97167,27.66426,14.3795,0
+25-Jul-2020,0.429396196883436,1,passed,"",260.80475,83.85123,19.53262,15.65504,0
+05-Apr-2020,0.430095462824758,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-05 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H5,H10,H12; status_fraction_exceeds_0.005:H1.",68.558035,55.465735,6.76883,7.13066,0
+01-May-2020,0.431442753474588,1,passed,"",303.775425,3.671335,22.59848,0.97956,0
+01-Nov-2020,0.431485843242013,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-01 fails exclude_flagged_pv: status_run_exceeds_2min:H6; pv_window_exceeds_astronomical_day_length_plus_0.5h.",340.97146,2.926705,28.08646,0.9168,0
+12-Jul-2020,0.432568284667658,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-12 fails exclude_flagged_pv: status_run_exceeds_2min:H14; status_fraction_exceeds_0.005:H14.",339.338107154754,10.66734,31.9721316446912,4.07266,0
+08-Sep-2020,0.434956944850502,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-08 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H10; status_fraction_exceeds_0.005:H5,H6,H7,H10,H12,H13,H20.",258.829435,93.54902,18.3485,13.29885,0
+02-Aug-2020,0.435115948849413,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-02 fails exclude_flagged_pv: status_run_exceeds_2min:H18.",291.2006,5.89428,24.91404,1.21898,0
+29-May-2020,0.435168665556277,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-29 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H18; status_fraction_exceeds_0.005:H18.",224.88029,101.27013,15.43434,16.26656,0
+11-Jan-2020,0.436346708939537,1,passed,"",339.40544,5.826905,32.47103,1.58056,0
+31-May-2020,0.442630001428941,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-31 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H7,H9.",242.055025,104.228975,16.53588,15.27652,0
+07-Oct-2020,0.442977703940866,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-07 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H15,H20; status_fraction_exceeds_0.005:H15; pv_window_exceeds_astronomical_day_length_plus_0.5h.",215.137785,105.841495,14.18674,15.1832,0
+08-Mar-2020,0.443654027587018,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-08 fails exclude_flagged_pv: pv_window_exceeds_astronomical_day_length_plus_0.5h.",230.618555,100.51059,15.33904,15.49662,0
+23-Sep-2020,0.444855281398379,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-23 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H12,H18,H19; status_fraction_exceeds_0.005:H1,H2,H3,H4,H5,H6,H8,H9,H10,H11,H12,H13,H14,H15,H17,H18,H19,H20.",223.98533,90.924985,21.46961,15.86242,0
+16-Jan-2020,0.446249545346174,1,passed,"",365.44109,18.80859,31.04748,7.29982,0
+23-May-2020,0.447369829535608,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-23 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H13,H15.",271.73144,92.102855,22.49166,15.52462,0
+09-May-2020,0.447753159491051,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-09 fails exclude_flagged_pv: status_run_exceeds_2min:H16.",266.57838,87.045195,27.81828,14.55872,0
+12-Sep-2020,0.447753904463931,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-12 fails exclude_flagged_pv: status_run_exceeds_2min:H14; status_fraction_exceeds_0.005:H14; pv_window_exceeds_astronomical_day_length_plus_0.5h.",340.301089798751,1.6014,32.8738556835531,0.73674,0
+05-Jan-2020,0.448633271920715,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-05 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H5,H8; pv_window_exceeds_astronomical_day_length_plus_0.5h.",60.275715,43.23677,7.35236,7.04428,0
+28-Apr-2020,0.450139050423348,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-28 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H20; status_fraction_exceeds_0.005:H1,H2,H3,H5,H6,H7,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H20.",166.268375,75.12798,15.25748,13.39426,0
+13-Apr-2020,0.452559677171506,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-13 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H9.",284.765965,100.52233,17.22202,12.88028,0
+21-Aug-2020,0.453518770809676,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-21 fails exclude_flagged_pv: status_run_exceeds_2min:H8; status_fraction_exceeds_0.005:H8.",240.50285,94.728665,18.5903582352941,15.31464,0
+05-Feb-2020,0.454007684309785,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-05 fails exclude_flagged_pv: status_run_exceeds_2min:H4,H5,H7,H8; pv_window_exceeds_astronomical_day_length_plus_0.5h.",60.89377,33.096335,10.58414,5.12842,0
+19-Jan-2020,0.454740296727028,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-19 fails exclude_flagged_pv: status_run_exceeds_2min:H2.",378.64206,40.46207,30.84922,9.5486,0
+25-Sep-2020,0.456864013348219,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-25 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H17,H18,H19,H20; status_fraction_exceeds_0.005:H6,H8,H9,H11,H12,H17,H18,H19,H20.",236.732155,91.90721,20.8514,15.70148,0
+14-Apr-2020,0.458939346183421,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-14 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H9,H13.",273.122845,103.4038,17.42826,13.26822,0
+14-Mar-2020,0.45981921090769,1,passed,"",359.12367,15.19735,29.93542,3.86298,0
+07-Jun-2020,0.460004755981593,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-07 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H5,H13,H17,H18,H19; status_fraction_exceeds_0.005:H1,H2,H3,H5,H19.",245.065945,109.57344,19.93014,13.71288,0
+14-Nov-2020,0.460771626093554,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-14 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H16; status_fraction_exceeds_0.005:H16.",341.212883421053,4.034555,28.8492252631579,1.4919,0
+17-Sep-2020,0.463724974016119,1,passed,"",237.01681,104.323935,19.88412,14.58144,0
+15-Jun-2020,0.464492198103875,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-15 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H12,H13.",226.185105,107.44176,15.97832,15.57046,0
+06-Feb-2020,0.464693539792222,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-06 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H7,H9,H11,H13,H15,H17; status_fraction_exceeds_0.005:H13; pv_window_exceeds_astronomical_day_length_plus_0.5h.",226.21765,113.552,16.68338,14.59822,0
+16-Mar-2020,0.465171147703142,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-16 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H11.",390.26294,17.3621,25.0989,3.22434,0
+20-Jul-2020,0.46749847703084,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-20 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H19; status_fraction_exceeds_0.005:H6,H18,H19,H20.",242.35737,115.40669,15.9704967164179,14.35896,0
+18-Aug-2020,0.467996262519316,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-18 fails exclude_flagged_pv: status_run_exceeds_2min:H12; status_fraction_exceeds_0.005:H12.",273.322538088235,100.483115,21.1063630930931,16.27478,0
+18-Sep-2020,0.470757305632454,1,passed,"",235.090395,103.844015,18.86202,15.43814,0
+28-May-2020,0.470985398474974,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-28 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H8,H19,H20.",227.232735,115.123275,18.23864,14.46948,0
+05-Aug-2020,0.471580301987658,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-05 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H7,H9,H13.",248.29289,109.757825,15.36326,14.35768,0
+15-Mar-2020,0.472195212762269,1,passed,"",351.07558,78.22652,27.1955,15.11892,0
+29-Apr-2020,0.472743396215896,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-29 fails exclude_flagged_pv: status_run_exceeds_2min:H7.",54.64806,33.23094,7.9526,7.15746,0
+22-Mar-2020,0.477607677485898,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-22 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H8,H10,H13,H19.",325.287345,77.74418,24.16168,15.56906,0
+28-Jul-2020,0.48040680752967,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-28 fails exclude_flagged_pv: status_run_exceeds_2min:H20; status_fraction_exceeds_0.005:H20.",224.795485,103.98316,16.81466,16.5246,0
+06-Jan-2020,0.483562977190449,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-01-06 fails exclude_flagged_pv: status_run_exceeds_2min:H9; pv_window_exceeds_astronomical_day_length_plus_0.5h.",208.273335,113.49267,15.59346,14.1266,0
+06-May-2020,0.484061801901579,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-06 fails exclude_flagged_pv: status_run_exceeds_2min:H18.",237.845125,110.109705,18.06462,16.4039,0
+21-Feb-2020,0.484685574325542,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-02-21 fails exclude_flagged_pv: status_run_exceeds_2min:H4; status_fraction_exceeds_0.005:H4; pv_window_exceeds_astronomical_day_length_plus_0.5h.",349.43951,3.889715,27.24944,0.98252,0
+27-Feb-2020,0.486636493887201,1,passed,"",296.793735,76.00874,28.34016,14.81162,0
+26-Sep-2020,0.488911118821323,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-26 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H12; status_fraction_exceeds_0.005:H6,H8,H9,H11,H12,H20.",249.932245,104.67406,19.80151,15.60102,0
+08-Aug-2020,0.490951935377631,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-08 fails exclude_flagged_pv: status_fraction_exceeds_0.005:H1,H7,H9,H12,H13.",272.06098,109.673565,21.65971,15.13287,0
+26-Mar-2020,0.491250550154012,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-26 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H7,H9,H12,H13,H14,H16,H18,H19,H20.",285.678625,93.393295,24.21984,16.35788,0
+30-Jul-2020,0.494337041463784,1,passed,"",244.95515,105.93764,17.15038,16.01566,0
+20-Mar-2020,0.494929984260291,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-20 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H7,H8,H9,H10,H11,H12,H13,H15,H16,H19,H20; status_fraction_exceeds_0.005:H6,H7,H8,H9,H11,H12,H13,H16,H20.",324.00932,80.39301,20.68918,16.36546,0
+05-Mar-2020,0.495033276603352,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-05 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H6,H8,H17,H18; pv_window_exceeds_astronomical_day_length_plus_0.5h.",41.802055,28.204995,7.15662,3.76328,0
+08-Dec-2020,0.495430308137745,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-12-08 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H6,H9,H14; status_fraction_exceeds_0.005:H2,H3,H6,H7,H8,H11,H12,H14; pv_window_exceeds_astronomical_day_length_plus_0.5h.",243.266501029412,112.763985,18.4941166666667,16.23552,0
+24-May-2020,0.49549049963161,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-24 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H11,H14,H18.",246.380315,119.29631,17.6602,16.12724,0
+30-May-2020,0.49550938493779,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-30 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H19,H20.",224.74027,116.894245,13.25756,14.86372,0
+16-Jul-2020,0.498647749923937,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-16 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H16; status_fraction_exceeds_0.005:H6.",218.202766666667,104.396965,18.6674057142857,17.21626,0
+05-Oct-2020,0.498811152356505,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-10-05 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H5,H19; pv_window_exceeds_astronomical_day_length_plus_0.5h.",249.179445,103.65983,19.69021,16.52332,0
+08-Nov-2020,0.500683988604329,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-08 fails exclude_flagged_pv: status_run_exceeds_2min:H6,H11,H18; status_fraction_exceeds_0.005:H1,H5,H6,H7,H10,H11,H13,H18; pv_window_exceeds_astronomical_day_length_plus_0.5h.",247.689725,110.40466,17.31016,15.291465,0
+04-Jul-2020,0.502872438064979,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-04 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H9,H11,H13,H15,H17,H18; status_fraction_exceeds_0.005:H18.",273.586545238095,105.25076,19.64888,17.0197,0
+13-May-2020,0.504958926812488,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-13 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H14,H15,H17; status_fraction_exceeds_0.005:H4.",240.684625,113.08325,17.55382,15.3903,0
+19-Sep-2020,0.507957393207195,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-19 fails exclude_flagged_pv: status_run_exceeds_2min:H15.",229.813245,103.78679,14.52814,16.08086,0
+05-Sep-2020,0.509936608601879,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-05 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H7,H9,H11,H13,H15; pv_window_exceeds_astronomical_day_length_plus_0.5h.",261.63926,118.31857,19.99842,15.1802,0
+27-Jul-2020,0.510298715166186,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-27 fails exclude_flagged_pv: status_run_exceeds_2min:H18; status_fraction_exceeds_0.005:H18,H20.",227.22406,106.29451,18.43148,15.91476,0
+26-May-2020,0.517500058418802,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-26 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H16,H18,H20.",247.307965,114.928725,19.49984,16.67996,0
+06-Mar-2020,0.517817153047435,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-06 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H15,H17; pv_window_exceeds_astronomical_day_length_plus_0.5h.",223.212845,108.06514,17.11754,17.2551,0
+15-May-2020,0.52141032531479,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-15 fails exclude_flagged_pv: status_run_exceeds_2min:H3,H7.",231.50698,123.89222,18.21316,15.05038,0
+15-Apr-2020,0.522060470335294,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-15 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H12,H13,H15,H19.",246.12833,116.55348,21.256,15.80036,0
+04-Jun-2020,0.524344759253151,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-04 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20; status_fraction_exceeds_0.005:H1,H2,H3,H5,H6,H7,H8,H10,H11,H12,H13,H14,H15,H17,H18,H19,H20.",298.74454,103.535735,19.898155221843,16.7918675,0
+27-May-2020,0.539897376760635,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-27 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H8,H20.",250.397465,123.793095,18.64136,15.755,0
+14-May-2020,0.544112067365511,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-05-14 fails exclude_flagged_pv: status_run_exceeds_2min:H2,H18.",227.88671,128.088765,17.25812,15.48752,0
+19-Jul-2020,0.554045685596691,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-19 fails exclude_flagged_pv: status_fraction_exceeds_0.005:H18.",236.118735,126.242885,14.91238,16.23614,0
+05-Dec-2020,0.556719360865723,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-12-05 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H8,H19; status_fraction_exceeds_0.005:H19; pv_window_exceeds_astronomical_day_length_plus_0.5h.",254.64819,128.52996,20.92186,15.106,0
+04-Aug-2020,0.564557883150091,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-08-04 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H18.",289.923365,117.67715,22.63928,16.44324,0
+18-Jul-2020,0.568809003645997,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-18 fails exclude_flagged_pv: status_run_exceeds_2min:H20; status_fraction_exceeds_0.005:H20.",251.91238,119.022015,16.9915542857143,16.25324,0
+29-Mar-2020,0.576404648736176,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-29 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H2,H3,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20; status_fraction_exceeds_0.005:H1,H2,H3,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20.",283.20832,117.21342,17.94072,16.30699,0
+27-Apr-2020,0.580207782074156,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-04-27 fails exclude_flagged_pv: status_run_exceeds_2min:H5.",247.430945,130.132305,18.65482,17.68984,0
+31-Mar-2020,0.582102053275288,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-31 fails exclude_flagged_pv: status_run_exceeds_2min:H4,H9,H19,H20; status_fraction_exceeds_0.005:H4.",303.931435,115.88529,19.0641,17.34962,0
+08-Jul-2020,0.585067304674924,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-07-08 fails exclude_flagged_pv: status_run_exceeds_2min:H5,H12,H17; status_fraction_exceeds_0.005:H1,H3,H5,H7,H12,H13,H17,H18.",259.727835,124.09002,18.28339,16.78249,0
+21-Jun-2020,0.590206781207606,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-06-21 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H12,H13,H15,H17.",235.628275,131.19381,17.97704,17.29526,0
+07-Sep-2020,0.590787535865105,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-09-07 fails exclude_flagged_pv: status_run_exceeds_2min:H7,H13.",215.68807,126.05525,16.06638,17.47846,0
+05-Nov-2020,0.603285686058576,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-11-05 fails exclude_flagged_pv: status_run_exceeds_2min:H1,H5,H7; pv_window_exceeds_astronomical_day_length_plus_0.5h.",253.55405,136.460335,19.75792,16.67468,0
+27-Mar-2020,0.605636051787821,0,quality_rejected,"StoreNet:QualityRejected: Day 2020-03-27 fails exclude_flagged_pv: status_run_exceeds_2min:H9,H13,H15,H16,H18.",310.071155,121.5723,21.2658,16.52732,0
+01-Jan-2020,Inf,0,score_unavailable,"StoreNet:QualityRejected: Day 2020-01-01 fails release_literal: physical_incomplete:H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20.",NaN,NaN,NaN,NaN,0

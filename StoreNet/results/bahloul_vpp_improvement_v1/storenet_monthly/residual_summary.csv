@@ -1,0 +1,16 @@
+ResidualOrViolation,Unit,Maximum
+EnergyBalanceResidualKW,kW,1.14352971536391e-13
+PvAllocationResidualKW,kW,7.98250354705488e-14
+HomeBalanceResidualKW,kW,7.58282325818982e-14
+BatteryDynamicsResidualKW,kW,1.14352971536391e-13
+AggregateImportResidualKW,kW,0
+ChargeConversionResidualKW,kW,0
+DischargeConversionResidualKW,kW,0
+InitialSocErrorKWh,kWh,0
+TerminalSocErrorKWh,kWh,0
+SocBoundViolationKWh,kWh,7.99360577730113e-14
+ChargePowerViolationKW,kW,1.33226762955019e-15
+DischargePowerViolationKW,kW,9.28146448586631e-14
+AggregateImportNonnegativeViolationKW,kW,1.36335387423969e-13
+SimultaneousChargeDischargeKW,kW,3.13762088235478e-14
+MaximumLexicographicViolation,objective units,3.5527136788005e-14

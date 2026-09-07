@@ -1,0 +1,39 @@
+function scenarios = bahloul_scenarios(scope)
+%BAHLOUL_SCENARIOS Return the frozen B2022-IR-v1 scenario matrix.
+
+arguments
+    scope (1, 1) string {mustBeMember(scope, ...
+        ["CORE_SIX", "FIGURE7_PAIR"])} = "CORE_SIX"
+end
+
+switch scope
+    case "CORE_SIX"
+        scenarioId = ["DC_XI007_H20"; "DC_XI007_H19"; ...
+            "AC_XI007_H20"; "AC_XI007_H19"; ...
+            "DC_XI000_H20"; "DC_XI000_H19"];
+        pairId = ["DC_XI007"; "DC_XI007"; "AC_XI007"; ...
+            "AC_XI007"; "DC_XI000"; "DC_XI000"];
+        pvBoundaryId = ["DC_SOURCE"; "DC_SOURCE"; ...
+            "AC_METER_RECONSTRUCTED_DC"; ...
+            "AC_METER_RECONSTRUCTED_DC"; "DC_SOURCE"; "DC_SOURCE"];
+        transferLossFraction = [0.07; 0.07; 0.07; 0.07; 0; 0];
+        cohortId = ["H20_PV10"; "H19_EXCL_H4_PV9"; ...
+            "H20_PV10"; "H19_EXCL_H4_PV9"; ...
+            "H20_PV10"; "H19_EXCL_H4_PV9"];
+        sensitivityRole = ["PRIMARY"; "H4_PAIR"; "PV_BOUNDARY"; ...
+            "PV_BOUNDARY_H4_PAIR"; "XI_ZERO"; "XI_ZERO_H4_PAIR"];
+    case "FIGURE7_PAIR"
+        scenarioId = ["DC_XI007_H20"; "DC_XI007_H19"];
+        pairId = ["DC_XI007"; "DC_XI007"];
+        pvBoundaryId = ["DC_SOURCE"; "DC_SOURCE"];
+        transferLossFraction = [0.07; 0.07];
+        cohortId = ["H20_PV10"; "H19_EXCL_H4_PV9"];
+        sensitivityRole = ["PRIMARY"; "H4_PAIR"];
+end
+
+isPrimary = sensitivityRole == "PRIMARY";
+scenarios = table(scenarioId, pairId, pvBoundaryId, ...
+    transferLossFraction, cohortId, sensitivityRole, isPrimary, ...
+    VariableNames=["ScenarioId", "PairId", "PvBoundaryId", ...
+    "TransferLossFraction", "CohortId", "SensitivityRole", "IsPrimary"]);
+end

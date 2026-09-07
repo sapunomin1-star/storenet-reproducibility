@@ -1,0 +1,2788 @@
+{
+  "schemaVersion": "StoreNet-run-manifest-v1",
+  "createdAtUtc": "2026-08-31T17:38:27.336Z",
+  "experiment": {
+    "runType": "monthly_structural_replication",
+    "runId": "monthly_2020_release_literal_bounded60",
+    "days": [
+      "2020-01-01",
+      "2020-01-02",
+      "2020-01-15",
+      "2020-01-16",
+      "2020-02-01",
+      "2020-02-02",
+      "2020-02-15",
+      "2020-02-16",
+      "2020-03-01",
+      "2020-03-02",
+      "2020-03-15",
+      "2020-03-16",
+      "2020-04-01",
+      "2020-04-02",
+      "2020-04-15",
+      "2020-04-16",
+      "2020-05-01",
+      "2020-05-02",
+      "2020-05-15",
+      "2020-05-16",
+      "2020-06-01",
+      "2020-06-02",
+      "2020-06-15",
+      "2020-06-16",
+      "2020-07-01",
+      "2020-07-02",
+      "2020-07-15",
+      "2020-07-16",
+      "2020-08-01",
+      "2020-08-02",
+      "2020-08-15",
+      "2020-08-16",
+      "2020-09-01",
+      "2020-09-02",
+      "2020-09-15",
+      "2020-09-16",
+      "2020-10-01",
+      "2020-10-02",
+      "2020-10-15",
+      "2020-10-16",
+      "2020-11-01",
+      "2020-11-02",
+      "2020-11-15",
+      "2020-11-16",
+      "2020-12-01",
+      "2020-12-02",
+      "2020-12-15",
+      "2020-12-16"
+    ],
+    "defaultSamplingRule": "days 1, 2, 15, and 16 of each 2020 month",
+    "missingPaperPeriod": "Public release starts in 2020; July-December 2019 is unavailable.",
+    "qualityMode": "release_literal",
+    "intervalMinutes": 60,
+    "intervalConvention": "hourly energy summed from minute Wh; interval-end labels",
+    "checkpointPolicy": "CSV tables and completion counts are rewritten after each strategy row",
+    "strategies": [
+      "SH_BM",
+      "VPP_BM",
+      "PS",
+      "PSDT",
+      "LL"
+    ],
+    "configuration": {
+      "releaseName": "StoreNet Figshare processed release",
+      "releaseIsImmutable": true,
+      "dataMode": "processed-release",
+      "dataRoot": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/../data/raw",
+      "timestampBasis": "naive local wall-clock (timezone is not encoded)",
+      "whTimestampConvention": "interval end; calendar day D uses (D 00:00, D+1 00:00]",
+      "homes": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9",
+        "H10",
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17",
+        "H18",
+        "H19",
+        "H20"
+      ],
+      "nHomes": 20,
+      "pvHomes": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H7",
+        "H10",
+        "H11",
+        "H13",
+        "H17"
+      ],
+      "pvHomeMask": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "intervalMinutes": 60,
+      "dtHours": 1,
+      "qualityModeRequested": "release_literal",
+      "qualityMode": "release_literal",
+      "throwOnQualityFailure": false,
+      "quality": {
+        "maxPhysicalMissingMinuteFraction": 0,
+        "maxMissingStatusRunMinutes": 2,
+        "maxMissingStatusFraction": 0.005,
+        "pvActiveFractionOfDailyMaximum": 0.05,
+        "pvWindowToleranceHours": 0.5,
+        "dingleLatitudeDegrees": 52.14
+      },
+      "etaPvAC": 0.95,
+      "etaPvDC": 0.95,
+      "etaBatteryCharge": 0.95,
+      "etaBatteryDischarge": 0.95,
+      "transferLossFraction": 0.07,
+      "batteryCapacityKWh": 10,
+      "batteryPowerKW": 3.3,
+      "socInitialFraction": 0.1,
+      "socMinFraction": 0.1,
+      "socMaxFraction": 0.9,
+      "socTerminalFraction": 0.1,
+      "nightPrice": 0.091,
+      "dayPrice": 0.194,
+      "feedInPrice": 0,
+      "dayStartHour": 10,
+      "dayEndHour": 22,
+      "mipRelativeGap": 1E-6,
+      "constraintTolerance": 1E-8,
+      "lexicographicTolerance": 1E-7,
+      "maxSolverTimeSeconds": 60
+    },
+    "statuses": [
+      {
+        "Day": "01-Jan-2020",
+        "Strategy": "SH_BM",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-01-01 fails release_literal: physical_incomplete:H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "01-Jan-2020",
+        "Strategy": "VPP_BM",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-01-01 fails release_literal: physical_incomplete:H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "01-Jan-2020",
+        "Strategy": "PS",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-01-01 fails release_literal: physical_incomplete:H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "01-Jan-2020",
+        "Strategy": "PSDT",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-01-01 fails release_literal: physical_incomplete:H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "01-Jan-2020",
+        "Strategy": "LL",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-01-01 fails release_literal: physical_incomplete:H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "02-Jan-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.475878625
+      },
+      {
+        "Day": "02-Jan-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.667329375
+      },
+      {
+        "Day": "02-Jan-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.9648067916666667
+      },
+      {
+        "Day": "02-Jan-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.6299881666666667
+      },
+      {
+        "Day": "02-Jan-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.4217267916666665
+      },
+      {
+        "Day": "15-Jan-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.03132575
+      },
+      {
+        "Day": "15-Jan-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.5253689166666666
+      },
+      {
+        "Day": "15-Jan-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.7506318333333333
+      },
+      {
+        "Day": "15-Jan-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.2526167083333335
+      },
+      {
+        "Day": "15-Jan-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.6354097083333334
+      },
+      {
+        "Day": "16-Jan-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.9135505
+      },
+      {
+        "Day": "16-Jan-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.4145187083333335
+      },
+      {
+        "Day": "16-Jan-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.7386175
+      },
+      {
+        "Day": "16-Jan-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.4331755833333335
+      },
+      {
+        "Day": "16-Jan-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.9298625
+      },
+      {
+        "Day": "01-Feb-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.91970825
+      },
+      {
+        "Day": "01-Feb-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.6970740833333333
+      },
+      {
+        "Day": "01-Feb-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.3842924583333334
+      },
+      {
+        "Day": "01-Feb-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.1482132916666665
+      },
+      {
+        "Day": "01-Feb-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.2196687916666669
+      },
+      {
+        "Day": "02-Feb-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.70523920833333331
+      },
+      {
+        "Day": "02-Feb-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.361438
+      },
+      {
+        "Day": "02-Feb-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.6045268333333333
+      },
+      {
+        "Day": "02-Feb-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.8955695416666667
+      },
+      {
+        "Day": "02-Feb-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.556683
+      },
+      {
+        "Day": "15-Feb-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.615774125
+      },
+      {
+        "Day": "15-Feb-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.7097314583333334
+      },
+      {
+        "Day": "15-Feb-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.3875248333333334
+      },
+      {
+        "Day": "15-Feb-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.2108652916666665
+      },
+      {
+        "Day": "15-Feb-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.0807127916666666
+      },
+      {
+        "Day": "16-Feb-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.64221466666666671
+      },
+      {
+        "Day": "16-Feb-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.452475375
+      },
+      {
+        "Day": "16-Feb-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.9806590833333333
+      },
+      {
+        "Day": "16-Feb-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.236130125
+      },
+      {
+        "Day": "16-Feb-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.0572365416666667
+      },
+      {
+        "Day": "01-Mar-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.59700729166666666
+      },
+      {
+        "Day": "01-Mar-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.3467327916666667
+      },
+      {
+        "Day": "01-Mar-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.449681
+      },
+      {
+        "Day": "01-Mar-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.55824775
+      },
+      {
+        "Day": "01-Mar-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.4259237083333334
+      },
+      {
+        "Day": "02-Mar-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.7142365
+      },
+      {
+        "Day": "02-Mar-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.4167582083333334
+      },
+      {
+        "Day": "02-Mar-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.438498375
+      },
+      {
+        "Day": "02-Mar-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.9144078333333334
+      },
+      {
+        "Day": "02-Mar-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.7266483333333333
+      },
+      {
+        "Day": "15-Mar-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.41552079166666667
+      },
+      {
+        "Day": "15-Mar-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.41996675
+      },
+      {
+        "Day": "15-Mar-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.9109711666666667
+      },
+      {
+        "Day": "15-Mar-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.1077542916666667
+      },
+      {
+        "Day": "15-Mar-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.233050875
+      },
+      {
+        "Day": "16-Mar-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.52216266666666666
+      },
+      {
+        "Day": "16-Mar-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.7263894583333332
+      },
+      {
+        "Day": "16-Mar-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.6519385
+      },
+      {
+        "Day": "16-Mar-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.4304258333333335
+      },
+      {
+        "Day": "16-Mar-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.566562208333333
+      },
+      {
+        "Day": "01-Apr-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.97866570833333333
+      },
+      {
+        "Day": "01-Apr-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.5644413333333334
+      },
+      {
+        "Day": "01-Apr-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.348377625
+      },
+      {
+        "Day": "01-Apr-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.505950625
+      },
+      {
+        "Day": "01-Apr-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.5112965833333334
+      },
+      {
+        "Day": "02-Apr-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.46896275
+      },
+      {
+        "Day": "02-Apr-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.0617209166666666
+      },
+      {
+        "Day": "02-Apr-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.5598449166666666
+      },
+      {
+        "Day": "02-Apr-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.669279875
+      },
+      {
+        "Day": "02-Apr-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.529689958333333
+      },
+      {
+        "Day": "15-Apr-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.43715716666666665
+      },
+      {
+        "Day": "15-Apr-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.4863741666666668
+      },
+      {
+        "Day": "15-Apr-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.7587867916666666
+      },
+      {
+        "Day": "15-Apr-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.5156037916666667
+      },
+      {
+        "Day": "15-Apr-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 6.0148315416666662
+      },
+      {
+        "Day": "16-Apr-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.69360441666666661
+      },
+      {
+        "Day": "16-Apr-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.9117177083333334
+      },
+      {
+        "Day": "16-Apr-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.6870727916666666
+      },
+      {
+        "Day": "16-Apr-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.4266222083333333
+      },
+      {
+        "Day": "16-Apr-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.0838985
+      },
+      {
+        "Day": "01-May-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.97229354166666671
+      },
+      {
+        "Day": "01-May-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.5344309166666668
+      },
+      {
+        "Day": "01-May-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.9706128333333335
+      },
+      {
+        "Day": "01-May-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.9707232916666666
+      },
+      {
+        "Day": "01-May-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.973185625
+      },
+      {
+        "Day": "02-May-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.356702375
+      },
+      {
+        "Day": "02-May-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.2568852916666666
+      },
+      {
+        "Day": "02-May-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.8855479166666669
+      },
+      {
+        "Day": "02-May-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.629191875
+      },
+      {
+        "Day": "02-May-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 6.1212681666666668
+      },
+      {
+        "Day": "15-May-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.442191875
+      },
+      {
+        "Day": "15-May-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.38522325
+      },
+      {
+        "Day": "15-May-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.6067540416666666
+      },
+      {
+        "Day": "15-May-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.4476781666666667
+      },
+      {
+        "Day": "15-May-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.8972300833333335
+      },
+      {
+        "Day": "16-May-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.53963658333333331
+      },
+      {
+        "Day": "16-May-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.6689187916666666
+      },
+      {
+        "Day": "16-May-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.4235004166666667
+      },
+      {
+        "Day": "16-May-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.3053577083333332
+      },
+      {
+        "Day": "16-May-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.56706725
+      },
+      {
+        "Day": "01-Jun-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.76701420833333334
+      },
+      {
+        "Day": "01-Jun-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.707649875
+      },
+      {
+        "Day": "01-Jun-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.0914105416666668
+      },
+      {
+        "Day": "01-Jun-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.452112625
+      },
+      {
+        "Day": "01-Jun-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.9430380833333334
+      },
+      {
+        "Day": "02-Jun-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.53834816666666663
+      },
+      {
+        "Day": "02-Jun-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.8091640416666666
+      },
+      {
+        "Day": "02-Jun-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.2646897083333331
+      },
+      {
+        "Day": "02-Jun-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.438760375
+      },
+      {
+        "Day": "02-Jun-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.3875492083333332
+      },
+      {
+        "Day": "15-Jun-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.431690375
+      },
+      {
+        "Day": "15-Jun-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.5076172916666666
+      },
+      {
+        "Day": "15-Jun-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.627451
+      },
+      {
+        "Day": "15-Jun-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.2618497916666667
+      },
+      {
+        "Day": "15-Jun-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 6.0503478333333334
+      },
+      {
+        "Day": "16-Jun-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.466906875
+      },
+      {
+        "Day": "16-Jun-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.4041405
+      },
+      {
+        "Day": "16-Jun-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.677187375
+      },
+      {
+        "Day": "16-Jun-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.3582680833333334
+      },
+      {
+        "Day": "16-Jun-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.402321
+      },
+      {
+        "Day": "01-Jul-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.92972691666666663
+      },
+      {
+        "Day": "01-Jul-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.17655425
+      },
+      {
+        "Day": "01-Jul-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.4179735
+      },
+      {
+        "Day": "01-Jul-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.8055818333333333
+      },
+      {
+        "Day": "01-Jul-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.0187629583333333
+      },
+      {
+        "Day": "02-Jul-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.75718208333333337
+      },
+      {
+        "Day": "02-Jul-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.2622975416666669
+      },
+      {
+        "Day": "02-Jul-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.7524303333333333
+      },
+      {
+        "Day": "02-Jul-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.2253456666666667
+      },
+      {
+        "Day": "02-Jul-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.38345125
+      },
+      {
+        "Day": "15-Jul-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.524337
+      },
+      {
+        "Day": "15-Jul-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.5065439166666668
+      },
+      {
+        "Day": "15-Jul-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.2121454166666665
+      },
+      {
+        "Day": "15-Jul-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.278364625
+      },
+      {
+        "Day": "15-Jul-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.81642475
+      },
+      {
+        "Day": "16-Jul-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.45337520833333333
+      },
+      {
+        "Day": "16-Jul-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.63661041666666662
+      },
+      {
+        "Day": "16-Jul-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.466331375
+      },
+      {
+        "Day": "16-Jul-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.3656282083333333
+      },
+      {
+        "Day": "16-Jul-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.3406235833333335
+      },
+      {
+        "Day": "01-Aug-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.83109441666666661
+      },
+      {
+        "Day": "01-Aug-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.0183609166666665
+      },
+      {
+        "Day": "01-Aug-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.0821579166666666
+      },
+      {
+        "Day": "01-Aug-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.5922014583333333
+      },
+      {
+        "Day": "01-Aug-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.9518668333333333
+      },
+      {
+        "Day": "02-Aug-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.0209229166666667
+      },
+      {
+        "Day": "02-Aug-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.1427301666666665
+      },
+      {
+        "Day": "02-Aug-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.1938270416666668
+      },
+      {
+        "Day": "02-Aug-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.0781452083333334
+      },
+      {
+        "Day": "02-Aug-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.803481125
+      },
+      {
+        "Day": "15-Aug-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.517484625
+      },
+      {
+        "Day": "15-Aug-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.79916625
+      },
+      {
+        "Day": "15-Aug-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.663617625
+      },
+      {
+        "Day": "15-Aug-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.003669875
+      },
+      {
+        "Day": "15-Aug-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.7513330833333329
+      },
+      {
+        "Day": "16-Aug-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.9232393333333333
+      },
+      {
+        "Day": "16-Aug-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.3429137083333331
+      },
+      {
+        "Day": "16-Aug-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.2221965833333335
+      },
+      {
+        "Day": "16-Aug-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.4523835416666668
+      },
+      {
+        "Day": "16-Aug-2020",
+        "Strategy": "LL",
+        "Status": "failed",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "ErrorMessage": "Optimization failed during throughput after import spread and bill (exit flag 0).",
+        "WallTimeSeconds": 62.119216416666667
+      },
+      {
+        "Day": "01-Sep-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.74590641666666668
+      },
+      {
+        "Day": "01-Sep-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.03872275
+      },
+      {
+        "Day": "01-Sep-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.5193595833333333
+      },
+      {
+        "Day": "01-Sep-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.1245317916666666
+      },
+      {
+        "Day": "01-Sep-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.89882475
+      },
+      {
+        "Day": "02-Sep-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.78884329166666667
+      },
+      {
+        "Day": "02-Sep-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.359946375
+      },
+      {
+        "Day": "02-Sep-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.186343875
+      },
+      {
+        "Day": "02-Sep-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.253988875
+      },
+      {
+        "Day": "02-Sep-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.5846957083333333
+      },
+      {
+        "Day": "15-Sep-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.649933625
+      },
+      {
+        "Day": "15-Sep-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.1639863333333333
+      },
+      {
+        "Day": "15-Sep-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.4521565
+      },
+      {
+        "Day": "15-Sep-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.169072
+      },
+      {
+        "Day": "15-Sep-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.3759679583333333
+      },
+      {
+        "Day": "16-Sep-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.58961608333333337
+      },
+      {
+        "Day": "16-Sep-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.4992783333333333
+      },
+      {
+        "Day": "16-Sep-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.1663966666666665
+      },
+      {
+        "Day": "16-Sep-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.5888389166666668
+      },
+      {
+        "Day": "16-Sep-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.28647625
+      },
+      {
+        "Day": "01-Oct-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.69447679166666665
+      },
+      {
+        "Day": "01-Oct-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.235586125
+      },
+      {
+        "Day": "01-Oct-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.0566508333333333
+      },
+      {
+        "Day": "01-Oct-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.4357823333333335
+      },
+      {
+        "Day": "01-Oct-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.5272388333333335
+      },
+      {
+        "Day": "02-Oct-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.595621375
+      },
+      {
+        "Day": "02-Oct-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.2203674166666665
+      },
+      {
+        "Day": "02-Oct-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.5592454583333333
+      },
+      {
+        "Day": "02-Oct-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.726666
+      },
+      {
+        "Day": "02-Oct-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.3731294583333336
+      },
+      {
+        "Day": "15-Oct-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.52743195833333334
+      },
+      {
+        "Day": "15-Oct-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.8346466666666668
+      },
+      {
+        "Day": "15-Oct-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.7951062916666667
+      },
+      {
+        "Day": "15-Oct-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.1141539583333333
+      },
+      {
+        "Day": "15-Oct-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.03861625
+      },
+      {
+        "Day": "16-Oct-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.62376241666666665
+      },
+      {
+        "Day": "16-Oct-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.5144657916666666
+      },
+      {
+        "Day": "16-Oct-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.9499080416666668
+      },
+      {
+        "Day": "16-Oct-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.1279112083333334
+      },
+      {
+        "Day": "16-Oct-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.7226224583333334
+      },
+      {
+        "Day": "01-Nov-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.706293875
+      },
+      {
+        "Day": "01-Nov-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.8522684583333333
+      },
+      {
+        "Day": "01-Nov-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.4080024166666667
+      },
+      {
+        "Day": "01-Nov-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.8006882083333333
+      },
+      {
+        "Day": "01-Nov-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.8854385
+      },
+      {
+        "Day": "02-Nov-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.53784208333333339
+      },
+      {
+        "Day": "02-Nov-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.1971382916666666
+      },
+      {
+        "Day": "02-Nov-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.4273298333333333
+      },
+      {
+        "Day": "02-Nov-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.1304855833333334
+      },
+      {
+        "Day": "02-Nov-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.0490421666666667
+      },
+      {
+        "Day": "15-Nov-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.771849125
+      },
+      {
+        "Day": "15-Nov-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.223223
+      },
+      {
+        "Day": "15-Nov-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.694430375
+      },
+      {
+        "Day": "15-Nov-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.515856875
+      },
+      {
+        "Day": "15-Nov-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.5874230833333334
+      },
+      {
+        "Day": "16-Nov-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.89715708333333333
+      },
+      {
+        "Day": "16-Nov-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.1995828333333334
+      },
+      {
+        "Day": "16-Nov-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.1809486666666666
+      },
+      {
+        "Day": "16-Nov-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.979331875
+      },
+      {
+        "Day": "16-Nov-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.9015264166666668
+      },
+      {
+        "Day": "01-Dec-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.64562525
+      },
+      {
+        "Day": "01-Dec-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.4136564583333333
+      },
+      {
+        "Day": "01-Dec-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.1683117083333334
+      },
+      {
+        "Day": "01-Dec-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.8199395
+      },
+      {
+        "Day": "01-Dec-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.89213725
+      },
+      {
+        "Day": "02-Dec-2020",
+        "Strategy": "SH_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 0.78330508333333337
+      },
+      {
+        "Day": "02-Dec-2020",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.1777642083333333
+      },
+      {
+        "Day": "02-Dec-2020",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.870219375
+      },
+      {
+        "Day": "02-Dec-2020",
+        "Strategy": "PSDT",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 1.8244466666666668
+      },
+      {
+        "Day": "02-Dec-2020",
+        "Strategy": "LL",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.135518
+      },
+      {
+        "Day": "15-Dec-2020",
+        "Strategy": "SH_BM",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-15 fails release_literal: physical_incomplete:H14.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "15-Dec-2020",
+        "Strategy": "VPP_BM",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-15 fails release_literal: physical_incomplete:H14.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "15-Dec-2020",
+        "Strategy": "PS",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-15 fails release_literal: physical_incomplete:H14.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "15-Dec-2020",
+        "Strategy": "PSDT",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-15 fails release_literal: physical_incomplete:H14.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "15-Dec-2020",
+        "Strategy": "LL",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-15 fails release_literal: physical_incomplete:H14.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "16-Dec-2020",
+        "Strategy": "SH_BM",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-16 fails release_literal: physical_incomplete:H14.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "16-Dec-2020",
+        "Strategy": "VPP_BM",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-16 fails release_literal: physical_incomplete:H14.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "16-Dec-2020",
+        "Strategy": "PS",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-16 fails release_literal: physical_incomplete:H14.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "16-Dec-2020",
+        "Strategy": "PSDT",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-16 fails release_literal: physical_incomplete:H14.",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "16-Dec-2020",
+        "Strategy": "LL",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-16 fails release_literal: physical_incomplete:H14.",
+        "WallTimeSeconds": 0
+      }
+    ],
+    "qualityStatuses": [
+      {
+        "Day": "01-Jan-2020",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-01-01 fails release_literal: physical_incomplete:H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20.",
+        "IsComplete": false,
+        "IsFullyObserved": false,
+        "QualityPassed": false,
+        "QualityReasons": "physical_incomplete:H1,H2,H3,H4,H5,H6,H7,H8,H9,H10,H11,H12,H13,H14,H15,H16,H17,H18,H19,H20",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": null,
+        "AstronomicalDayLengthHours": 7.5867186258110495,
+        "MaximumMissingStatusRunMinutes": 60
+      },
+      {
+        "Day": "02-Jan-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 7.333333333333333,
+        "AstronomicalDayLengthHours": 7.6062779353264274,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "15-Jan-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6.916666666666667,
+        "AstronomicalDayLengthHours": 7.995361228770534,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "16-Jan-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6.9,
+        "AstronomicalDayLengthHours": 8.03473393099037,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "01-Feb-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6.1,
+        "AstronomicalDayLengthHours": 8.807615215262981,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "02-Feb-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 7.5166666666666666,
+        "AstronomicalDayLengthHours": 8.86333203281488,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "15-Feb-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 7.4833333333333334,
+        "AstronomicalDayLengthHours": 9.6426494084949663,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "16-Feb-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 8.4666666666666668,
+        "AstronomicalDayLengthHours": 9.7060360494305833,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "01-Mar-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6.166666666666667,
+        "AstronomicalDayLengthHours": 10.626932905105122,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "02-Mar-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 7.2833333333333332,
+        "AstronomicalDayLengthHours": 10.694515839785513,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "15-Mar-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 9.6666666666666661,
+        "AstronomicalDayLengthHours": 11.585034251915905,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "16-Mar-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 10.733333333333333,
+        "AstronomicalDayLengthHours": 11.654121693025132,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "01-Apr-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6.1166666666666663,
+        "AstronomicalDayLengthHours": 12.759506888370828,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "02-Apr-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 8,
+        "AstronomicalDayLengthHours": 12.828175354493991,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "15-Apr-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 12.166666666666666,
+        "AstronomicalDayLengthHours": 13.707980408024488,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "16-Apr-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 12.25,
+        "AstronomicalDayLengthHours": 13.774274437664925,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "01-May-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6.4833333333333334,
+        "AstronomicalDayLengthHours": 14.728403655035871,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "02-May-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 7.9333333333333336,
+        "AstronomicalDayLengthHours": 14.78850948960306,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "15-May-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 13.616666666666667,
+        "AstronomicalDayLengthHours": 15.510410178265492,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "16-May-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 13.4,
+        "AstronomicalDayLengthHours": 15.560437789139717,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "01-Jun-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 7.0166666666666666,
+        "AstronomicalDayLengthHours": 16.213919664001729,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "02-Jun-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": true,
+        "PvWindowHours": 19.133333333333333,
+        "AstronomicalDayLengthHours": 16.244036144163523,
+        "MaximumMissingStatusRunMinutes": 340
+      },
+      {
+        "Day": "15-Jun-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 13.333333333333334,
+        "AstronomicalDayLengthHours": 16.496557988968796,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "16-Jun-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 13.15,
+        "AstronomicalDayLengthHours": 16.504625128442,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "01-Jul-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": true,
+        "PvWindowHours": 17.466666666666665,
+        "AstronomicalDayLengthHours": 16.422463940903356,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "02-Jul-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 7.25,
+        "AstronomicalDayLengthHours": 16.403699955797869,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "15-Jul-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 13.35,
+        "AstronomicalDayLengthHours": 16.023864267361077,
+        "MaximumMissingStatusRunMinutes": 241
+      },
+      {
+        "Day": "16-Jul-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 11.95,
+        "AstronomicalDayLengthHours": 15.985104773036429,
+        "MaximumMissingStatusRunMinutes": 192
+      },
+      {
+        "Day": "01-Aug-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6.3,
+        "AstronomicalDayLengthHours": 15.21997149675223,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "02-Aug-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 8.3166666666666664,
+        "AstronomicalDayLengthHours": 15.164615827395725,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "15-Aug-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 13.366666666666667,
+        "AstronomicalDayLengthHours": 14.388891914896792,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "16-Aug-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 11.8,
+        "AstronomicalDayLengthHours": 14.32570715870277,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "01-Sep-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 5.7666666666666666,
+        "AstronomicalDayLengthHours": 13.271627316872017,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "02-Sep-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6.9666666666666668,
+        "AstronomicalDayLengthHours": 13.203789880896256,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "15-Sep-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 10.183333333333334,
+        "AstronomicalDayLengthHours": 12.311318995609062,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "16-Sep-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 9.8,
+        "AstronomicalDayLengthHours": 12.242174300083516,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "01-Oct-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 4.916666666666667,
+        "AstronomicalDayLengthHours": 11.206146843535718,
+        "MaximumMissingStatusRunMinutes": 4
+      },
+      {
+        "Day": "02-Oct-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 8.0333333333333332,
+        "AstronomicalDayLengthHours": 11.137527672766266,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "15-Oct-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 9.8,
+        "AstronomicalDayLengthHours": 10.2588408365325,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "16-Oct-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 8.95,
+        "AstronomicalDayLengthHours": 10.192675521026041,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "01-Nov-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": true,
+        "PvWindowHours": 13.016666666666667,
+        "AstronomicalDayLengthHours": 9.1816440771008825,
+        "MaximumMissingStatusRunMinutes": 3
+      },
+      {
+        "Day": "02-Nov-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 7.65,
+        "AstronomicalDayLengthHours": 9.1223785959101953,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "15-Nov-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6,
+        "AstronomicalDayLengthHours": 8.41489468141568,
+        "MaximumMissingStatusRunMinutes": 1441
+      },
+      {
+        "Day": "16-Nov-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6.7833333333333332,
+        "AstronomicalDayLengthHours": 8.366270878484718,
+        "MaximumMissingStatusRunMinutes": 1441
+      },
+      {
+        "Day": "01-Dec-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 6.4,
+        "AstronomicalDayLengthHours": 7.7708443824350617,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "02-Dec-2020",
+        "Status": "passed",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "IsComplete": true,
+        "IsFullyObserved": false,
+        "QualityPassed": true,
+        "QualityReasons": "",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 7.4333333333333336,
+        "AstronomicalDayLengthHours": 7.7414420920161593,
+        "MaximumMissingStatusRunMinutes": 2
+      },
+      {
+        "Day": "15-Dec-2020",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-15 fails release_literal: physical_incomplete:H14.",
+        "IsComplete": false,
+        "IsFullyObserved": false,
+        "QualityPassed": false,
+        "QualityReasons": "physical_incomplete:H14",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 5.9,
+        "AstronomicalDayLengthHours": 7.499197829556433,
+        "MaximumMissingStatusRunMinutes": 1441
+      },
+      {
+        "Day": "16-Dec-2020",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "ErrorMessage": "Day 2020-12-16 fails release_literal: physical_incomplete:H14.",
+        "IsComplete": false,
+        "IsFullyObserved": false,
+        "QualityPassed": false,
+        "QualityReasons": "physical_incomplete:H14",
+        "PvLongWindowAnomaly": false,
+        "PvWindowHours": 5.7833333333333332,
+        "AstronomicalDayLengthHours": 7.4919741411803882,
+        "MaximumMissingStatusRunMinutes": 1441
+      }
+    ]
+  },
+  "code": {
+    "repositoryRoot": "/Users/guichenxiang/Desktop/電力專案",
+    "commit": "24e7c10aae1c7c2d3932fa470395e340d226ace5",
+    "trackedFilesDirty": false,
+    "statusAvailable": true,
+    "untrackedFilesExcluded": true,
+    "statusScope": "tracked files only; generated and other untracked files are excluded"
+  },
+  "runtime": {
+    "version": "26.2.0.3281582 (R2026b) Prerelease Update 1",
+    "release": "2026b",
+    "computer": "MACA64"
+  },
+  "solver": {
+    "name": "intlinprog",
+    "interface": "MATLAB problem-based optimization",
+    "toolboxVersion": "26.2"
+  },
+  "release": {
+    "manifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/../data/RELEASE_MANIFEST.sha256",
+    "manifestExists": true,
+    "manifestSha256": "a3d901b627546061b63264c438b361674ac6cd11df60eff919a6258dfd35ecec"
+  }
+}

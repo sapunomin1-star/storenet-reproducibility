@@ -1,0 +1,1067 @@
+{
+  "run_id": "data_paper_figures_5_10_v2",
+  "pipeline": "Scientific Data Figures 5-10 reproduction and audit",
+  "provenance": {
+    "pipeline_version": "2.0.0",
+    "contractId": "SR2020-IR-v2",
+    "contractSha256": "9aaa09b56dfeaef27dba26289be445dff40492bf7a2340da5fe36d1a016ea3ca",
+    "git_commit": "660921848cbec5cfbf818dd7eddffc159f038bb7",
+    "git_status_before_run": "",
+    "resolved_paths": {
+      "data_dir": "/Users/guichenxiang/Desktop/電力專案/StoreNet/data/raw",
+      "reference_dir": "/Users/guichenxiang/Desktop/電力專案/StoreNet/reference",
+      "output_dir": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/data_paper_figures_5_10_v2",
+      "source_pdf": "/Users/guichenxiang/Desktop/電力專案/Ireland0_Comprehensive Dataset on Electrical Load Profiles for Energy Community in Ireland.pdf"
+    },
+    "python": "3.9.6",
+    "platform": "macOS-15.7.7-arm64-arm-64bit",
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "matplotlib": "3.9.4",
+    "timestamp_basis": "timezone unknown; naive timestamps preserved exactly as published",
+    "analysis_intervals": {
+      "paper_legacy_annual": "all released rows per household; endpoints and row counts are saved in sidecars; many files extend through 2021-01-01 00:59",
+      "unit_corrected_daily": "2020-01-01 00:00 inclusive to 2021-01-01 00:00 exclusive; released processed values, not raw-observation completeness",
+      "figure9": "2020-12-07 00:00 inclusive to 2020-12-14 00:00 exclusive",
+      "figure6_cross_house_control": "2020-02-01 00:00 inclusive to 2020-09-01 00:00 exclusive; same-timestamp Consumption only",
+      "figure6_daily_lag_search": "calendar 2020; integer Wh timestamp offsets from -1440 to +1440 minutes"
+    },
+    "data_manifest_sha256": "a3d901b627546061b63264c438b361674ac6cd11df60eff919a6258dfd35ecec",
+    "source_pdf_sha256": "4632374fdf1023379d7f937a948aa7c8ff98bdf163e44aa0147607d0503da6b7",
+    "pipeline_file_sha256": {
+      "StoreNet/src/reproduce_data_paper_figures.py": "89d118dce41b5d72c835441798b96ec7e7450c37b98a8f27e0b573996b1a7187",
+      "StoreNet/tests/test_data_paper_figures.py": "d657208866b8f5e1e4e7f34f7cde192f76280b02f00daf225592ae09706ef499",
+      "StoreNet/requirements-figures.txt": "57bb14c1367c8c854bc981c933e028149eabde59f6ee7eec1826ad24a8e5cf3e",
+      "StoreNet/docs/REPRODUCTION_CONTRACT.md": "9aaa09b56dfeaef27dba26289be445dff40492bf7a2340da5fe36d1a016ea3ca",
+      "StoreNet/docs/DATA_PAPER_FIGURES_5_10.md": "51ead88299c789ceb94a1779b602d34270d838a33e27788173205dd974c44a97",
+      "StoreNet/reference/data_paper_claims.json": "dfaaab55ac9e7e1fa05e5d880daac46b1b4c029ad30ea1e418fd50adf56845f0",
+      "StoreNet/reference/data_paper_fig5_availability.csv": "82fa8c3007d452f23d60f142648294b1a2705fe1c682a4cbeb7793f287e84337",
+      "StoreNet/reference/data_paper_fig7_annual_consumption.csv": "2a34b569a6be17ff3085712904670927eb3f1e860d5958dcf329facd25b6eb62",
+      "StoreNet/reference/figshare_v1_inventory.csv": "349875fab1bbe351a2ea54a57486d9516ef5b160b7b63d50fd85773134b735a9"
+    },
+    "verified_release_file_count": 46,
+    "verified_figshare_inventory_file_count": 46
+  },
+  "verified_release_files": [
+    {
+      "path": "StoreNet/data/raw/H10_W.csv",
+      "bytes": 26243860,
+      "expected_sha256": "50b94d5294f29a25456e14a1183291df9d2783f674678b6244545c0970a7ec53",
+      "observed_sha256": "50b94d5294f29a25456e14a1183291df9d2783f674678b6244545c0970a7ec53",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H10_Wh.csv",
+      "bytes": 28477429,
+      "expected_sha256": "1b055605d0b4ee8a2861f4082745405f425e7a793bad54fa4057d1bf3f4dbd92",
+      "observed_sha256": "1b055605d0b4ee8a2861f4082745405f425e7a793bad54fa4057d1bf3f4dbd92",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H11_W.csv",
+      "bytes": 26012381,
+      "expected_sha256": "69fc639e62ed2377a96b96e776db035368acdb2c479708d9ee4d27e30de785ec",
+      "observed_sha256": "69fc639e62ed2377a96b96e776db035368acdb2c479708d9ee4d27e30de785ec",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H11_Wh.csv",
+      "bytes": 28262437,
+      "expected_sha256": "00c8d24a8a5f528719765d8ba6bb4672568d3b0888a5197e2d6fa164dba00105",
+      "observed_sha256": "00c8d24a8a5f528719765d8ba6bb4672568d3b0888a5197e2d6fa164dba00105",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H12_W.csv",
+      "bytes": 25775627,
+      "expected_sha256": "9115bcc92cbf2402fef937fad72df85ece5459e10c14a54006be3e89d1491614",
+      "observed_sha256": "9115bcc92cbf2402fef937fad72df85ece5459e10c14a54006be3e89d1491614",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H12_Wh.csv",
+      "bytes": 27914275,
+      "expected_sha256": "9d679be96a431c99397f369e06fbe751736ee386e64d24227a30faa96af4e43d",
+      "observed_sha256": "9d679be96a431c99397f369e06fbe751736ee386e64d24227a30faa96af4e43d",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H13_W.csv",
+      "bytes": 26207181,
+      "expected_sha256": "b4a272cfaba5e61c3c00e41f62ad94156b4f10d14445755a02cdd8f2a1f2676e",
+      "observed_sha256": "b4a272cfaba5e61c3c00e41f62ad94156b4f10d14445755a02cdd8f2a1f2676e",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H13_Wh.csv",
+      "bytes": 28317945,
+      "expected_sha256": "521442533e37b83c704f2b2b1b1b87d92d9bc0c4ca6879a5961dde8c04902193",
+      "observed_sha256": "521442533e37b83c704f2b2b1b1b87d92d9bc0c4ca6879a5961dde8c04902193",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H14_W.csv",
+      "bytes": 23991311,
+      "expected_sha256": "6cae6cd46e8d987e3f4788ac2c13be613a5ea7d85c8931643065dd583b2143c3",
+      "observed_sha256": "6cae6cd46e8d987e3f4788ac2c13be613a5ea7d85c8931643065dd583b2143c3",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H14_Wh.csv",
+      "bytes": 26693313,
+      "expected_sha256": "9f45b4905a729c86ffd87700dc0512383c1be669f1d59cd87b6a922b50dc627f",
+      "observed_sha256": "9f45b4905a729c86ffd87700dc0512383c1be669f1d59cd87b6a922b50dc627f",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H15_W.csv",
+      "bytes": 25686282,
+      "expected_sha256": "cbe2725e771475f1947ef1091bee9e4f7d8574e818f18e58e97e345346ad47b3",
+      "observed_sha256": "cbe2725e771475f1947ef1091bee9e4f7d8574e818f18e58e97e345346ad47b3",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H15_Wh.csv",
+      "bytes": 27980665,
+      "expected_sha256": "3a7752a761c11c75c9456c7ace813e6a2ef25d50e0d844f21bab011066852ea9",
+      "observed_sha256": "3a7752a761c11c75c9456c7ace813e6a2ef25d50e0d844f21bab011066852ea9",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H16_W.csv",
+      "bytes": 25238153,
+      "expected_sha256": "0b5d5d7c869e6829175298fb0acc97e1032f31e21da020cccc1043a836c6a0dc",
+      "observed_sha256": "0b5d5d7c869e6829175298fb0acc97e1032f31e21da020cccc1043a836c6a0dc",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H16_Wh.csv",
+      "bytes": 28855785,
+      "expected_sha256": "6cc1c0344c06a9c47b3f0b88119a74f31edcde7c1558d6c99db899969f7b9d78",
+      "observed_sha256": "6cc1c0344c06a9c47b3f0b88119a74f31edcde7c1558d6c99db899969f7b9d78",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H17_W.csv",
+      "bytes": 25922951,
+      "expected_sha256": "7432d0fc3f417964158e3585bf93f351895eb38736ea78b2debd7fbeef45ec81",
+      "observed_sha256": "7432d0fc3f417964158e3585bf93f351895eb38736ea78b2debd7fbeef45ec81",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H17_Wh.csv",
+      "bytes": 28277573,
+      "expected_sha256": "50485b23bf92218e9d2f1b937f728778ff0c99c5a5db792d5af6f36c3d2c73e2",
+      "observed_sha256": "50485b23bf92218e9d2f1b937f728778ff0c99c5a5db792d5af6f36c3d2c73e2",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H18_W.csv",
+      "bytes": 25726232,
+      "expected_sha256": "df5f8e63ccec382692471c114386ca28a3658eb4cc27807297c37bab1e155a44",
+      "observed_sha256": "df5f8e63ccec382692471c114386ca28a3658eb4cc27807297c37bab1e155a44",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H18_Wh.csv",
+      "bytes": 27992340,
+      "expected_sha256": "292930a879587d2a4444866bfa921284dfc2cc4ff2a7468335439f84fb2140a2",
+      "observed_sha256": "292930a879587d2a4444866bfa921284dfc2cc4ff2a7468335439f84fb2140a2",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H19_W.csv",
+      "bytes": 25564772,
+      "expected_sha256": "1cbce140e06aaac4898c9ca3315312be71337d4a60c625996cd5facec62e2284",
+      "observed_sha256": "1cbce140e06aaac4898c9ca3315312be71337d4a60c625996cd5facec62e2284",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H19_Wh.csv",
+      "bytes": 27846982,
+      "expected_sha256": "446f2a4feef483710ca80cb2d853fd63f189e3d79602fdce399248bff14016b1",
+      "observed_sha256": "446f2a4feef483710ca80cb2d853fd63f189e3d79602fdce399248bff14016b1",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H1_W.csv",
+      "bytes": 25712485,
+      "expected_sha256": "5f1aecbcba4a9c41c8c42c8a07ac490958607646f93ec9796d19178acf1ee21c",
+      "observed_sha256": "5f1aecbcba4a9c41c8c42c8a07ac490958607646f93ec9796d19178acf1ee21c",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H1_Wh.csv",
+      "bytes": 28166707,
+      "expected_sha256": "4bcce1b9956a0c0a2d532e065b7ac6a52a25481be45f8420532a1b847e5d407e",
+      "observed_sha256": "4bcce1b9956a0c0a2d532e065b7ac6a52a25481be45f8420532a1b847e5d407e",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H20_W.csv",
+      "bytes": 25823765,
+      "expected_sha256": "f2915ab3a5647ab1e402cf70a5f7fcf63c220652db63e8c23546e0c1f9e6eac0",
+      "observed_sha256": "f2915ab3a5647ab1e402cf70a5f7fcf63c220652db63e8c23546e0c1f9e6eac0",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H20_Wh.csv",
+      "bytes": 27922160,
+      "expected_sha256": "5d5f1e63a7d72a8a4eb225b5b9fa6a714dae3ed743fb8ec5db3d0a5dc8257bd1",
+      "observed_sha256": "5d5f1e63a7d72a8a4eb225b5b9fa6a714dae3ed743fb8ec5db3d0a5dc8257bd1",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H2_W.csv",
+      "bytes": 26311199,
+      "expected_sha256": "9a6c0b4e87f156d71a7f2e97954dcc6835468917caadf06e688356d9ed926b8f",
+      "observed_sha256": "9a6c0b4e87f156d71a7f2e97954dcc6835468917caadf06e688356d9ed926b8f",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H2_Wh.csv",
+      "bytes": 28256065,
+      "expected_sha256": "ba6ddece061e6cd1e4ef2efe2540427c832b3462cc11e4cc6b8b78ba416cbd5a",
+      "observed_sha256": "ba6ddece061e6cd1e4ef2efe2540427c832b3462cc11e4cc6b8b78ba416cbd5a",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H3_W.csv",
+      "bytes": 26285261,
+      "expected_sha256": "a1e06f05ead2e2d171d7344569ca8e1333af065a88be59c1f9bc7d4c966a3a89",
+      "observed_sha256": "a1e06f05ead2e2d171d7344569ca8e1333af065a88be59c1f9bc7d4c966a3a89",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H3_Wh.csv",
+      "bytes": 28165745,
+      "expected_sha256": "bc9ac7831ddf5806ab8af4118e91b3d08a8864318e9147d575a29dd0f8f6e2b5",
+      "observed_sha256": "bc9ac7831ddf5806ab8af4118e91b3d08a8864318e9147d575a29dd0f8f6e2b5",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H4_W.csv",
+      "bytes": 29035442,
+      "expected_sha256": "ff7a73a9b544cd4c204709f09b59986a8eb4bbf2cd35ef197d7f59f143b4517b",
+      "observed_sha256": "ff7a73a9b544cd4c204709f09b59986a8eb4bbf2cd35ef197d7f59f143b4517b",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H4_Wh.csv",
+      "bytes": 28145851,
+      "expected_sha256": "95b3a5202ef1788e1d840784a0b60a4f9e7802d6863f301b2ae13dc8b1375cba",
+      "observed_sha256": "95b3a5202ef1788e1d840784a0b60a4f9e7802d6863f301b2ae13dc8b1375cba",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H5_W.csv",
+      "bytes": 26436037,
+      "expected_sha256": "3b7ac29afe378cc4f4f03ac366ead46850d4b3edb3a06aa4baf72fcbdb263ad5",
+      "observed_sha256": "3b7ac29afe378cc4f4f03ac366ead46850d4b3edb3a06aa4baf72fcbdb263ad5",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H5_Wh.csv",
+      "bytes": 28257688,
+      "expected_sha256": "3433edfa4ec797194c51f822bc31c772d40d750aa93a10710b74c37f9b27966d",
+      "observed_sha256": "3433edfa4ec797194c51f822bc31c772d40d750aa93a10710b74c37f9b27966d",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H6_W.csv",
+      "bytes": 25652496,
+      "expected_sha256": "cb2a94e2641fa5abae90df37b42bb7bdb923715aa09bc3d7c35f94e39bdad2c5",
+      "observed_sha256": "cb2a94e2641fa5abae90df37b42bb7bdb923715aa09bc3d7c35f94e39bdad2c5",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H6_Wh.csv",
+      "bytes": 28009410,
+      "expected_sha256": "3759e5c954a72cac059f925e419de9acfdb520aad8c2e9fbb59ce5714208454d",
+      "observed_sha256": "3759e5c954a72cac059f925e419de9acfdb520aad8c2e9fbb59ce5714208454d",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H7_W.csv",
+      "bytes": 26253419,
+      "expected_sha256": "520a07049ad90662c136506a1e4790537c8b0be8f87df32f0f52920380c819c1",
+      "observed_sha256": "520a07049ad90662c136506a1e4790537c8b0be8f87df32f0f52920380c819c1",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H7_Wh.csv",
+      "bytes": 28377855,
+      "expected_sha256": "8557165f6f29cf7ec589e09e44fd76f4fecb194cd5ee3e2b2cdbd92b6fc5d7c4",
+      "observed_sha256": "8557165f6f29cf7ec589e09e44fd76f4fecb194cd5ee3e2b2cdbd92b6fc5d7c4",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H8_W.csv",
+      "bytes": 25962474,
+      "expected_sha256": "7428f3e804a89c9e23f6a96563029aa2fd96ce95c7f788ad2c23142897a6877d",
+      "observed_sha256": "7428f3e804a89c9e23f6a96563029aa2fd96ce95c7f788ad2c23142897a6877d",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H8_Wh.csv",
+      "bytes": 28087065,
+      "expected_sha256": "7f97239fca322bf5dcf50362c32f6ab4289fedd68d1579ffcbdc7f961be37976",
+      "observed_sha256": "7f97239fca322bf5dcf50362c32f6ab4289fedd68d1579ffcbdc7f961be37976",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H9_W.csv",
+      "bytes": 25486997,
+      "expected_sha256": "47ef617b379cc2be2acf2c72cd1ca2522d7736009edb2712060cb7591f41a350",
+      "observed_sha256": "47ef617b379cc2be2acf2c72cd1ca2522d7736009edb2712060cb7591f41a350",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/H9_Wh.csv",
+      "bytes": 27992086,
+      "expected_sha256": "81ae93e0fc890cd3cf1d4a683d7a2ae294bfd97f58843a1344e57bec93537c01",
+      "observed_sha256": "81ae93e0fc890cd3cf1d4a683d7a2ae294bfd97f58843a1344e57bec93537c01",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/README.md",
+      "bytes": 2989,
+      "expected_sha256": "0ff3b8a3814be9ea92f8838f316953a4c4cdc028d13189af979aee796ab8734d",
+      "observed_sha256": "0ff3b8a3814be9ea92f8838f316953a4c4cdc028d13189af979aee796ab8734d",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/data_processing.py",
+      "bytes": 8698,
+      "expected_sha256": "ace22286fe4242a732fcb847c78648d0b747227fbfd6bb749e2d8dc27c521db2",
+      "observed_sha256": "ace22286fe4242a732fcb847c78648d0b747227fbfd6bb749e2d8dc27c521db2",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/energy plots.py",
+      "bytes": 25789,
+      "expected_sha256": "a939df9942c482f0203fd9f9f46c1d53e0c0edbb107131d3a3437d6de92ffce7",
+      "observed_sha256": "a939df9942c482f0203fd9f9f46c1d53e0c0edbb107131d3a3437d6de92ffce7",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/power plots.py",
+      "bytes": 6233,
+      "expected_sha256": "20fd38e91567edf16c9b7d051c1aca79dfaefb8411d2e3c01b7baa612f0807e5",
+      "observed_sha256": "20fd38e91567edf16c9b7d051c1aca79dfaefb8411d2e3c01b7baa612f0807e5",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/setup.py",
+      "bytes": 594,
+      "expected_sha256": "82f74c4eec7b2059725a03996828c33f6a29dee6368aab97325e6f8140720d27",
+      "observed_sha256": "82f74c4eec7b2059725a03996828c33f6a29dee6368aab97325e6f8140720d27",
+      "passed": true
+    },
+    {
+      "path": "StoreNet/data/raw/weather.csv",
+      "bytes": 26241817,
+      "expected_sha256": "8a92b05bf67395bfe64a38b2bb22c183f6a785eeb89aaf54107850d103fb3953",
+      "observed_sha256": "8a92b05bf67395bfe64a38b2bb22c183f6a785eeb89aaf54107850d103fb3953",
+      "passed": true
+    }
+  ],
+  "verified_figshare_inventory_files": [
+    {
+      "article_id": 25927213,
+      "article_doi": "10.6084/m9.figshare.25927213.v1",
+      "article_version": 1,
+      "file_id": 46657249,
+      "file_name": "H10_W.csv",
+      "official_bytes": 26243860,
+      "observed_bytes": 26243860,
+      "official_md5": "babb3169813c288f7f62dccf467b7266",
+      "observed_md5": "babb3169813c288f7f62dccf467b7266",
+      "download_url": "https://ndownloader.figshare.com/files/46657249",
+      "passed": true
+    },
+    {
+      "article_id": 25927174,
+      "article_doi": "10.6084/m9.figshare.25927174.v1",
+      "article_version": 1,
+      "file_id": 46657114,
+      "file_name": "H10_Wh.csv",
+      "official_bytes": 28477429,
+      "observed_bytes": 28477429,
+      "official_md5": "959e527d96baa007b2b87c862b006595",
+      "observed_md5": "959e527d96baa007b2b87c862b006595",
+      "download_url": "https://ndownloader.figshare.com/files/46657114",
+      "passed": true
+    },
+    {
+      "article_id": 25927204,
+      "article_doi": "10.6084/m9.figshare.25927204.v1",
+      "article_version": 1,
+      "file_id": 46657240,
+      "file_name": "H11_W.csv",
+      "official_bytes": 26012381,
+      "observed_bytes": 26012381,
+      "official_md5": "f0d44c690d0940534bb69587f8eea7d5",
+      "observed_md5": "f0d44c690d0940534bb69587f8eea7d5",
+      "download_url": "https://ndownloader.figshare.com/files/46657240",
+      "passed": true
+    },
+    {
+      "article_id": 25927171,
+      "article_doi": "10.6084/m9.figshare.25927171.v1",
+      "article_version": 1,
+      "file_id": 46657105,
+      "file_name": "H11_Wh.csv",
+      "official_bytes": 28262437,
+      "observed_bytes": 28262437,
+      "official_md5": "e5fd5aff71c89746e39f18cf4f2ba4bf",
+      "observed_md5": "e5fd5aff71c89746e39f18cf4f2ba4bf",
+      "download_url": "https://ndownloader.figshare.com/files/46657105",
+      "passed": true
+    },
+    {
+      "article_id": 25927225,
+      "article_doi": "10.6084/m9.figshare.25927225.v1",
+      "article_version": 1,
+      "file_id": 46657417,
+      "file_name": "H12_W.csv",
+      "official_bytes": 25775627,
+      "observed_bytes": 25775627,
+      "official_md5": "b3cde3e04a708ab22b19d42fa8fa89a0",
+      "observed_md5": "b3cde3e04a708ab22b19d42fa8fa89a0",
+      "download_url": "https://ndownloader.figshare.com/files/46657417",
+      "passed": true
+    },
+    {
+      "article_id": 25927138,
+      "article_doi": "10.6084/m9.figshare.25927138.v1",
+      "article_version": 1,
+      "file_id": 46657078,
+      "file_name": "H12_Wh.csv",
+      "official_bytes": 27914275,
+      "observed_bytes": 27914275,
+      "official_md5": "ca9a252ae27abde96c6fe4c1479c7d37",
+      "observed_md5": "ca9a252ae27abde96c6fe4c1479c7d37",
+      "download_url": "https://ndownloader.figshare.com/files/46657078",
+      "passed": true
+    },
+    {
+      "article_id": 25927237,
+      "article_doi": "10.6084/m9.figshare.25927237.v1",
+      "article_version": 1,
+      "file_id": 46657444,
+      "file_name": "H13_W.csv",
+      "official_bytes": 26207181,
+      "observed_bytes": 26207181,
+      "official_md5": "ac63c9ff37084bb2abb3f2a8c0d33485",
+      "observed_md5": "ac63c9ff37084bb2abb3f2a8c0d33485",
+      "download_url": "https://ndownloader.figshare.com/files/46657444",
+      "passed": true
+    },
+    {
+      "article_id": 25927162,
+      "article_doi": "10.6084/m9.figshare.25927162.v1",
+      "article_version": 1,
+      "file_id": 46657096,
+      "file_name": "H13_Wh.csv",
+      "official_bytes": 28317945,
+      "observed_bytes": 28317945,
+      "official_md5": "5eea55769242734cef742cfc8e329f2a",
+      "observed_md5": "5eea55769242734cef742cfc8e329f2a",
+      "download_url": "https://ndownloader.figshare.com/files/46657096",
+      "passed": true
+    },
+    {
+      "article_id": 25927216,
+      "article_doi": "10.6084/m9.figshare.25927216.v1",
+      "article_version": 1,
+      "file_id": 46657438,
+      "file_name": "H14_W.csv",
+      "official_bytes": 23991311,
+      "observed_bytes": 23991311,
+      "official_md5": "8db9b8189e3ea9409b48b525264a3af6",
+      "observed_md5": "8db9b8189e3ea9409b48b525264a3af6",
+      "download_url": "https://ndownloader.figshare.com/files/46657438",
+      "passed": true
+    },
+    {
+      "article_id": 25927132,
+      "article_doi": "10.6084/m9.figshare.25927132.v1",
+      "article_version": 1,
+      "file_id": 46657072,
+      "file_name": "H14_Wh.csv",
+      "official_bytes": 26693313,
+      "observed_bytes": 26693313,
+      "official_md5": "6667fb85c0e7a9d8ccf4995dcfe4f9b0",
+      "observed_md5": "6667fb85c0e7a9d8ccf4995dcfe4f9b0",
+      "download_url": "https://ndownloader.figshare.com/files/46657072",
+      "passed": true
+    },
+    {
+      "article_id": 25927189,
+      "article_doi": "10.6084/m9.figshare.25927189.v1",
+      "article_version": 1,
+      "file_id": 46657231,
+      "file_name": "H15_W.csv",
+      "official_bytes": 25686282,
+      "observed_bytes": 25686282,
+      "official_md5": "76b2a98b13fcdb88eb1148d4a77316b7",
+      "observed_md5": "76b2a98b13fcdb88eb1148d4a77316b7",
+      "download_url": "https://ndownloader.figshare.com/files/46657231",
+      "passed": true
+    },
+    {
+      "article_id": 25927168,
+      "article_doi": "10.6084/m9.figshare.25927168.v1",
+      "article_version": 1,
+      "file_id": 46657111,
+      "file_name": "H15_Wh.csv",
+      "official_bytes": 27980665,
+      "observed_bytes": 27980665,
+      "official_md5": "d97d57712dd39c3f416cb916ce4d4644",
+      "observed_md5": "d97d57712dd39c3f416cb916ce4d4644",
+      "download_url": "https://ndownloader.figshare.com/files/46657111",
+      "passed": true
+    },
+    {
+      "article_id": 25927207,
+      "article_doi": "10.6084/m9.figshare.25927207.v1",
+      "article_version": 1,
+      "file_id": 46657423,
+      "file_name": "H16_W.csv",
+      "official_bytes": 25238153,
+      "observed_bytes": 25238153,
+      "official_md5": "6c7a728619d4dbd5cc30b3af34bc6057",
+      "observed_md5": "6c7a728619d4dbd5cc30b3af34bc6057",
+      "download_url": "https://ndownloader.figshare.com/files/46657423",
+      "passed": true
+    },
+    {
+      "article_id": 25927147,
+      "article_doi": "10.6084/m9.figshare.25927147.v1",
+      "article_version": 1,
+      "file_id": 46657099,
+      "file_name": "H16_Wh.csv",
+      "official_bytes": 28855785,
+      "observed_bytes": 28855785,
+      "official_md5": "89ac983e359db5a7498ac4f27abe8638",
+      "observed_md5": "89ac983e359db5a7498ac4f27abe8638",
+      "download_url": "https://ndownloader.figshare.com/files/46657099",
+      "passed": true
+    },
+    {
+      "article_id": 25927195,
+      "article_doi": "10.6084/m9.figshare.25927195.v1",
+      "article_version": 1,
+      "file_id": 46657237,
+      "file_name": "H17_W.csv",
+      "official_bytes": 25922951,
+      "observed_bytes": 25922951,
+      "official_md5": "e5cdf40783caf7709f869cddba4f041b",
+      "observed_md5": "e5cdf40783caf7709f869cddba4f041b",
+      "download_url": "https://ndownloader.figshare.com/files/46657237",
+      "passed": true
+    },
+    {
+      "article_id": 25927144,
+      "article_doi": "10.6084/m9.figshare.25927144.v1",
+      "article_version": 1,
+      "file_id": 46657081,
+      "file_name": "H17_Wh.csv",
+      "official_bytes": 28277573,
+      "observed_bytes": 28277573,
+      "official_md5": "91a72e86eb37669ee39712618398d68f",
+      "observed_md5": "91a72e86eb37669ee39712618398d68f",
+      "download_url": "https://ndownloader.figshare.com/files/46657081",
+      "passed": true
+    },
+    {
+      "article_id": 25927231,
+      "article_doi": "10.6084/m9.figshare.25927231.v1",
+      "article_version": 1,
+      "file_id": 46657435,
+      "file_name": "H18_W.csv",
+      "official_bytes": 25726232,
+      "observed_bytes": 25726232,
+      "official_md5": "91a47b50eac99d6800bf0da1205f24fb",
+      "observed_md5": "91a47b50eac99d6800bf0da1205f24fb",
+      "download_url": "https://ndownloader.figshare.com/files/46657435",
+      "passed": true
+    },
+    {
+      "article_id": 25927141,
+      "article_doi": "10.6084/m9.figshare.25927141.v1",
+      "article_version": 1,
+      "file_id": 46657093,
+      "file_name": "H18_Wh.csv",
+      "official_bytes": 27992340,
+      "observed_bytes": 27992340,
+      "official_md5": "853c74ecebdb56753f2799d7346050bb",
+      "observed_md5": "853c74ecebdb56753f2799d7346050bb",
+      "download_url": "https://ndownloader.figshare.com/files/46657093",
+      "passed": true
+    },
+    {
+      "article_id": 25927222,
+      "article_doi": "10.6084/m9.figshare.25927222.v1",
+      "article_version": 1,
+      "file_id": 46657429,
+      "file_name": "H19_W.csv",
+      "official_bytes": 25564772,
+      "observed_bytes": 25564772,
+      "official_md5": "f83ac31f8472127b4e4d8dd543936e56",
+      "observed_md5": "f83ac31f8472127b4e4d8dd543936e56",
+      "download_url": "https://ndownloader.figshare.com/files/46657429",
+      "passed": true
+    },
+    {
+      "article_id": 25927135,
+      "article_doi": "10.6084/m9.figshare.25927135.v1",
+      "article_version": 1,
+      "file_id": 46657075,
+      "file_name": "H19_Wh.csv",
+      "official_bytes": 27846982,
+      "observed_bytes": 27846982,
+      "official_md5": "6c78b22efa9c281cb8b40773522ecee5",
+      "observed_md5": "6c78b22efa9c281cb8b40773522ecee5",
+      "download_url": "https://ndownloader.figshare.com/files/46657075",
+      "passed": true
+    },
+    {
+      "article_id": 25927228,
+      "article_doi": "10.6084/m9.figshare.25927228.v1",
+      "article_version": 1,
+      "file_id": 46657426,
+      "file_name": "H1_W.csv",
+      "official_bytes": 25712485,
+      "observed_bytes": 25712485,
+      "official_md5": "ccf441987cff2d91d71fb484d68521f1",
+      "observed_md5": "ccf441987cff2d91d71fb484d68521f1",
+      "download_url": "https://ndownloader.figshare.com/files/46657426",
+      "passed": true
+    },
+    {
+      "article_id": 25927156,
+      "article_doi": "10.6084/m9.figshare.25927156.v1",
+      "article_version": 1,
+      "file_id": 46657087,
+      "file_name": "H1_Wh.csv",
+      "official_bytes": 28166707,
+      "observed_bytes": 28166707,
+      "official_md5": "c18dc9d3e181fd1396fd8430e31e39f6",
+      "observed_md5": "c18dc9d3e181fd1396fd8430e31e39f6",
+      "download_url": "https://ndownloader.figshare.com/files/46657087",
+      "passed": true
+    },
+    {
+      "article_id": 25927219,
+      "article_doi": "10.6084/m9.figshare.25927219.v1",
+      "article_version": 1,
+      "file_id": 46657420,
+      "file_name": "H20_W.csv",
+      "official_bytes": 25823765,
+      "observed_bytes": 25823765,
+      "official_md5": "4781b8e4485732aba61e01dea4f70637",
+      "observed_md5": "4781b8e4485732aba61e01dea4f70637",
+      "download_url": "https://ndownloader.figshare.com/files/46657420",
+      "passed": true
+    },
+    {
+      "article_id": 25927183,
+      "article_doi": "10.6084/m9.figshare.25927183.v1",
+      "article_version": 1,
+      "file_id": 46657123,
+      "file_name": "H20_Wh.csv",
+      "official_bytes": 27922160,
+      "observed_bytes": 27922160,
+      "official_md5": "f0a370af1c07ef5781de74edd6894470",
+      "observed_md5": "f0a370af1c07ef5781de74edd6894470",
+      "download_url": "https://ndownloader.figshare.com/files/46657123",
+      "passed": true
+    },
+    {
+      "article_id": 25927210,
+      "article_doi": "10.6084/m9.figshare.25927210.v1",
+      "article_version": 1,
+      "file_id": 46657432,
+      "file_name": "H2_W.csv",
+      "official_bytes": 26311199,
+      "observed_bytes": 26311199,
+      "official_md5": "587d4953e1fe2ac91a43002436193131",
+      "observed_md5": "587d4953e1fe2ac91a43002436193131",
+      "download_url": "https://ndownloader.figshare.com/files/46657432",
+      "passed": true
+    },
+    {
+      "article_id": 25927165,
+      "article_doi": "10.6084/m9.figshare.25927165.v1",
+      "article_version": 1,
+      "file_id": 46657108,
+      "file_name": "H2_Wh.csv",
+      "official_bytes": 28256065,
+      "observed_bytes": 28256065,
+      "official_md5": "3426b49700334b839aaf185f18c9b2db",
+      "observed_md5": "3426b49700334b839aaf185f18c9b2db",
+      "download_url": "https://ndownloader.figshare.com/files/46657108",
+      "passed": true
+    },
+    {
+      "article_id": 25927234,
+      "article_doi": "10.6084/m9.figshare.25927234.v1",
+      "article_version": 1,
+      "file_id": 46657441,
+      "file_name": "H3_W.csv",
+      "official_bytes": 26285261,
+      "observed_bytes": 26285261,
+      "official_md5": "07c52a663fd44f0d1ff7729980e73bbf",
+      "observed_md5": "07c52a663fd44f0d1ff7729980e73bbf",
+      "download_url": "https://ndownloader.figshare.com/files/46657441",
+      "passed": true
+    },
+    {
+      "article_id": 25927177,
+      "article_doi": "10.6084/m9.figshare.25927177.v1",
+      "article_version": 1,
+      "file_id": 46657117,
+      "file_name": "H3_Wh.csv",
+      "official_bytes": 28165745,
+      "observed_bytes": 28165745,
+      "official_md5": "b88b16df2c8907b778c9eae0f92b9cd9",
+      "observed_md5": "b88b16df2c8907b778c9eae0f92b9cd9",
+      "download_url": "https://ndownloader.figshare.com/files/46657117",
+      "passed": true
+    },
+    {
+      "article_id": 25927198,
+      "article_doi": "10.6084/m9.figshare.25927198.v1",
+      "article_version": 1,
+      "file_id": 46657246,
+      "file_name": "H4_W.csv",
+      "official_bytes": 29035442,
+      "observed_bytes": 29035442,
+      "official_md5": "c01f226bc199d6cb0bcaf99ebf51413d",
+      "observed_md5": "c01f226bc199d6cb0bcaf99ebf51413d",
+      "download_url": "https://ndownloader.figshare.com/files/46657246",
+      "passed": true
+    },
+    {
+      "article_id": 25927180,
+      "article_doi": "10.6084/m9.figshare.25927180.v1",
+      "article_version": 1,
+      "file_id": 46657120,
+      "file_name": "H4_Wh.csv",
+      "official_bytes": 28145851,
+      "observed_bytes": 28145851,
+      "official_md5": "0928b1c9c174e0ee15655ece87cb4553",
+      "observed_md5": "0928b1c9c174e0ee15655ece87cb4553",
+      "download_url": "https://ndownloader.figshare.com/files/46657120",
+      "passed": true
+    },
+    {
+      "article_id": 25927243,
+      "article_doi": "10.6084/m9.figshare.25927243.v1",
+      "article_version": 1,
+      "file_id": 46657450,
+      "file_name": "H5_W.csv",
+      "official_bytes": 26436037,
+      "observed_bytes": 26436037,
+      "official_md5": "a422b7be909bfe4791b28dd9b5952e90",
+      "observed_md5": "a422b7be909bfe4791b28dd9b5952e90",
+      "download_url": "https://ndownloader.figshare.com/files/46657450",
+      "passed": true
+    },
+    {
+      "article_id": 25927150,
+      "article_doi": "10.6084/m9.figshare.25927150.v1",
+      "article_version": 1,
+      "file_id": 46657084,
+      "file_name": "H5_Wh.csv",
+      "official_bytes": 28257688,
+      "observed_bytes": 28257688,
+      "official_md5": "85b59c718a70fcca6295a4f21eb52adf",
+      "observed_md5": "85b59c718a70fcca6295a4f21eb52adf",
+      "download_url": "https://ndownloader.figshare.com/files/46657084",
+      "passed": true
+    },
+    {
+      "article_id": 25927201,
+      "article_doi": "10.6084/m9.figshare.25927201.v1",
+      "article_version": 1,
+      "file_id": 46657243,
+      "file_name": "H6_W.csv",
+      "official_bytes": 25652496,
+      "observed_bytes": 25652496,
+      "official_md5": "d2ed500bd8cb6a94af39c7465b454fbf",
+      "observed_md5": "d2ed500bd8cb6a94af39c7465b454fbf",
+      "download_url": "https://ndownloader.figshare.com/files/46657243",
+      "passed": true
+    },
+    {
+      "article_id": 25927159,
+      "article_doi": "10.6084/m9.figshare.25927159.v1",
+      "article_version": 1,
+      "file_id": 46657090,
+      "file_name": "H6_Wh.csv",
+      "official_bytes": 28009410,
+      "observed_bytes": 28009410,
+      "official_md5": "839b26be6d58fae05888dc201012892c",
+      "observed_md5": "839b26be6d58fae05888dc201012892c",
+      "download_url": "https://ndownloader.figshare.com/files/46657090",
+      "passed": true
+    },
+    {
+      "article_id": 25927240,
+      "article_doi": "10.6084/m9.figshare.25927240.v1",
+      "article_version": 1,
+      "file_id": 46657447,
+      "file_name": "H7_W.csv",
+      "official_bytes": 26253419,
+      "observed_bytes": 26253419,
+      "official_md5": "a24b79cb1d01ba3ccccf0bdb2c38a4d7",
+      "observed_md5": "a24b79cb1d01ba3ccccf0bdb2c38a4d7",
+      "download_url": "https://ndownloader.figshare.com/files/46657447",
+      "passed": true
+    },
+    {
+      "article_id": 25927153,
+      "article_doi": "10.6084/m9.figshare.25927153.v1",
+      "article_version": 1,
+      "file_id": 46657102,
+      "file_name": "H7_Wh.csv",
+      "official_bytes": 28377855,
+      "observed_bytes": 28377855,
+      "official_md5": "fab9fc83bd03d3b28d365790e06e8320",
+      "observed_md5": "fab9fc83bd03d3b28d365790e06e8320",
+      "download_url": "https://ndownloader.figshare.com/files/46657102",
+      "passed": true
+    },
+    {
+      "article_id": 25927246,
+      "article_doi": "10.6084/m9.figshare.25927246.v1",
+      "article_version": 1,
+      "file_id": 46657453,
+      "file_name": "H8_W.csv",
+      "official_bytes": 25962474,
+      "observed_bytes": 25962474,
+      "official_md5": "9e8e16c7fbf9b8bc49bc1ec9d50dae78",
+      "observed_md5": "9e8e16c7fbf9b8bc49bc1ec9d50dae78",
+      "download_url": "https://ndownloader.figshare.com/files/46657453",
+      "passed": true
+    },
+    {
+      "article_id": 25927186,
+      "article_doi": "10.6084/m9.figshare.25927186.v1",
+      "article_version": 1,
+      "file_id": 46657126,
+      "file_name": "H8_Wh.csv",
+      "official_bytes": 28087065,
+      "observed_bytes": 28087065,
+      "official_md5": "4f70ee107a6d4d188dc187c300d470a3",
+      "observed_md5": "4f70ee107a6d4d188dc187c300d470a3",
+      "download_url": "https://ndownloader.figshare.com/files/46657126",
+      "passed": true
+    },
+    {
+      "article_id": 25927192,
+      "article_doi": "10.6084/m9.figshare.25927192.v1",
+      "article_version": 1,
+      "file_id": 46657234,
+      "file_name": "H9_W.csv",
+      "official_bytes": 25486997,
+      "observed_bytes": 25486997,
+      "official_md5": "8b89fb1e69494a8028738e71aaeadc32",
+      "observed_md5": "8b89fb1e69494a8028738e71aaeadc32",
+      "download_url": "https://ndownloader.figshare.com/files/46657234",
+      "passed": true
+    },
+    {
+      "article_id": 25927129,
+      "article_doi": "10.6084/m9.figshare.25927129.v1",
+      "article_version": 1,
+      "file_id": 46657069,
+      "file_name": "H9_Wh.csv",
+      "official_bytes": 27992086,
+      "observed_bytes": 27992086,
+      "official_md5": "298ed347b230f963931c55bc0161a030",
+      "observed_md5": "298ed347b230f963931c55bc0161a030",
+      "download_url": "https://ndownloader.figshare.com/files/46657069",
+      "passed": true
+    },
+    {
+      "article_id": 25927315,
+      "article_doi": "10.6084/m9.figshare.25927315.v1",
+      "article_version": 1,
+      "file_id": 46659082,
+      "file_name": "README.md",
+      "official_bytes": 2989,
+      "observed_bytes": 2989,
+      "official_md5": "45fb62b248eb6e9e43df9de012de8f5e",
+      "observed_md5": "45fb62b248eb6e9e43df9de012de8f5e",
+      "download_url": "https://ndownloader.figshare.com/files/46659082",
+      "passed": true
+    },
+    {
+      "article_id": 25927312,
+      "article_doi": "10.6084/m9.figshare.25927312.v1",
+      "article_version": 1,
+      "file_id": 46659085,
+      "file_name": "data_processing.py",
+      "official_bytes": 8698,
+      "observed_bytes": 8698,
+      "official_md5": "7e411ca96e2f46bb15e256218f030aee",
+      "observed_md5": "7e411ca96e2f46bb15e256218f030aee",
+      "download_url": "https://ndownloader.figshare.com/files/46659085",
+      "passed": true
+    },
+    {
+      "article_id": 25927309,
+      "article_doi": "10.6084/m9.figshare.25927309.v1",
+      "article_version": 1,
+      "file_id": 46659079,
+      "file_name": "energy plots.py",
+      "official_bytes": 25789,
+      "observed_bytes": 25789,
+      "official_md5": "56612ae986410557c0e885c23aa722aa",
+      "observed_md5": "56612ae986410557c0e885c23aa722aa",
+      "download_url": "https://ndownloader.figshare.com/files/46659079",
+      "passed": true
+    },
+    {
+      "article_id": 25927318,
+      "article_doi": "10.6084/m9.figshare.25927318.v1",
+      "article_version": 1,
+      "file_id": 46659088,
+      "file_name": "power plots.py",
+      "official_bytes": 6233,
+      "observed_bytes": 6233,
+      "official_md5": "0df583f025507a84c9b4fff69f801f8f",
+      "observed_md5": "0df583f025507a84c9b4fff69f801f8f",
+      "download_url": "https://ndownloader.figshare.com/files/46659088",
+      "passed": true
+    },
+    {
+      "article_id": 25927306,
+      "article_doi": "10.6084/m9.figshare.25927306.v1",
+      "article_version": 1,
+      "file_id": 46659076,
+      "file_name": "setup.py",
+      "official_bytes": 594,
+      "observed_bytes": 594,
+      "official_md5": "a4c13a7b756c788a63a2bc5fd7af98cb",
+      "observed_md5": "a4c13a7b756c788a63a2bc5fd7af98cb",
+      "download_url": "https://ndownloader.figshare.com/files/46659076",
+      "passed": true
+    },
+    {
+      "article_id": 25927249,
+      "article_doi": "10.6084/m9.figshare.25927249.v1",
+      "article_version": 1,
+      "file_id": 46657456,
+      "file_name": "weather.csv",
+      "official_bytes": 26241817,
+      "observed_bytes": 26241817,
+      "official_md5": "56035b96a1250e3476c62588d40a8875",
+      "observed_md5": "56035b96a1250e3476c62588d40a8875",
+      "download_url": "https://ndownloader.figshare.com/files/46657456",
+      "passed": true
+    }
+  ],
+  "artifact_sha256": {
+    "README.md": "43b7a251cf69a459e7cac5162025bbce200c25dd797f24cc078b61156b0d9b67",
+    "figure10_reproducibility_boundary.png": "036bc2c08449ead30779a638564932d603df91b09a942502cfb758bcd018de90",
+    "figure10_requirements.csv": "4cff6ddd502cb67f3e5ef2f1e2ffedcc360bf261f7ee877ad4fa364f65993929",
+    "figure5_availability.csv": "24787a08061b8d484e476577ba9a3f96e7670543f5de00a6d43a4514d7c2e7e8",
+    "figure5_data_availability.png": "4c5dc053c91b48d5746bc229263628396e1bbe740963c475560423d6773b8d2f",
+    "figure6_all_house_consistency.png": "ccae0a2950dbff99a9975dd6f5a00f69c505675467587b08adbe2a126d58ca8b",
+    "figure6_all_house_metrics.csv": "43a0b553917b14e8732504ec34c1a1ae9119784c5deb006e44e3f84a3f362445",
+    "figure6_h4_alignment_summary.csv": "655c38eb057db5c36ce07ec29f5b40d2f293802ce9816361fc67121975406198",
+    "figure6_h4_anomaly_segments.csv": "e79bda6d01df72bc1fefcde32a90e56380030922c849044833531565946ba932",
+    "figure6_h4_cross_house_controls.csv": "68e2838758dd47fffcafbf5552e0331e33f1fb6edb3f783f689c1134ac2f9613",
+    "figure6_h4_daily_diagnostics.csv": "0ebd6d82793eb5c4789b4eef654c30a8ce62875ae7a21dae5e1da4f0afe6dfed",
+    "figure6_h4_date_transpose_diagnostics.csv": "4eae2d12a42b673c4b32b03d381bf0939ac5bd46c8c8d95fdef7292abd0c19b6",
+    "figure6_h4_monthly_summary.csv": "68b45de5f86259586ecf4dcc476b3b40b3cc3448847c2066027d5f5f701a4a74",
+    "figure6_h4_temporal_diagnostics.png": "cf5125eba0eb3d1bbefac3d8d746c7a8a04d096088c79b02225d00e084d11c32",
+    "figure6_h4_wh_balance.json": "7da7d75c8a87d18f313eb88a1714422056439c577ab750c7c64ded96d5dfb3de",
+    "figure6_power_energy_consistency.png": "11769b4983523f5d265d2f563d98f897877470507a9ae5fcbf52520187a00e6d",
+    "figure7_annual_and_temperature.png": "65c2e8176aa760a14e47477d4ef083ae79eb235c9ec56316143e90df3922fed2",
+    "figure7_annual_consumption.csv": "eded9e483229151a39e42f573bf423b4359a609131ed37bbd4571ea70c1ced54",
+    "figure7b_paper_legacy_daily.csv": "4c2b7a9a83a456a6f0e02e2bf746dc5a7ddcf524f6fc274e2def6edabc1652a8",
+    "figure7b_timestamp_coverage.csv": "584a9ec060d1646279da258e4aaa5635430b7514da2eabd5385f3f29e979b2f4",
+    "figure7b_unit_corrected_comparison.png": "42cfd1902386d40958b06a89f45398d794b586ccbef62260d5dbb04c89131407",
+    "figure7b_unit_corrected_daily.csv": "ebe570b854bc40dc4fb9a7e5917f310015a2c59be2153d26d99fc4ed571474c2",
+    "figure8_pv_annual_profiles.png": "5813f4026559d22262c9672db3dfe321b45ed29c21db66211e7b29c25e2e3ee0",
+    "figure8_pv_annual_totals.csv": "d8846b6653df4bec7fd8f81440d4c248238624990aa5b7df7228bc7d751007bd",
+    "figure9_h4_week.png": "8c412cd55b95be3d78aa047147f8d95a49c3a87468ba3e9a1702ebbb9656e5f6",
+    "figure9_h4_week_profiles.csv": "a659e7fb3bfbd0002f892b33abbce010e928a87001a59f23b2032027c95836df",
+    "figure9_metrics.json": "e5dea26f4587461a5efda2ecc717a7a63778214a9f15c610ea444173fae1f4ee",
+    "summary.json": "7169a22db822c57a6d0aa54fddcce8eeac927d76164efa58e91fa4846aea3a2e",
+    "validation.csv": "d1260b8126a8656f179578be9c8c4d7cbb4a34d593cdce09fa7670cf4c77707c"
+  },
+  "figure_status": {
+    "5": "exact numeric reproduction",
+    "6": "general W/Wh consistency supported; H4 public release has diagnosed time/date assembly evidence, while the published H4 panel remains unreproduced",
+    "7a": "bar values exact; caption mean conflicts",
+    "7b": "legacy trend reproduced; released-grid-complete unit correction supplied",
+    "8": "released-data totals reproduced; textual range conflicts",
+    "9": "released-data week reproduced",
+    "10": "structural only; exact inputs unpublished"
+  },
+  "required_gates": {
+    "figure5_published_percentages": true,
+    "figure6_all_house_both_scopes": true,
+    "figure6_h4_forensic_blocks": true,
+    "figure6_h4_date_transpose_policies": true,
+    "figure6_h4_daily_alignment_classification": true,
+    "figure6_cross_house_scope_control": true,
+    "figure6_h4_wh_internal_balance": true,
+    "figure6_normative_sidecars_present": true,
+    "figure7a_published_bars": true,
+    "figure7b_legacy_correlation": true,
+    "figure7b_released_grid_complete_days": true,
+    "figure8_pv_cohort": true,
+    "figure9_exact_minute_sequence": true
+  },
+  "figure6_audit_schema": {
+    "schema_version": "2.0.0",
+    "comparison_scopes": {
+      "finite_release_same_timestamp": "finite released pairs at identical published timestamps",
+      "observed_both_endpoints": "finite pairs with released W status(t-1)==status(t)==1; status is an observation proxy, not proof of Wh ground truth"
+    },
+    "daily_lag_sign": "positive L compares W(t) with 60*Wh(t+L); integer L in [-1440,+1440]",
+    "daily_lag_minimum_finite_points": 60,
+    "daily_lag_interpretation": "diagnostic_only: lag search characterises release alignment and is not a repair, imputation rule, or data-acceptance gate",
+    "mapped_comparison_scope": {
+      "name": "source_and_mapped_target_w_status_both_endpoints",
+      "description": "finite mapped W/Wh pairs requiring the released W-status observation proxy at both endpoints on both the source W timestamps and mapped-target Wh timestamps; W status is not proof of Wh ground truth"
+    },
+    "alignment_boundary_policy": "same-date zero-offset uses 1440 labels; +60 core mappings use 1380 labels; same-date and transpose continuous-24h diagnostics use 1440 labels and are exported separately under the same source-and-mapped-target W-status proxy scope",
+    "alignment_rule": "frozen_rule_based_v2",
+    "alignment_candidate_pass_rule": "MatchedFinitePoints>=60 and PearsonR>0.99 for both signals",
+    "date_transpose_pass_rule": "MatchedFinitePoints>=60 and PearsonR>0.99 under the mapped comparison scope",
+    "alignment_category_days": {
+      "unaffected_same0": 146,
+      "unassessable_no_finite_W_pairs": 1,
+      "same_date_plus60_core": 135,
+      "actual_transpose_plus60_core": 42,
+      "diagonal_identity_plus60_control": 7,
+      "unresolved": 35
+    },
+    "unaffected_alignment_days": 146,
+    "unassessable_no_finite_W_pair_days": 1,
+    "affected_core_aligned_days": 184,
+    "affected_unresolved_days": 35,
+    "affected_core_alignment_caveat": "184 dates pass frozen within-target-day core checks; this is not a claim that their full 24-hour boundaries are solved or repaired",
+    "forensic_block_definition": "finite Unnamed: 6 rows split when adjacent finite index values differ by anything other than +1",
+    "forensic_blocks": 20,
+    "sidecars": [
+      "figure6_all_house_metrics.csv",
+      "figure6_h4_daily_diagnostics.csv",
+      "figure6_h4_monthly_summary.csv",
+      "figure6_h4_alignment_summary.csv",
+      "figure6_h4_anomaly_segments.csv",
+      "figure6_h4_date_transpose_diagnostics.csv",
+      "figure6_h4_cross_house_controls.csv",
+      "figure6_h4_wh_balance.json"
+    ]
+  }
+}

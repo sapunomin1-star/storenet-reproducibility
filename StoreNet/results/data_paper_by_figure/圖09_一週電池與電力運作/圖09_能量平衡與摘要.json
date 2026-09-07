@@ -1,0 +1,64 @@
+{
+  "Start": "2020-12-07 00:00:00",
+  "End": "2020-12-13 23:59:00",
+  "Rows": 10080,
+  "DuplicateTimestamps": 0,
+  "MissingMinutes": 0,
+  "UnexpectedTimestamps": 0,
+  "TimestampSequenceExact": true,
+  "TimestampsMonotonicIncreasing": true,
+  "NonfiniteDerivedPowerRows": 0,
+  "MaximumAbsoluteBalanceResidualWh": 0.43,
+  "MaximumStateOfChargePercent": 100.0,
+  "MinimumStateOfChargePercent": 0.0,
+  "MaximumProductionW": 2472.0,
+  "MaximumConsumptionW": 11464.199999999999,
+  "MaximumFromgridW": 12438.0,
+  "MaximumFeed-inW": 2863.2,
+  "MaximumChargeW": 2002.8000000000002,
+  "MaximumDischargeW": 3112.2,
+  "DailyEnergyKWh": {
+    "2020-12-07": {
+      "ProductionKWh": 8.69634,
+      "ConsumptionKWh": 4.09274,
+      "Feed-inKWh": 4.09039,
+      "From gridKWh": 0.55241
+    },
+    "2020-12-08": {
+      "ProductionKWh": 11.932979999999999,
+      "ConsumptionKWh": 11.788785,
+      "Feed-inKWh": 0.02281,
+      "From gridKWh": 6.890335
+    },
+    "2020-12-09": {
+      "ProductionKWh": 5.65208,
+      "ConsumptionKWh": 19.48228,
+      "Feed-inKWh": 0.01086,
+      "From gridKWh": 14.64077
+    },
+    "2020-12-10": {
+      "ProductionKWh": 5.492185,
+      "ConsumptionKWh": 15.718110000000001,
+      "Feed-inKWh": 0.02414,
+      "From gridKWh": 11.26336
+    },
+    "2020-12-11": {
+      "ProductionKWh": 0.41552,
+      "ConsumptionKWh": 24.66778,
+      "Feed-inKWh": 0.019350000000000003,
+      "From gridKWh": 25.559900000000003
+    },
+    "2020-12-12": {
+      "ProductionKWh": 1.39751,
+      "ConsumptionKWh": 25.281740000000003,
+      "Feed-inKWh": 0.48866000000000004,
+      "From gridKWh": 25.99019
+    },
+    "2020-12-13": {
+      "ProductionKWh": 0.48817,
+      "ConsumptionKWh": 34.075515,
+      "Feed-inKWh": 0.052450000000000004,
+      "From gridKWh": 34.903870000000005
+    }
+  }
+}

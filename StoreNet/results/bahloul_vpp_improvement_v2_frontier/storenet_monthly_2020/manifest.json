@@ -1,0 +1,6657 @@
+{
+  "schemaVersion": "StoreNet-run-manifest-v1",
+  "createdAtUtc": "2026-09-03T16:22:51.557Z",
+  "experiment": {
+    "runType": "bahloul_frontier_v1",
+    "runId": "storenet_monthly_2020",
+    "decisionRecord": "docs/decisions/ADR-002-bill-peak-frontier-and-tariff.md",
+    "days": [
+      "2020-01-01",
+      "2020-01-02",
+      "2020-01-15",
+      "2020-01-16",
+      "2020-02-01",
+      "2020-02-02",
+      "2020-02-15",
+      "2020-02-16",
+      "2020-03-01",
+      "2020-03-02",
+      "2020-03-15",
+      "2020-03-16",
+      "2020-04-01",
+      "2020-04-02",
+      "2020-04-15",
+      "2020-04-16",
+      "2020-05-01",
+      "2020-05-02",
+      "2020-05-15",
+      "2020-05-16",
+      "2020-06-01",
+      "2020-06-02",
+      "2020-06-15",
+      "2020-06-16",
+      "2020-07-01",
+      "2020-07-02",
+      "2020-07-15",
+      "2020-07-16",
+      "2020-08-01",
+      "2020-08-02",
+      "2020-08-15",
+      "2020-08-16",
+      "2020-09-01",
+      "2020-09-02",
+      "2020-09-15",
+      "2020-09-16",
+      "2020-10-01",
+      "2020-10-02",
+      "2020-10-15",
+      "2020-10-16",
+      "2020-11-01",
+      "2020-11-02",
+      "2020-11-15",
+      "2020-11-16",
+      "2020-12-01",
+      "2020-12-02",
+      "2020-12-15",
+      "2020-12-16"
+    ],
+    "qualityMode": "release_literal",
+    "intervalMinutes": 60,
+    "cohortId": "H20_PV10",
+    "pvBoundaryId": "DC_SOURCE",
+    "transferLossFraction": 0.07,
+    "capDefinition": "CapRatio times the PV-self/no-battery aggregate import peak of the same day",
+    "capRatios": [
+      2,
+      1.5,
+      1.25,
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5
+    ],
+    "demandChargesEURPerKW": [
+      0.05,
+      0.1,
+      0.2,
+      0.5,
+      1
+    ],
+    "batteryEfficiencies": [],
+    "anchorStrategies": [
+      "VPP_BM",
+      "VPP_BM_PEAK_LEX",
+      "PS"
+    ],
+    "efficiencyStrategies": [
+      "SH_BM",
+      "VPP_BM",
+      "VPP_BM_PEAK_LEX",
+      "PS",
+      "PSDT",
+      "LL",
+      "IMPROVED_PEAK_GUARD"
+    ],
+    "configOverrides": {
+      "maxSolverTimeSeconds": 60
+    },
+    "persistSolutions": true,
+    "persistFrontierSolutions": false,
+    "elapsedSeconds": 1640.31036725,
+    "statuses": [
+      {
+        "Day": "2020-01-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.5878244583333334
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.426347875
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.6202342916666668
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4908917916666669
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6056015
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2177534166666666
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0550485833333334
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.73846204166666662
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8621203333333334
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1961950833333332
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6523595416666668
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.762446
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8840020833333333
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.61230425
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0361128333333331
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.7833274166666668
+      },
+      {
+        "Day": "2020-01-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.3560949583333333
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.89686333333333335
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6190195416666666
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.0098164166666668
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3809527916666666
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2717923333333334
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2571561666666666
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0220394583333334
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.82156795833333329
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0571583333333334
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0284480833333332
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5667377916666667
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.13308154166666666
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3989902083333334
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4630129166666668
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.231937625
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7876529583333334
+      },
+      {
+        "Day": "2020-01-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.8413801666666667
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6980350833333335
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6788855416666668
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1401803333333334
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.349256125
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.89204629166666671
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0912230416666666
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.9249478333333333
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.93823191666666672
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.68970854166666662
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.6642455
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.37443504166666669
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.183629375
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.842483
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.66986175
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6428978333333333
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8217149583333334
+      },
+      {
+        "Day": "2020-01-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4572421666666666
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8383005833333332
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.317905125
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.9288570416666668
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4027632083333332
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.128024
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3956820833333334
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.45317025
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.91948566666666665
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.9306662916666667
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1867337916666667
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6297824583333334
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.12314154166666667
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6700023333333334
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.971777875
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.621297875
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7384414583333334
+      },
+      {
+        "Day": "2020-02-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1522260416666668
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1337211666666667
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7369087083333334
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0378395833333331
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.457599625
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9042663333333334
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.8786177083333333
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.91177404166666665
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.53079316666666665
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.71247316666666671
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0629152916666667
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.11256204166666667
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.098071875
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1876805
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6172219166666666
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4783369166666667
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8786580416666667
+      },
+      {
+        "Day": "2020-02-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2831595
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.33565425
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.8027112916666668
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.159755625
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.42279175
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2804784583333333
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.53590775
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.55174766666666664
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.63618995833333336
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.6300979166666667
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2154873333333334
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0844989166666668
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.10372329166666666
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8350292916666666
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1410144166666667
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.229023125
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4567952916666669
+      },
+      {
+        "Day": "2020-02-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.66303525
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8504707916666667
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2505226666666664
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.8199625
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0805192083333333
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.418988625
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.064040125
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.586613
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.59671583333333333
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.62207541666666666
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.28495625
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.123839875
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.10523204166666666
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4125208333333332
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4824819166666667
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3114985833333332
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.69505725
+      },
+      {
+        "Day": "2020-02-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.8004165
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9352594583333333
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.71676125
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.5617581666666664
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0663349166666665
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3229620833333333
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.547945625
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.73603945833333329
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.86338658333333329
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.84571870833333329
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5021945416666667
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.11202316666666666
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.042562333333333334
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5342831666666668
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.305557625
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.91202275
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2853299166666667
+      },
+      {
+        "Day": "2020-03-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.244711875
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1283632916666666
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.9488135416666665
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1618567083333335
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5588356666666667
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5492035833333333
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.771780125
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.60846275
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.90381220833333331
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.60753770833333332
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.11037404166666667
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.0978665
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.042573458333333335
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6510478333333334
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.91538179166666667
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9641516666666667
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8796814583333334
+      },
+      {
+        "Day": "2020-03-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2810290833333333
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6800854166666666
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 5.037013
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.0964319583333335
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0982218333333331
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2708382916666667
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.214439
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3878616666666668
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0274004583333332
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2519846666666667
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.80741158333333329
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3070541666666666
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.133114125
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5832175
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.16078075
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.5927833333333332
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.3344675416666667
+      },
+      {
+        "Day": "2020-03-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5203101666666667
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.754667875
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.3921936666666666
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.9274837083333334
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.03087275
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0283354166666667
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0872924583333334
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.53479445833333328
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.78250033333333335
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.89711483333333331
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0359507083333332
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.13023833333333334
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.1160135
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3607482083333333
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6364137916666666
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.897330875
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1767720416666667
+      },
+      {
+        "Day": "2020-03-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.4080289583333334
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6352851666666668
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.686242375
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.5453632083333333
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8956114166666667
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4174225416666668
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.313758875
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.372253
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5180242916666666
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.93436320833333331
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1643842916666667
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.652487
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.16579775
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.99625075
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.5114546666666668
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0014359583333334
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.5275197083333332
+      },
+      {
+        "Day": "2020-04-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.762247375
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1743490416666666
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7769379583333333
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.3639569166666665
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2313861666666666
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1415965833333332
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3070017083333334
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1429396666666667
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6589724166666666
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.751217625
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9905856666666666
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.553688625
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.21569091666666668
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1576821666666666
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.490986625
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.300416125
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4178771666666667
+      },
+      {
+        "Day": "2020-04-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.13618975
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6022304583333333
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4893529166666666
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.91729425
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0922612916666667
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4898285833333333
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.97553345833333338
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0102525416666666
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2389370416666667
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.84824145833333331
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.83303120833333333
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.862939
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.80442704166666668
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1160018333333332
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3114822916666666
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1007272083333333
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.051367
+      },
+      {
+        "Day": "2020-04-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.360672
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4084702083333334
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.703797625
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.42755925
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1586099583333334
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.817965
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2850194166666666
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.88322154166666667
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.790062375
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2367292083333334
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.13405754166666667
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.12537725
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.05861825
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.178944375
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6035627083333333
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0045555833333335
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.80601975
+      },
+      {
+        "Day": "2020-04-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.746084375
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3957542916666668
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.3358165416666665
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.3006125
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0721487083333334
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2298240416666666
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2489666666666666
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.68017325
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.784105625
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.76015595833333338
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.20023925
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6309630833333333
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.12448141666666666
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3293492083333334
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7330561666666666
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2861339583333333
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3946032083333333
+      },
+      {
+        "Day": "2020-05-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.7104503333333332
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3529619583333334
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9325104166666667
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.0984401666666668
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.04190775
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.26176375
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6942222916666667
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6535844583333332
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.224913125
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.115734125
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.29607325
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.20406241666666666
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.12928904166666666
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0012664583333333
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.0549243333333331
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.31077125
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.97477545833333334
+      },
+      {
+        "Day": "2020-05-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.6524178333333333
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5350454166666667
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4795149583333334
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.93881775
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.93614616666666661
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2193105
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0856242083333334
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1630627916666667
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0584542916666666
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1242924583333334
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.253578
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.65726995833333335
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.13928716666666666
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.178057875
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5542785833333332
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5810518333333334
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0330253333333332
+      },
+      {
+        "Day": "2020-05-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1530606666666667
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.679825
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.3629630833333333
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2577387083333331
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.408830875
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.063750625
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6749089166666666
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0234793333333334
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.96005104166666666
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.82804254166666669
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.13495733333333335
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.12085266666666666
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.096757291666666662
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8110627083333333
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5744477083333333
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8124220416666668
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0517406666666669
+      },
+      {
+        "Day": "2020-05-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3950985416666666
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1829931666666669
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.167712
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.9540466666666667
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.5075217916666666
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4726895416666668
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.873041625
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.3333206666666668
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.7894813333333333
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4285197083333334
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1341945
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.2097163333333336
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.16305666666666666
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.03412575
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.63493275
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.546096375
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.6821486666666665
+      },
+      {
+        "Day": "2020-06-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.3040565833333337
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.0770130416666666
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.01503125
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 5.340046875
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5892440833333332
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.75844375
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.22460225
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.69167041666666662
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.86909758333333331
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2864679166666666
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.379403625
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.27452808333333334
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.15561991666666666
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.644401625
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.331368875
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3830509583333332
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.23799775
+      },
+      {
+        "Day": "2020-06-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.9122934583333331
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.68555825
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.5304077916666667
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.2465444583333332
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8946865416666667
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.71382925
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9214640833333334
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.300995375
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4932665
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.2063191666666668
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9280925416666668
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.9598704583333335
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8517719166666666
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6349982916666668
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.832905125
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.586945
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.344980125
+      },
+      {
+        "Day": "2020-06-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.2764725
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 5.3658890833333333
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 6.024405625
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 6.508917875
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8603910833333333
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4682330416666667
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.3489655
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1792495
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4477710833333333
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4265975416666667
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2155835
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4014715833333335
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.24918816666666666
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6328080833333334
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6411084166666665
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.6166951666666667
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1448085833333335
+      },
+      {
+        "Day": "2020-06-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.88893225
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2177665416666668
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2514542916666667
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.3003284166666669
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.194517
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.94248975
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6563451666666666
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0440211666666666
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.86509983333333329
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.72362220833333335
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0839485
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.18768045833333333
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.12652258333333333
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.7467545
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6048586666666669
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.9143095
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.7376596666666666
+      },
+      {
+        "Day": "2020-07-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 5.9781823333333337
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.2818967916666666
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.0761242083333338
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 5.274983875
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.1165490833333331
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.6570890833333332
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0245953333333335
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.6831142083333335
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6160318333333332
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.61143475
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0041749166666667
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1568833333333335
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4221342916666666
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.88855275
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.5091975416666665
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.6568643333333335
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.1042009166666666
+      },
+      {
+        "Day": "2020-07-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.688625875
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.12380575
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 7.946569291666667
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.8238630833333334
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.2375405
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9975864583333334
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.55573675
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.24064725
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3311044166666666
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.8905715833333332
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.151763625
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.8289647916666665
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.202498125
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.6659035416666668
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 6.84081475
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 6.680397291666667
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.190279375
+      },
+      {
+        "Day": "2020-07-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.453421875
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.5990355
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.596510875
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.2656933333333331
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.78260966666666665
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2905144583333332
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3254298333333334
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.945946375
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.937427625
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4360292916666666
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.758674
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.41221675
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.724046125
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9811900833333334
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.206975
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5008711666666668
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.237948125
+      },
+      {
+        "Day": "2020-07-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3701672916666667
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1532824583333334
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.0582617083333332
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0787623333333332
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0808465
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1656466666666667
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4962599583333334
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.65248108333333332
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.800575375
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.80150770833333329
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.88420729166666667
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.7698503333333333
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.13659370833333334
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.566960875
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.650342625
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.855355875
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4623297916666669
+      },
+      {
+        "Day": "2020-08-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.0042277083333335
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0565917083333334
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.7177135833333335
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.0461238333333331
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2284200416666666
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1736834166666668
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7250442083333333
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3267466666666667
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1079712916666666
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0311154583333333
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.99876833333333337
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.272139625
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.10985291666666666
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2266325833333331
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6079259166666666
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7446064166666666
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.3901628333333331
+      },
+      {
+        "Day": "2020-08-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.2611353333333337
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7738068333333334
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.762187375
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.3364516666666666
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8013836666666667
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3076526666666666
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.817597375
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.74314983333333329
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.70075791666666665
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.5248539166666667
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.711512875
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.83355
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.12260341666666667
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.721895375
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1922864583333332
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5881077083333333
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.630543375
+      },
+      {
+        "Day": "2020-08-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4718505
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.8612304583333334
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 5.3613418333333334
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.2388744166666665
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.1481690833333333
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9882936666666666
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0006444583333334
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3151795
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.785760625
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.755582375
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1487732916666666
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.65620825
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.16842654166666668
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4314745416666668
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4075572916666668
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3929255
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7961563333333332
+      },
+      {
+        "Day": "2020-08-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.5546638333333331
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.0038890833333332
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.6159455
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.4294977083333329
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.691722625
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4909639166666666
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4098822083333333
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.75121333333333329
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.107786625
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.98673208333333329
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.385275375
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.15755991666666666
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.11453995833333333
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.904571375
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.610236875
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7512215833333333
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2599712916666665
+      },
+      {
+        "Day": "2020-09-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.6639907083333334
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.3750920833333335
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.99486925
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 5.1002916666666662
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.056646875
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6210246666666666
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.130475625
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.70896641666666671
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.76430791666666664
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.803757375
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.03061525
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.10672954166666666
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.091758833333333331
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7286795
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.7408685416666665
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1858597083333333
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.420439625
+      },
+      {
+        "Day": "2020-09-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.7441406666666666
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.67346775
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.3038791666666665
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6171205
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.668407625
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.331236375
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.360037875
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2172444166666667
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.913662625
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.8662925
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.995905375
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0213953333333334
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.10532691666666667
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.96570325
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2684629583333331
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6655699583333332
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2664331666666668
+      },
+      {
+        "Day": "2020-09-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.509803375
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.878697875
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0798294583333334
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.252346375
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.08685925
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1229412083333334
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.67681966666666671
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.72427416666666666
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0783917916666668
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1353103333333334
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.19174775
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.574981125
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.10938145833333333
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4858084583333333
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2748435
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.885055625
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4292338333333334
+      },
+      {
+        "Day": "2020-09-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.585594625
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1029473333333333
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4873460833333334
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6522353333333335
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.745117
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4033092083333334
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.539876875
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2431041666666667
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.60863075
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.65749391666666668
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3124665
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7085634166666666
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.107424
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6033504583333333
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0367259166666667
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.869750125
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.621103375
+      },
+      {
+        "Day": "2020-10-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.8775919166666668
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7607056666666667
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.642308
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1230585
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6870119166666666
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7038810416666668
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2038272083333332
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.89460716666666662
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.50384479166666662
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1029022916666666
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0917278333333333
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6460192083333334
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.15259479166666667
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9462387916666666
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.341327875
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9110331666666667
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.946203625
+      },
+      {
+        "Day": "2020-10-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6552472916666665
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4912894583333334
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2389811666666666
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.406926625
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1044872916666666
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2319260416666666
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.57891308333333336
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.554029875
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6392534166666666
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.89424395833333337
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.87260879166666672
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1398654583333334
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.10755583333333334
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2918830833333332
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2529847916666668
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.366411125
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2146685416666667
+      },
+      {
+        "Day": "2020-10-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7400336666666667
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.30326275
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9393887916666666
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4280570416666665
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.72563041666666672
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.8204532916666667
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.94979341666666661
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.93617783333333338
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5394479583333334
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.82754029166666665
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2560979166666666
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.82959266666666664
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1292100833333334
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.93963675
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.925488
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.94040620833333333
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.236671375
+      },
+      {
+        "Day": "2020-10-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.218416875
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.228967375
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4105650833333332
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1960702916666666
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.85926
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1368115416666666
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.80141379166666671
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5104636666666666
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.71172591666666662
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.81799829166666671
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.525884625
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.79956191666666665
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.10074808333333334
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7423163333333334
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.27918925
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4988127083333334
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4351092916666666
+      },
+      {
+        "Day": "2020-11-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.8313077916666667
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0744806666666666
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.7550417916666667
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.062667875
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0062819166666668
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2979605
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.43664825
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2720175833333334
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.84749454166666671
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.6530239166666667
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.3680615
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7223718333333333
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.10494633333333334
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8535865416666666
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6230141666666666
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.797074625
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6994300833333333
+      },
+      {
+        "Day": "2020-11-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.762738125
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.1279912083333334
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2109205416666668
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.4842808333333335
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5090152083333332
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4653680833333333
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1994175
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.015381625
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2777279583333334
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.89600908333333329
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.67381304166666667
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0705540416666666
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5878345833333334
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.123841625
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1898746666666666
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.0055438333333333
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5513570833333334
+      },
+      {
+        "Day": "2020-11-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.9217756666666665
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.718233
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.442387
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 4.8440802916666668
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2686495
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.193883
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0515269166666668
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1691439583333334
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2681088333333332
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.83765795833333334
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.672584625
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3668682916666666
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.097433291666666672
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.659204875
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.2361747916666666
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5887863333333334
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7567805
+      },
+      {
+        "Day": "2020-11-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.9211175416666668
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.106077125
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.80070875
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.4517523333333333
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7287301666666666
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5661554166666667
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6987392083333333
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.641867125
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.244640625
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.98892925
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.67314454166666671
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.7017627916666667
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.92350270833333337
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.5927629583333334
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.6745405416666665
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8051895833333333
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.4975075416666668
+      },
+      {
+        "Day": "2020-12-01",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 3.1806027083333333
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.2778750833333334
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.816548875
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.9494915
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.95257683333333332
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.921336375
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.0627188333333333
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.931635125
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.68056858333333337
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.84708408333333329
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 0.91876333333333338
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.1940192083333334
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "infeasible",
+        "ErrorIdentifier": "StoreNet:OptimizationFailed",
+        "WallTimeSeconds": 0.112344
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.8370129166666667
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.6836412083333334
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.3528752916666666
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 1.911382875
+      },
+      {
+        "Day": "2020-12-02",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "WallTimeSeconds": 2.5373258333333335
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-15",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "ANCHOR_VPP_BM",
+        "Strategy": "VPP_BM",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "ANCHOR_VPP_BM_PEAK_LEX",
+        "Strategy": "VPP_BM_PEAK_LEX",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "ANCHOR_PS",
+        "Strategy": "PS",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "FRONTIER_R2.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "FRONTIER_R1.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "FRONTIER_R1.250",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "FRONTIER_R1.000",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "FRONTIER_R0.900",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "FRONTIER_R0.800",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "FRONTIER_R0.700",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "FRONTIER_R0.600",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "FRONTIER_R0.500",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "TARIFF_L0.050",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "TARIFF_L0.100",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "TARIFF_L0.200",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "TARIFF_L0.500",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      },
+      {
+        "Day": "2020-12-16",
+        "CaseId": "TARIFF_L1.000",
+        "Strategy": "VPP_BM_DEMAND_CHARGE",
+        "Status": "quality_rejected",
+        "ErrorIdentifier": "StoreNet:QualityRejected",
+        "WallTimeSeconds": 0
+      }
+    ]
+  },
+  "code": {
+    "repositoryRoot": "/Users/guichenxiang/Desktop/電力專案",
+    "commit": "f973befe5a9f353b85ab026f690ec23c6beb159e",
+    "trackedFilesDirty": true,
+    "statusAvailable": true,
+    "untrackedFilesExcluded": true,
+    "statusScope": "tracked files only; generated and other untracked files are excluded"
+  },
+  "runtime": {
+    "version": "26.2.0.3281582 (R2026b) Prerelease Update 1",
+    "release": "2026b",
+    "computer": "MACA64"
+  },
+  "solver": {
+    "name": "intlinprog",
+    "interface": "MATLAB problem-based optimization",
+    "toolboxVersion": "26.2"
+  },
+  "release": {
+    "manifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/../data/RELEASE_MANIFEST.sha256",
+    "manifestExists": true,
+    "manifestSha256": "a3d901b627546061b63264c438b361674ac6cd11df60eff919a6258dfd35ecec"
+  }
+}

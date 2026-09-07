@@ -1,0 +1,60 @@
+name: Mac and Windows reproduction
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    name: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 50
+    env:
+      PYTHONUTF8: '1'
+      PYTHONIOENCODING: utf-8
+    steps:
+      - name: Enable long paths in Windows Git
+        if: runner.os == 'Windows'
+        run: git config --global core.longpaths true
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: StoreNet/requirements-grid.txt
+      - name: Install Python dependencies
+        run: python -m pip install -r StoreNet/requirements-grid.txt
+      - name: Download original data
+        run: python StoreNet/tools/download_data.py
+      - name: Python tests
+        run: python -m unittest discover -s StoreNet/tests -p "test_*.py"
+      - name: Run all six Python figures
+        run: python StoreNet/tools/validate_figures.py
+      - uses: matlab-actions/setup-matlab@v3
+        with:
+          release: R2026a
+          products: Optimization_Toolbox
+      - name: MATLAB portability and representative orchestration tests
+        uses: matlab-actions/run-command@v3
+        with:
+          command: addpath('StoreNet/src'); r = runtests({'StoreNet/tests/TestPortableFiles.m','StoreNet/tests/TestBahloulProvenance.m','StoreNet/tests/TestBahloulArtifacts.m','StoreNet/tests/TestBahloulTypicalV1.m','StoreNet/tests/TestObservedSbsc.m','StoreNet/tests/TestStoreNetModel.m'}); assertSuccess(r);
+      - name: Recompute the report representative day
+        uses: matlab-actions/run-command@v3
+        with:
+          command: run('StoreNet/tools/validate_typical.m');
+      - name: Keep generated figures for inspection
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reproduction-${{ matrix.os }}
+          path: |
+            StoreNet/results/data_paper_by_figure/
+            StoreNet/results/figure10_grid/
+            StoreNet/results/方法論文代表日/
+          retention-days: 14

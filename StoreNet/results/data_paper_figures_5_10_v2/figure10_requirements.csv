@@ -1,0 +1,8 @@
+Requirement,Availability,Evidence
+IEEE European LV stock feeder,public,Official IEEE test-feeder ZIP
+55-customer phase allocation,public,A/B/C = 21/19/15
+LEM tariffs and VUF definition,public,Energy Reports methods
+Modified 350 kVA paper circuit,missing,No exact OpenDSS model published
+20/10 profiles mapped to 55 nodes,missing,No mapping/scaling table published
+Optimisation code and solver tie handling,missing,No MATLAB/YALMIP code published
+55 x 24 voltage phasors or VUF matrix,missing,Only raster surface is published

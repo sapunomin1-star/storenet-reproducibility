@@ -1,0 +1,19 @@
+# Runtime used to reproduce Scientific Data (2024) Figures 5-9.
+# Python 3.9-compatible direct and transitive versions are frozen so rendering
+# and numerical sidecars can be regenerated without modifying author files.
+contourpy==1.3.0
+cycler==0.12.1
+fonttools==4.60.2
+importlib-resources==6.5.2
+kiwisolver==1.4.7
+matplotlib==3.9.4
+numpy==2.0.2
+packaging==26.3
+pandas==2.2.3
+pillow==11.3.0
+pyparsing==3.3.2
+python-dateutil==2.9.0.post0
+pytz==2026.3.post1
+six==1.17.0
+tzdata==2026.3
+zipp==3.23.1

@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "StoreNet-run-manifest-v2",
+  "formalMode": true,
+  "createdAtUtc": "2026-09-01T14:56:30.411Z",
+  "experiment": {
+    "runType": "B2022-IR-v1_formal",
+    "typicalDay": "2020-08-24",
+    "typicalIntervalMinutes": 30,
+    "qualityMode": "release_literal",
+    "dataRoot": "/Users/guichenxiang/Desktop/電力專案/StoreNet/data/raw",
+    "h4DiagnosticsPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/data_paper_figures_5_10_v2/figure6_h4_daily_diagnostics.csv",
+    "dataContractPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/docs/REPRODUCTION_CONTRACT.md",
+    "modelContractPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/docs/B2022_REPRODUCTION_CONTRACT.md",
+    "referenceManifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/reference/B2022_REFERENCE_MANIFEST.csv",
+    "releaseManifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/data/RELEASE_MANIFEST.sha256",
+    "figure6EvidenceDirectory": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/data_paper_figures_5_10_v2",
+    "figure7ReuseCsv": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/sensitivity_20200824_vppbm/sensitivity.csv",
+    "figure7ReuseManifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/sensitivity_20200824_vppbm/manifest.json",
+    "existingDailyMetricsPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/monthly_2020_release_literal_bounded60/monthly_metrics.csv",
+    "existingDailyManifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/monthly_2020_release_literal_bounded60/manifest.json",
+    "monthlyDailyMetricsEvidencePath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/b2022_ir_v1_formal/evidence/monthly_daily_metrics_source.csv",
+    "monthlyDailyManifestEvidencePath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/b2022_ir_v1_formal/evidence/monthly_daily_manifest.json",
+    "canonicalCallbacksEnforced": true,
+    "childRunIds": {
+      "typical": "b2022_typical_v1_20200824",
+      "monthly": "b2022_monthly_v1_2020",
+      "sensitivity": "b2022_sensitivity_v1_20200824"
+    },
+    "executionOrder": [
+      "typical",
+      "monthly",
+      "sensitivity"
+    ],
+    "preflightEvidencePath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/b2022_ir_v1_formal/evidence/review_preflight.json",
+    "referenceEvidencePath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/b2022_ir_v1_formal/evidence/B2022_REFERENCE_MANIFEST.csv",
+    "scientificInterpretationPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/b2022_ir_v1_formal/SCIENTIFIC_INTERPRETATION.md"
+  },
+  "code": {
+    "repositoryRoot": "/Users/guichenxiang/Desktop/電力專案",
+    "commit": "09a3b5b305f751b6a67eeae8486a0212b5a4beab",
+    "statusAvailable": true,
+    "statusPorcelain": "",
+    "isClean": true,
+    "untrackedFilesIncluded": true,
+    "capturedBeforeOutputDirectory": true,
+    "capturedAtUtc": "2026-09-01T14:37:13.454Z",
+    "preflightSource": "caller-supplied-pre-output",
+    "workingTreeDirty": false,
+    "untrackedFilesExcluded": false,
+    "statusScope": "tracked and untracked files"
+  },
+  "runtime": {
+    "version": "26.2.0.3281582 (R2026b) Prerelease Update 1",
+    "release": "2026b",
+    "computer": "MACA64"
+  },
+  "solver": {
+    "name": "solve_storenet",
+    "interface": "StoreNet MATLAB solver callback",
+    "version": "2026b",
+    "matlabVersion": "26.2.0.3281582 (R2026b) Prerelease Update 1",
+    "sourceGitCommit": "09a3b5b305f751b6a67eeae8486a0212b5a4beab",
+    "optimizationToolboxVersion": "26.2"
+  },
+  "dataProvider": {
+    "name": "load_storenet_day",
+    "interface": "StoreNet MATLAB data-provider callback",
+    "matlabVersion": "26.2.0.3281582 (R2026b) Prerelease Update 1",
+    "sourceGitCommit": "09a3b5b305f751b6a67eeae8486a0212b5a4beab"
+  },
+  "contracts": {
+    "data": {
+      "contractId": "SR2020-IR-v2",
+      "contractSha256": "9aaa09b56dfeaef27dba26289be445dff40492bf7a2340da5fe36d1a016ea3ca",
+      "gitCommit": "f342259e06e86c2379de9ac51c6963805a41da39"
+    },
+    "model": {
+      "contractId": "B2022-IR-v1",
+      "contractSha256": "86b0faa12b0497d7015eb1e93097ca889739f55f44ad38ba8d8b9a426549e702"
+    }
+  },
+  "references": {
+    "referenceManifestSha256": "7a1d42d2767eba8f8ab83d126499870f5a18de3d0338f94ab55e153e7963bd18"
+  },
+  "artifactClosure": {
+    "policy": "SCIENTIFIC_ARTIFACT_MANIFEST.sha256 closes preregistered scientific artifacts before acceptance; RESULT_MANIFEST.sha256 then closes that manifest, acceptance reports, and every other result artifact while excluding only itself",
+    "resultManifestHashStoredInRunManifest": false
+  },
+  "release": {
+    "manifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/data/RELEASE_MANIFEST.sha256",
+    "manifestExists": true,
+    "manifestSha256": "a3d901b627546061b63264c438b361674ac6cd11df60eff919a6258dfd35ecec",
+    "verification": {
+      "command": "cd '/Users/guichenxiang/Desktop/電力專案' && shasum -a 256 -c '/Users/guichenxiang/Desktop/電力專案/StoreNet/data/RELEASE_MANIFEST.sha256'",
+      "commandExitStatus": 0,
+      "expectedFileCount": 46,
+      "manifestFileCount": 46,
+      "checkedFileCount": 46,
+      "passedFileCount": 46,
+      "failedFileCount": 0,
+      "allPassed": true,
+      "perFile": [
+        {
+          "path": "StoreNet/data/raw/H10_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H10_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H10_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H10_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H11_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H11_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H11_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H11_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H12_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H12_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H12_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H12_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H13_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H13_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H13_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H13_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H14_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H14_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H14_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H14_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H15_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H15_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H15_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H15_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H16_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H16_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H16_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H16_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H17_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H17_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H17_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H17_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H18_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H18_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H18_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H18_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H19_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H19_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H19_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H19_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H1_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H1_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H1_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H1_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H20_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H20_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H20_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H20_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H2_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H2_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H2_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H2_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H3_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H3_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H3_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H3_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H4_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H4_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H4_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H4_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H5_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H5_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H5_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H5_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H6_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H6_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H6_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H6_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H7_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H7_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H7_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H7_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H8_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H8_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H8_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H8_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H9_W.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H9_W.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/H9_Wh.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/H9_Wh.csv: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/README.md",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/README.md: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/data_processing.py",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/data_processing.py: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/energy plots.py",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/energy plots.py: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/power plots.py",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/power plots.py: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/setup.py",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/setup.py: OK"
+        },
+        {
+          "path": "StoreNet/data/raw/weather.csv",
+          "status": "passed",
+          "rawLine": "StoreNet/data/raw/weather.csv: OK"
+        }
+      ],
+      "rawOutput": "StoreNet/data/raw/H10_W.csv: OK\nStoreNet/data/raw/H10_Wh.csv: OK\nStoreNet/data/raw/H11_W.csv: OK\nStoreNet/data/raw/H11_Wh.csv: OK\nStoreNet/data/raw/H12_W.csv: OK\nStoreNet/data/raw/H12_Wh.csv: OK\nStoreNet/data/raw/H13_W.csv: OK\nStoreNet/data/raw/H13_Wh.csv: OK\nStoreNet/data/raw/H14_W.csv: OK\nStoreNet/data/raw/H14_Wh.csv: OK\nStoreNet/data/raw/H15_W.csv: OK\nStoreNet/data/raw/H15_Wh.csv: OK\nStoreNet/data/raw/H16_W.csv: OK\nStoreNet/data/raw/H16_Wh.csv: OK\nStoreNet/data/raw/H17_W.csv: OK\nStoreNet/data/raw/H17_Wh.csv: OK\nStoreNet/data/raw/H18_W.csv: OK\nStoreNet/data/raw/H18_Wh.csv: OK\nStoreNet/data/raw/H19_W.csv: OK\nStoreNet/data/raw/H19_Wh.csv: OK\nStoreNet/data/raw/H1_W.csv: OK\nStoreNet/data/raw/H1_Wh.csv: OK\nStoreNet/data/raw/H20_W.csv: OK\nStoreNet/data/raw/H20_Wh.csv: OK\nStoreNet/data/raw/H2_W.csv: OK\nStoreNet/data/raw/H2_Wh.csv: OK\nStoreNet/data/raw/H3_W.csv: OK\nStoreNet/data/raw/H3_Wh.csv: OK\nStoreNet/data/raw/H4_W.csv: OK\nStoreNet/data/raw/H4_Wh.csv: OK\nStoreNet/data/raw/H5_W.csv: OK\nStoreNet/data/raw/H5_Wh.csv: OK\nStoreNet/data/raw/H6_W.csv: OK\nStoreNet/data/raw/H6_Wh.csv: OK\nStoreNet/data/raw/H7_W.csv: OK\nStoreNet/data/raw/H7_Wh.csv: OK\nStoreNet/data/raw/H8_W.csv: OK\nStoreNet/data/raw/H8_Wh.csv: OK\nStoreNet/data/raw/H9_W.csv: OK\nStoreNet/data/raw/H9_Wh.csv: OK\nStoreNet/data/raw/README.md: OK\nStoreNet/data/raw/data_processing.py: OK\nStoreNet/data/raw/energy plots.py: OK\nStoreNet/data/raw/power plots.py: OK\nStoreNet/data/raw/setup.py: OK\nStoreNet/data/raw/weather.csv: OK"
+    }
+  }
+}

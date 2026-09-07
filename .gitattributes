@@ -1,0 +1,6 @@
+# Keep published data/evidence byte-identical on Windows; text edits use UTF-8.
+* -text
+*.m text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+README.md text eol=lf

@@ -1,0 +1,1 @@
+YearMonth,ScenarioId,PairId,CohortId,SensitivityRole,IsPrimary,PvBoundaryId,TransferLossFraction,HouseCount,PvHomeCount,Strategy,ProfileType,IntervalIndex,IntervalEndHour,MeanOriginalLoadKW,MeanGridImportKW,ValidProfileDays

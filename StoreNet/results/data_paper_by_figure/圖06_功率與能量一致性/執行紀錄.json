@@ -1,0 +1,23 @@
+{
+  "figure": "圖06_功率與能量一致性",
+  "completed_utc": "2026-09-07T06:35:03.030680+00:00",
+  "note": "圖 6：依相同時間標籤比較 H4 的 W 與 Wh × 60。公開 H4 檔案存在時間組裝問題，因此這張圖是公開資料的檢查結果，不能逐點重現論文使用未公開原始檔所畫的圖。",
+  "input_sha256": {
+    "data/raw/H4_W.csv": "ff7a73a9b544cd4c204709f09b59986a8eb4bbf2cd35ef197d7f59f143b4517b",
+    "data/raw/H4_Wh.csv": "95b3a5202ef1788e1d840784a0b60a4f9e7802d6863f301b2ae13dc8b1375cba"
+  },
+  "code_sha256": {
+    "src/data_paper_figures/figure06_consistency.py": "7c6ca565b2f0d3451c0ce20e21705e9bc76d4754699ca816466ff12b5a49e5c7",
+    "src/data_paper_figures/_common.py": "656008cbdf140b4a26aad3c02cc7c9c8fe487e57cffe8f3b26d6bd6ffbe7f279",
+    "src/reproduce_data_paper_figures.py": "1f4b9a9e88ea755630266e1d0ea9699ea462c108c497bbb03b84ca3dbfefe499"
+  },
+  "python": "3.12.14",
+  "numpy": "2.4.3",
+  "pandas": "2.3.3",
+  "matplotlib": "3.10.8",
+  "output_sha256": {
+    "00_結果說明.md": "25c6508f8aa2795fc171c2fb01e0e380f96ef589b00e868431b4af5519a2f3d0",
+    "圖06_功率與能量一致性.png": "3ef12fbc4ba59d134f372ff4152736bd5dceded23586a92dce8a44cf5fd13376",
+    "圖06_相關係數與誤差.csv": "19884f87e3c8de4951cfc87220a0cc2fefd2fabb571291f662084a8afaa52d0b"
+  }
+}

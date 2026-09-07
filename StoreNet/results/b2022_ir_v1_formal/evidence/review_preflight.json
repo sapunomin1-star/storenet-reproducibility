@@ -1,0 +1,935 @@
+{
+  "schemaVersion": "B2022-review-preflight-v1",
+  "dataContractId": "SR2020-IR-v2",
+  "modelContractId": "B2022-IR-v1",
+  "capturedAtUtc": "2026-09-01T14:37:13.399Z",
+  "repositoryRoot": "/Users/guichenxiang/Desktop/電力專案",
+  "formalOutputPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/b2022_ir_v1_formal",
+  "formalOutputWasAbsent": true,
+  "gitPreflight": {
+    "repositoryRoot": "/Users/guichenxiang/Desktop/電力專案",
+    "commit": "09a3b5b305f751b6a67eeae8486a0212b5a4beab",
+    "statusAvailable": true,
+    "statusPorcelain": "",
+    "isClean": true,
+    "untrackedFilesIncluded": true,
+    "capturedBeforeOutputDirectory": true,
+    "capturedAtUtc": "2026-09-01T14:37:13.454Z"
+  },
+  "contracts": {
+    "dataContractPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/docs/REPRODUCTION_CONTRACT.md",
+    "modelContractPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/docs/B2022_REPRODUCTION_CONTRACT.md",
+    "dataContractId": "SR2020-IR-v2",
+    "modelContractId": "B2022-IR-v1",
+    "dataContractGitCommit": "f342259e06e86c2379de9ac51c6963805a41da39",
+    "dataContractSha256": "9aaa09b56dfeaef27dba26289be445dff40492bf7a2340da5fe36d1a016ea3ca",
+    "modelContractSha256": "86b0faa12b0497d7015eb1e93097ca889739f55f44ad38ba8d8b9a426549e702",
+    "expectedDataContractSha256": "9aaa09b56dfeaef27dba26289be445dff40492bf7a2340da5fe36d1a016ea3ca",
+    "dataHashPassed": true,
+    "modelHashPassed": true,
+    "idsPresent": true,
+    "allPassed": true,
+    "failureReason": ""
+  },
+  "references": {
+    "manifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/reference/B2022_REFERENCE_MANIFEST.csv",
+    "manifestSha256": "7a1d42d2767eba8f8ab83d126499870f5a18de3d0338f94ab55e153e7963bd18",
+    "entryCount": 9,
+    "passedCount": 9,
+    "allPassed": true,
+    "entries": [
+      {
+        "artifactId": "FIG5_PROFILE",
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/reference/paper_fig5_profile_digitized.csv",
+        "expectedSha256": "3264e86081d43a21ddec8f95c9e81587bf8233bf8faabe1c987ed7ef0c59e877",
+        "observedSha256": "3264e86081d43a21ddec8f95c9e81587bf8233bf8faabe1c987ed7ef0c59e877",
+        "passed": true
+      },
+      {
+        "artifactId": "FIG5_SAVINGS",
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/reference/fig5_savings.csv",
+        "expectedSha256": "7b63f901b6ffcda22f28c88c18776e1734bae59edb737f27aa08ab73084e66e5",
+        "observedSha256": "7b63f901b6ffcda22f28c88c18776e1734bae59edb737f27aa08ab73084e66e5",
+        "passed": true
+      },
+      {
+        "artifactId": "TABLE_I_TARGETS",
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/reference/table_i.csv",
+        "expectedSha256": "5b28f8085f8ab0ba44e8b203c86970cbe2b69be6bdc5ca3f91e2a8eb5d20b4b5",
+        "observedSha256": "5b28f8085f8ab0ba44e8b203c86970cbe2b69be6bdc5ca3f91e2a8eb5d20b4b5",
+        "passed": true
+      },
+      {
+        "artifactId": "REFERENCE_METHOD",
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/reference/README.md",
+        "expectedSha256": "5247c4d628e331b912b32ecda3c3859349024c5a2f0fea1df7439b01d1b31386",
+        "observedSha256": "5247c4d628e331b912b32ecda3c3859349024c5a2f0fea1df7439b01d1b31386",
+        "passed": true
+      },
+      {
+        "artifactId": "SOURCE_PDF",
+        "path": "/Users/guichenxiang/Desktop/電力專案/02_Role_of_Aggregator_in_Coordinating_Residential_Virtual_Power_Plant_in_StoreNet__A_Pilot_Project_Case_Study (1).pdf",
+        "expectedSha256": "6164850be4edd539609ec2ce1d76670acc3b0aa54d0357257c18dcf5cf00907f",
+        "observedSha256": "6164850be4edd539609ec2ce1d76670acc3b0aa54d0357257c18dcf5cf00907f",
+        "passed": true
+      },
+      {
+        "artifactId": "FORMULA_CODE_AUDIT",
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/docs/BAHLOUL_VPP_REPRODUCIBILITY_AUDIT.md",
+        "expectedSha256": "6c6dc26d68af36603b0ce37d6565551c1e754a0ebf5de5b2dae3ba4a7d2d824e",
+        "observedSha256": "6c6dc26d68af36603b0ce37d6565551c1e754a0ebf5de5b2dae3ba4a7d2d824e",
+        "passed": true
+      },
+      {
+        "artifactId": "TYPICAL_DAY_DECISION",
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/docs/decisions/ADR-001-typical-day-selection.md",
+        "expectedSha256": "46764f5da4cea0eb3ad3a8d3a3954cb3d06d7c71ad25ce7ede91e6bb24840f8b",
+        "observedSha256": "46764f5da4cea0eb3ad3a8d3a3954cb3d06d7c71ad25ce7ede91e6bb24840f8b",
+        "passed": true
+      },
+      {
+        "artifactId": "TYPICAL_DAY_RANKING",
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/typical_day_selection_2020/ranking.csv",
+        "expectedSha256": "2a73d0ea85c419d07f5a62f12655141650461cd3f0e9d9d807c7c1b3a7677412",
+        "observedSha256": "2a73d0ea85c419d07f5a62f12655141650461cd3f0e9d9d807c7c1b3a7677412",
+        "passed": true
+      },
+      {
+        "artifactId": "TYPICAL_DAY_PROVENANCE",
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/typical_day_selection_2020/manifest.json",
+        "expectedSha256": "7bcf12dab7b6352aa5addbf74e8eb9ba6b413ef1ff9e7a4e945a44f665acf18e",
+        "observedSha256": "7bcf12dab7b6352aa5addbf74e8eb9ba6b413ef1ff9e7a4e945a44f665acf18e",
+        "passed": true
+      }
+    ]
+  },
+  "release": {
+    "manifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/data/RELEASE_MANIFEST.sha256",
+    "manifestSha256": "a3d901b627546061b63264c438b361674ac6cd11df60eff919a6258dfd35ecec",
+    "expectedFileCount": 46,
+    "manifestFileCount": 46,
+    "commandExitStatus": 0,
+    "passedFileCount": 46,
+    "allPassed": true,
+    "rawOutput": "StoreNet/data/raw/H10_W.csv: OK\nStoreNet/data/raw/H10_Wh.csv: OK\nStoreNet/data/raw/H11_W.csv: OK\nStoreNet/data/raw/H11_Wh.csv: OK\nStoreNet/data/raw/H12_W.csv: OK\nStoreNet/data/raw/H12_Wh.csv: OK\nStoreNet/data/raw/H13_W.csv: OK\nStoreNet/data/raw/H13_Wh.csv: OK\nStoreNet/data/raw/H14_W.csv: OK\nStoreNet/data/raw/H14_Wh.csv: OK\nStoreNet/data/raw/H15_W.csv: OK\nStoreNet/data/raw/H15_Wh.csv: OK\nStoreNet/data/raw/H16_W.csv: OK\nStoreNet/data/raw/H16_Wh.csv: OK\nStoreNet/data/raw/H17_W.csv: OK\nStoreNet/data/raw/H17_Wh.csv: OK\nStoreNet/data/raw/H18_W.csv: OK\nStoreNet/data/raw/H18_Wh.csv: OK\nStoreNet/data/raw/H19_W.csv: OK\nStoreNet/data/raw/H19_Wh.csv: OK\nStoreNet/data/raw/H1_W.csv: OK\nStoreNet/data/raw/H1_Wh.csv: OK\nStoreNet/data/raw/H20_W.csv: OK\nStoreNet/data/raw/H20_Wh.csv: OK\nStoreNet/data/raw/H2_W.csv: OK\nStoreNet/data/raw/H2_Wh.csv: OK\nStoreNet/data/raw/H3_W.csv: OK\nStoreNet/data/raw/H3_Wh.csv: OK\nStoreNet/data/raw/H4_W.csv: OK\nStoreNet/data/raw/H4_Wh.csv: OK\nStoreNet/data/raw/H5_W.csv: OK\nStoreNet/data/raw/H5_Wh.csv: OK\nStoreNet/data/raw/H6_W.csv: OK\nStoreNet/data/raw/H6_Wh.csv: OK\nStoreNet/data/raw/H7_W.csv: OK\nStoreNet/data/raw/H7_Wh.csv: OK\nStoreNet/data/raw/H8_W.csv: OK\nStoreNet/data/raw/H8_Wh.csv: OK\nStoreNet/data/raw/H9_W.csv: OK\nStoreNet/data/raw/H9_Wh.csv: OK\nStoreNet/data/raw/README.md: OK\nStoreNet/data/raw/data_processing.py: OK\nStoreNet/data/raw/energy plots.py: OK\nStoreNet/data/raw/power plots.py: OK\nStoreNet/data/raw/setup.py: OK\nStoreNet/data/raw/weather.csv: OK",
+    "command": "cd '/Users/guichenxiang/Desktop/電力專案' && shasum -a 256 -c '/Users/guichenxiang/Desktop/電力專案/StoreNet/data/RELEASE_MANIFEST.sha256'"
+  },
+  "figure6Evidence": {
+    "directory": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/data_paper_figures_5_10_v2",
+    "requiredFiles": [
+      "figure6_all_house_metrics.csv",
+      "figure6_h4_daily_diagnostics.csv",
+      "figure6_h4_monthly_summary.csv",
+      "figure6_h4_alignment_summary.csv",
+      "figure6_h4_anomaly_segments.csv",
+      "figure6_h4_date_transpose_diagnostics.csv",
+      "figure6_h4_cross_house_controls.csv",
+      "figure6_h4_wh_balance.json"
+    ],
+    "present": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "listedInResultManifest": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "resultManifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/results/data_paper_figures_5_10_v2/RESULT_MANIFEST.sha256",
+    "resultManifestSha256": "cd3c8aa94d731ddb9be2716029fe3d98c0ac075fbbfc6337a12ce622af73fe18",
+    "verificationCommand": "cd '/Users/guichenxiang/Desktop/電力專案/StoreNet/results/data_paper_figures_5_10_v2' && shasum -a 256 -c RESULT_MANIFEST.sha256",
+    "commandExitStatus": 0,
+    "rawOutput": "README.md: OK\nfigure10_reproducibility_boundary.png: OK\nfigure10_requirements.csv: OK\nfigure5_availability.csv: OK\nfigure5_data_availability.png: OK\nfigure6_all_house_consistency.png: OK\nfigure6_all_house_metrics.csv: OK\nfigure6_h4_alignment_summary.csv: OK\nfigure6_h4_anomaly_segments.csv: OK\nfigure6_h4_cross_house_controls.csv: OK\nfigure6_h4_daily_diagnostics.csv: OK\nfigure6_h4_date_transpose_diagnostics.csv: OK\nfigure6_h4_monthly_summary.csv: OK\nfigure6_h4_temporal_diagnostics.png: OK\nfigure6_h4_wh_balance.json: OK\nfigure6_power_energy_consistency.png: OK\nfigure7_annual_and_temperature.png: OK\nfigure7_annual_consumption.csv: OK\nfigure7b_paper_legacy_daily.csv: OK\nfigure7b_timestamp_coverage.csv: OK\nfigure7b_unit_corrected_comparison.png: OK\nfigure7b_unit_corrected_daily.csv: OK\nfigure8_pv_annual_profiles.png: OK\nfigure8_pv_annual_totals.csv: OK\nfigure9_h4_week.png: OK\nfigure9_h4_week_profiles.csv: OK\nfigure9_metrics.json: OK\nmanifest.json: OK\nsummary.json: OK\nvalidation.csv: OK",
+    "allPassed": true
+  },
+  "runtime": {
+    "matlabVersion": "26.2.0.3281582 (R2026b) Prerelease Update 1",
+    "matlabRelease": "2026b",
+    "computer": "MACA64",
+    "solverFunction": "solve_storenet",
+    "dataProviderFunction": "load_storenet_day",
+    "optimizationToolboxAvailable": true,
+    "optimizationToolboxVersion": "26.2",
+    "mipRelativeGap": 1E-6,
+    "constraintTolerance": 1E-8,
+    "lexicographicTolerance": 1E-7,
+    "allPassed": true
+  },
+  "implementation": {
+    "mappingPresent": true,
+    "schemaFiles": [
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/bahloul_scenarios.m",
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/evaluate_storenet.m",
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/evaluate_observed_sbsc.m",
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/prepare_bahloul_case.m",
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/prepare_observed_sbsc_case.m"
+    ],
+    "schemaFilesPresent": true,
+    "scenarioRunners": [
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/run_bahloul_typical_v1.m",
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/run_bahloul_monthly_v1.m",
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/run_bahloul_sensitivity_v1.m"
+    ],
+    "scenarioRunnersPresent": true,
+    "durableSchemaFiles": [
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/write_bahloul_case_artifacts.m",
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/reevaluate_bahloul_artifact.m",
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/write_bahloul_observed_artifacts.m",
+      "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/reevaluate_bahloul_observed_artifact.m"
+    ],
+    "durableSchemaPresent": true
+  },
+  "analyzer": {
+    "ran": true,
+    "fileCount": 19,
+    "issueCount": 0,
+    "missingFiles": [],
+    "files": [
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/bahloul_scenarios.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/evaluate_observed_sbsc.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/evaluate_bahloul_acceptance_v1.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/evaluate_storenet.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/prepare_bahloul_case.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/prepare_observed_sbsc_case.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/reevaluate_bahloul_artifact.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/reevaluate_bahloul_observed_artifact.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/run_bahloul_typical_v1.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/run_bahloul_monthly_v1.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/run_bahloul_sensitivity_v1.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/run_bahloul_preflight_v1.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/run_bahloul_formal_v1.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/solve_storenet.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/storenet_config.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/write_bahloul_case_artifacts.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/write_bahloul_observed_artifacts.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/write_result_manifest_sha256.m",
+        "issueCount": 0,
+        "issues": []
+      },
+      {
+        "path": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/write_run_manifest.m",
+        "issueCount": 0,
+        "issues": []
+      }
+    ]
+  },
+  "tests": {
+    "ran": true,
+    "fileCount": 13,
+    "missingFiles": [],
+    "resultCount": 81,
+    "passedCount": 81,
+    "failedCount": 0,
+    "incompleteCount": 0,
+    "allPassed": true,
+    "hasBaselineTest": true,
+    "hasArtifactTest": true,
+    "hasOrchestrationTests": true,
+    "results": [
+      {
+        "name": "TestBahloulAcceptanceV1/testCompleteSyntheticFixturePasses",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "16.908 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testTamperedArtifactFailsClosed",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "12.306 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testMissingMonthlyRowDoesNotShrinkDenominator",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "13.647 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testCanonicalCohortMismatchFailsR4",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "12.994 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testCsvScalarMutationFailsR5Join",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "13.162 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testRootManifestIdentityMismatchFailsR4",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "12.151 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testQualityRejectedRowRequiresReason",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "12.042 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testCriticalQualityRejectionCannotPass",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "11.835 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testMonthlySolverFailureWithReasonIsRegrouped",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "13.02 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testObservedCsvMutationFailsR5",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "12.168 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testObservedPersistedProfileMutationFailsR5",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "12.642 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testTableINonfiniteLocalValueFailsR6",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "12.454 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testMonthlyAggregateMutationFailsR4",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "12.185 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testOfflineMonthlyProfilesMayBeEmpty",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "11.837 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testUnlockedObjectiveStagesFailR3",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "11.89 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testNegativeFlowFailsR2",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "11.748 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testEffectivePowerRatioMismatchFailsR4",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "12.003 sec"
+      },
+      {
+        "name": "TestBahloulAcceptanceV1/testInvalidPngFailsR6SchemaGate",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "12.22 sec"
+      },
+      {
+        "name": "TestBahloulArtifacts/testWritesByteAddressedV2AndReevaluatesOffline",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.7702 sec"
+      },
+      {
+        "name": "TestBahloulArtifacts/testRecordsUnavailableMasksExplicitly",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.2284 sec"
+      },
+      {
+        "name": "TestBahloulArtifacts/testRejectsTamperedContentBeforeLoading",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.2215 sec"
+      },
+      {
+        "name": "TestBahloulArtifacts/testRejectsAmbiguousContentAddressedPair",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.10398 sec"
+      },
+      {
+        "name": "TestBahloulArtifacts/testAcceptsOnlyUnambiguousLegacyPair",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.13755 sec"
+      },
+      {
+        "name": "TestBahloulArtifacts/testRejectsMixedLegacyAndContentAddressedLayout",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.094831 sec"
+      },
+      {
+        "name": "TestBahloulArtifacts/testRefusesToOverwriteCaseDirectory",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.1447 sec"
+      },
+      {
+        "name": "TestBahloulBaselines/testKnownDualBaselineValues",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.31678 sec"
+      },
+      {
+        "name": "TestBahloulBaselines/testTariffUsesIntervalStartAtTen",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.041051 sec"
+      },
+      {
+        "name": "TestBahloulBaselines/testZeroDenominatorsReturnNaN",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.064668 sec"
+      },
+      {
+        "name": "TestBahloulBaselines/testPvSelfBaselineClipsExcessPvAtZeroImport",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.036756 sec"
+      },
+      {
+        "name": "TestBahloulBaselines/testDeprecatedAliasesTargetPvSelfBaseline",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.12153 sec"
+      },
+      {
+        "name": "TestBahloulCasePreparation/testPublicDcScenarioPreservesReleasedPv",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.41938 sec"
+      },
+      {
+        "name": "TestBahloulCasePreparation/testAcBoundaryReconstructsDcSource",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.19068 sec"
+      },
+      {
+        "name": "TestBahloulCasePreparation/testH4PairRemovesOnlyH4",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.084124 sec"
+      },
+      {
+        "name": "TestBahloulCasePreparation/testMissingRequiredH4DateFailsClosed",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.10679 sec"
+      },
+      {
+        "name": "TestBahloulCasePreparation/testCarriesSubsetQualityMasksAndFormalProvenance",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.12179 sec"
+      },
+      {
+        "name": "TestBahloulFormalV1/testPreflightFailureNeverCreatesFormalRoot",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "1.4092 sec"
+      },
+      {
+        "name": "TestBahloulFormalV1/testMissingMonthlyReuseSourceFailsBeforePreflight",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.85732 sec"
+      },
+      {
+        "name": "TestBahloulFormalV1/testSuccessfulRunIsOrderedClosedAndProvenanced",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "2.7971 sec"
+      },
+      {
+        "name": "TestBahloulFormalV1/testExistingFormalRootIsRejectedBeforePreflight",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "1.1968 sec"
+      },
+      {
+        "name": "TestBahloulFormalV1/testNoncanonicalCallbacksAreRejectedBeforePreflight",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "1.1301 sec"
+      },
+      {
+        "name": "TestBahloulMonthlyV1/testAggregatesPrimaryScenarioAndPersistsEvidence",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "15.807 sec"
+      },
+      {
+        "name": "TestBahloulMonthlyV1/testQualityRejectionRetainsAllExpectedRows",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "5.2135 sec"
+      },
+      {
+        "name": "TestBahloulMonthlyV1/testDefaultGridAndPaperPeriodBoundaries",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "7.2411 sec"
+      },
+      {
+        "name": "TestBahloulPreflightV1/testCapturesImmutableEvidenceWithoutCreatingFormalOutput",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "5.6851 sec"
+      },
+      {
+        "name": "TestBahloulProvenance/testLegacyCallRemainsVersionOne",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "1.5794 sec"
+      },
+      {
+        "name": "TestBahloulProvenance/testFormalManifestRecordsVerifiedProvenance",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "1.0651 sec"
+      },
+      {
+        "name": "TestBahloulProvenance/testFormalModeRejectsChecksumMismatchBeforeOutput",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.99182 sec"
+      },
+      {
+        "name": "TestBahloulProvenance/testFormalModeRequiresExactlyFortySixFiles",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "1.7566 sec"
+      },
+      {
+        "name": "TestBahloulProvenance/testFormalModeRejectsDirtyCallerPreflight",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.82662 sec"
+      },
+      {
+        "name": "TestBahloulProvenance/testFormalModeRequiresUntrackedFilesInPreflight",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.83725 sec"
+      },
+      {
+        "name": "TestBahloulProvenance/testFormalModeRejectsPreflightFromAnotherRepository",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.85193 sec"
+      },
+      {
+        "name": "TestBahloulProvenance/testAutomaticPreflightRequiresUncreatedOutput",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.86416 sec"
+      },
+      {
+        "name": "TestBahloulProvenance/testFormalModeRequiresExplicitContracts",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.9133 sec"
+      },
+      {
+        "name": "TestBahloulScenarios/testCoreMatrixHasThreeCompletePairs",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.29769 sec"
+      },
+      {
+        "name": "TestBahloulScenarios/testFigureSevenMatrixIsOnlyFrozenDcPair",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.16285 sec"
+      },
+      {
+        "name": "TestBahloulSensitivityV1/testWritesFrozenMatricesAndArtifacts",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "13.768 sec"
+      },
+      {
+        "name": "TestBahloulSensitivityV1/testReusesValidatedLegacyFiveByFiveGrid",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "8.8127 sec"
+      },
+      {
+        "name": "TestBahloulSensitivityV1/testRefusesNonemptyRunDirectory",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.4287 sec"
+      },
+      {
+        "name": "TestBahloulTypicalV1/testWritesPlannedMatrixObservedPairAndFigure",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "11.855 sec"
+      },
+      {
+        "name": "TestBahloulTypicalV1/testRetainsOnlyPlannedSolverFailureRow",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "7.4069 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testUsesReleasedProductionWithoutEtaOrXi",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.79549 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testZeroDenominatorsReturnNaNAndExplicitFlags",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.022897 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testEtaBoundaryAndXiCannotChangeObservedBaseline",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.10645 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testPreparesObservedLabelsAndDirectReleaseData",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.11696 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testWritesContentAddressedEvidenceAndReevaluatesOffline",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.71346 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testRejectsTamperedObservedSolution",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.45916 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testObservedWriterRefusesOverwrite",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.2849 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testObservedWriterRejectsNoncanonicalMetrics",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.12432 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testRequiresAllReleasedFlowFields",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.094223 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testRejectsMismatchedReleasedFlowCohort",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.053634 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testRejectsMislabeledObservedCohort",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.064539 sec"
+      },
+      {
+        "name": "TestObservedSbsc/testRejectsMissingMeasuredGrid",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.15477 sec"
+      },
+      {
+        "name": "TestStoreNetModel/testVppSharingReducesBillWithoutBattery",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "7.8394 sec"
+      },
+      {
+        "name": "TestStoreNetModel/testBatteryHonorsDynamicsTerminalAndMutualExclusion",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "1.3642 sec"
+      },
+      {
+        "name": "TestStoreNetModel/testFivePublishedStrategiesSolveFeasibly",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "3.7185 sec"
+      },
+      {
+        "name": "TestStoreNetModel/testImprovedPeakGuardEnforcesConfiguredCap",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.3552 sec"
+      },
+      {
+        "name": "TestStoreNetModel/testEvaluateDetectsAlteredTerminalState",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.2031 sec"
+      },
+      {
+        "name": "TestStoreNetModel/testEvaluateDetectsAlteredPackagedCharge",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.42128 sec"
+      },
+      {
+        "name": "TestStoreNetModel/testIntervalEndTariffBoundaries",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.60451 sec"
+      },
+      {
+        "name": "TestStoreNetModel/testNonuniformAndNonincreasingTimeAreRejected",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.16886 sec"
+      },
+      {
+        "name": "TestStoreNetModel/testNegativeLoadIsRejected",
+        "passed": true,
+        "failed": false,
+        "incomplete": false,
+        "durationSeconds": "0.026507 sec"
+      }
+    ]
+  },
+  "gates": [
+    {
+      "gateId": "P1_DOCUMENTARY_MAPPING",
+      "status": "PASS",
+      "machineEvidence": "reference manifest and formula-code audit",
+      "failureReason": ""
+    },
+    {
+      "gateId": "P2_NORMATIVE_AUTHORITY",
+      "status": "PASS",
+      "machineEvidence": "runtime contract hashes",
+      "failureReason": ""
+    },
+    {
+      "gateId": "P3_BOUNDARY_SCHEMA",
+      "status": "PASS",
+      "machineEvidence": "canonical scenario/case/evaluator implementations",
+      "failureReason": ""
+    },
+    {
+      "gateId": "P4_DUAL_BASELINE_TESTS",
+      "status": "PASS",
+      "machineEvidence": "TestBahloulBaselines",
+      "failureReason": ""
+    },
+    {
+      "gateId": "P5_COHORT_SCENARIO_RUNNER",
+      "status": "PASS",
+      "machineEvidence": "typical/monthly/sensitivity fixture inventories",
+      "failureReason": ""
+    },
+    {
+      "gateId": "P6_PROVENANCE_PREFLIGHT",
+      "status": "PASS",
+      "machineEvidence": "embedded release/sidecar/git/hash/runtime/analyzer evidence",
+      "failureReason": ""
+    },
+    {
+      "gateId": "P7_DURABLE_SCHEMA",
+      "status": "PASS",
+      "machineEvidence": "content-addressed artifact and offline-evaluator tests",
+      "failureReason": ""
+    },
+    {
+      "gateId": "P8_FIXTURE_ACCEPTANCE",
+      "status": "PASS",
+      "machineEvidence": "all preregistered fixture tests",
+      "failureReason": ""
+    },
+    {
+      "gateId": "P9_HISTORICAL_PROTECTION",
+      "status": "PASS",
+      "machineEvidence": "formal output path absent before solve",
+      "failureReason": ""
+    }
+  ],
+  "allPassed": true
+}

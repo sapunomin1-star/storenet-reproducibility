@@ -1,0 +1,48 @@
+{
+  "PaperLoadOnlyBaseline": {
+    "definition": "Original aggregate load; no PV, no battery, no VPP sharing",
+    "billEUR": 34.282723145,
+    "peakImportKW": 14.82562,
+    "daytimePeakImportKW": 14.82562,
+    "savingsEUR": 22.223689774193083,
+    "savingsPercent": 64.824750589961013,
+    "savingsPercentDenominatorIsZero": false
+  },
+  "PvSelfNoBatteryBaseline": {
+    "definition": "Household PV self-consumption; no battery, no VPP sharing",
+    "billEUR": 26.587499821999998,
+    "peakImportKW": 14.471279499999998,
+    "daytimePeakImportKW": 14.471279499999998,
+    "savingsEUR": 14.528466451193083,
+    "savingsPercent": 54.643973854101958,
+    "savingsPercentDenominatorIsZero": false
+  },
+  "optimizedBillEUR": 12.059033370806915,
+  "peakImportKW": 13.113906529398719,
+  "daytimePeakImportKW": 6.7413792052134491E-8,
+  "importSpreadKW": 13.11390652939872,
+  "totalGridImportKWh": 132.51685015234392,
+  "totalBatteryThroughputKWh": 121.84601775386568,
+  "totalCurtailedPvKWh": 0,
+  "totalSharedExportKWh": 45.161753924193555,
+  "energyBalanceResidualKW": 2.3314683517128287E-15,
+  "pvAllocationResidualKW": 4.4408920985006262E-16,
+  "homeBalanceResidualKW": 2.2204460492503131E-16,
+  "batteryDynamicsResidualKW": 2.3314683517128287E-15,
+  "aggregateImportResidualKW": 0,
+  "chargeConversionResidualKW": 0,
+  "dischargeConversionResidualKW": 0,
+  "initialSocErrorKWh": 0,
+  "terminalSocErrorKWh": 0,
+  "socBoundViolationKWh": 1.1102230246251565E-16,
+  "chargePowerViolationKW": 0,
+  "dischargePowerViolationKW": 0,
+  "aggregateImportNonnegativeViolationKW": 2.2204460492503131E-15,
+  "simultaneousChargeDischargeKW": 0,
+  "simultaneousChargeDischargeCount": 0,
+  "lexicographicPreservationViolation": [
+    8.8817841970012523E-15,
+    1.7763568394002505E-15
+  ],
+  "maximumLexicographicViolation": 8.8817841970012523E-15
+}

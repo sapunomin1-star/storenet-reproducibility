@@ -1,0 +1,23 @@
+{
+  "figure": "圖09_一週電池與電力運作",
+  "completed_utc": "2026-09-07T06:35:28.226067+00:00",
+  "note": "圖 9：H4 一週的太陽能、用電、電網交換、電池充放電與電量，共 10,080 分鐘。",
+  "input_sha256": {
+    "data/raw/H4_Wh.csv": "95b3a5202ef1788e1d840784a0b60a4f9e7802d6863f301b2ae13dc8b1375cba"
+  },
+  "code_sha256": {
+    "src/data_paper_figures/figure09_battery_week.py": "0c7d3ba0cc3c8e79908413a168d6fbe06762a7457fdf0fe966b592bcf0f30a41",
+    "src/data_paper_figures/_common.py": "656008cbdf140b4a26aad3c02cc7c9c8fe487e57cffe8f3b26d6bd6ffbe7f279",
+    "src/reproduce_data_paper_figures.py": "1f4b9a9e88ea755630266e1d0ea9699ea462c108c497bbb03b84ca3dbfefe499"
+  },
+  "python": "3.12.14",
+  "numpy": "2.4.3",
+  "pandas": "2.3.3",
+  "matplotlib": "3.10.8",
+  "output_sha256": {
+    "00_結果說明.md": "6803cf3df96889ff84bee7f31560f01ea6a1767da5a59d5848103291caff7cfc",
+    "圖09_一週電池與電力運作.png": "fd8744c49055d26ddf5e729c8d9fb8b399a76aa9271239bd6189a6e3093a8e9c",
+    "圖09_每分鐘資料.csv": "a659e7fb3bfbd0002f892b33abbce010e928a87001a59f23b2032027c95836df",
+    "圖09_能量平衡與摘要.json": "e5dea26f4587461a5efda2ecc717a7a63778214a9f15c610ea444173fae1f4ee"
+  }
+}

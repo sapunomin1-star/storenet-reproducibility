@@ -1,0 +1,99 @@
+{
+  "calendarDayCount": 365,
+  "houseCount": 53,
+  "rankingRowCount": 359,
+  "rejectedDayCount": 6,
+  "rejectedDays": [
+    "2013-01-09",
+    "2013-01-10",
+    "2013-01-31",
+    "2013-04-16",
+    "2013-04-17",
+    "2013-04-26"
+  ],
+  "rejectionReasonCounts": {
+    "row_quality": 6
+  },
+  "schemaVersion": "StoreNet-independent-Ausgrid-audit-v1",
+  "selection": [
+    {
+      "candidateCount": 28,
+      "day": "2013-01-21",
+      "month": 1,
+      "score": 0.853387336817967
+    },
+    {
+      "candidateCount": 28,
+      "day": "2013-02-15",
+      "month": 2,
+      "score": 1.2885816394293899
+    },
+    {
+      "candidateCount": 31,
+      "day": "2013-03-12",
+      "month": 3,
+      "score": 0.7980468394136762
+    },
+    {
+      "candidateCount": 27,
+      "day": "2013-04-28",
+      "month": 4,
+      "score": 0.8574298721292019
+    },
+    {
+      "candidateCount": 31,
+      "day": "2013-05-21",
+      "month": 5,
+      "score": 1.136749047797528
+    },
+    {
+      "candidateCount": 30,
+      "day": "2013-06-05",
+      "month": 6,
+      "score": 0.8317653867526312
+    },
+    {
+      "candidateCount": 31,
+      "day": "2012-07-03",
+      "month": 7,
+      "score": 0.9560769996323245
+    },
+    {
+      "candidateCount": 31,
+      "day": "2012-08-17",
+      "month": 8,
+      "score": 0.9798319960894397
+    },
+    {
+      "candidateCount": 30,
+      "day": "2012-09-06",
+      "month": 9,
+      "score": 1.0024068152018677
+    },
+    {
+      "candidateCount": 31,
+      "day": "2012-10-19",
+      "month": 10,
+      "score": 0.9775472588034646
+    },
+    {
+      "candidateCount": 30,
+      "day": "2012-11-12",
+      "month": 11,
+      "score": 1.097522307584769
+    },
+    {
+      "candidateCount": 31,
+      "day": "2012-12-21",
+      "month": 12,
+      "score": 0.9589641421418449
+    }
+  ],
+  "selectionFeatureUnit": "kW",
+  "sourceFileSha256": "e4be46b3c9991c65735a9545319a2f1c33be8e639c75a17a88e0323a8e5098be",
+  "sourceIntervalHours": 0.5,
+  "sourcePath": "/Users/guichenxiang/Desktop/\u96fb\u529b\u5c08\u6848/StoreNet/data/external/ausgrid/raw/extracted/Solar home 2012-2013.csv",
+  "sourceRowCount": 268557,
+  "specPath": "/Users/guichenxiang/Desktop/\u96fb\u529b\u5c08\u6848/StoreNet/config/crossenv/ausgrid_2012_2013.json",
+  "validDayCount": 359
+}

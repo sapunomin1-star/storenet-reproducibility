@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "StoreNet-run-manifest-v1",
+  "createdAtUtc": "2026-08-31T16:27:38.344Z",
+  "experiment": {
+    "runType": "typical_day",
+    "runId": "baseline_typical_20200824_v2",
+    "days": "2020-08-24",
+    "qualityMode": "exclude_flagged_pv",
+    "intervalMinutes": 30,
+    "intervalConvention": "interval end; calendar day D uses (D 00:00, D+1 00:00]",
+    "baselineStrategies": [
+      "SH_BM",
+      "VPP_BM",
+      "PS",
+      "PSDT",
+      "LL"
+    ],
+    "improvementStrategy": "IMPROVED_PEAK_GUARD",
+    "improvementExecutedAfterBaselines": true,
+    "improvementCapDefinition": "peak of no-battery household PV-self-consumption baseline",
+    "improvementCapKW": 17.936162500000002,
+    "configuration": {
+      "releaseName": "StoreNet Figshare processed release",
+      "releaseIsImmutable": true,
+      "dataMode": "processed-release",
+      "dataRoot": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/../data/raw",
+      "timestampBasis": "naive local wall-clock (timezone is not encoded)",
+      "whTimestampConvention": "interval end; calendar day D uses (D 00:00, D+1 00:00]",
+      "homes": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9",
+        "H10",
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17",
+        "H18",
+        "H19",
+        "H20"
+      ],
+      "nHomes": 20,
+      "pvHomes": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H7",
+        "H10",
+        "H11",
+        "H13",
+        "H17"
+      ],
+      "pvHomeMask": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "intervalMinutes": 30,
+      "dtHours": 0.5,
+      "qualityModeRequested": "exclude_flagged_pv",
+      "qualityMode": "exclude_flagged_pv",
+      "throwOnQualityFailure": false,
+      "quality": {
+        "maxPhysicalMissingMinuteFraction": 0,
+        "maxMissingStatusRunMinutes": 2,
+        "maxMissingStatusFraction": 0.005,
+        "pvActiveFractionOfDailyMaximum": 0.05,
+        "pvWindowToleranceHours": 0.5,
+        "dingleLatitudeDegrees": 52.14
+      },
+      "etaPvAC": 0.95,
+      "etaPvDC": 0.95,
+      "etaBatteryCharge": 0.95,
+      "etaBatteryDischarge": 0.95,
+      "transferLossFraction": 0.07,
+      "batteryCapacityKWh": 10,
+      "batteryPowerKW": 3.3,
+      "socInitialFraction": 0.1,
+      "socMinFraction": 0.1,
+      "socMaxFraction": 0.9,
+      "socTerminalFraction": 0.1,
+      "nightPrice": 0.091,
+      "dayPrice": 0.194,
+      "feedInPrice": 0,
+      "dayStartHour": 10,
+      "dayEndHour": 22,
+      "mipRelativeGap": 1E-6,
+      "constraintTolerance": 1E-8,
+      "lexicographicTolerance": 1E-7
+    },
+    "qualitySummary": {
+      "qualityPassed": true,
+      "qualityReasons": [],
+      "isComplete": true,
+      "isFullyObserved": false,
+      "pvLongWindowAnomaly": false,
+      "pvWindowHours": 11.75,
+      "astronomicalDayLengthHours": 13.80732447897396,
+      "maximumMissingStatusRunMinutes": 2
+    },
+    "statuses": [
+      {
+        "Day": "24-Aug-2020",
+        "Strategy": "SH_BM",
+        "Phase": "baseline",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 3.5655161666666668
+      },
+      {
+        "Day": "24-Aug-2020",
+        "Strategy": "VPP_BM",
+        "Phase": "baseline",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 5.1927590416666662
+      },
+      {
+        "Day": "24-Aug-2020",
+        "Strategy": "PS",
+        "Phase": "baseline",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 14.281769041666667
+      },
+      {
+        "Day": "24-Aug-2020",
+        "Strategy": "PSDT",
+        "Phase": "baseline",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 4.957074875
+      },
+      {
+        "Day": "24-Aug-2020",
+        "Strategy": "LL",
+        "Phase": "baseline",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 30.045828208333333
+      },
+      {
+        "Day": "24-Aug-2020",
+        "Strategy": "IMPROVED_PEAK_GUARD",
+        "Phase": "improvement",
+        "Status": "ok",
+        "ErrorIdentifier": "",
+        "ErrorMessage": "",
+        "WallTimeSeconds": 2.3469483333333332
+      }
+    ]
+  },
+  "code": {
+    "repositoryRoot": "/Users/guichenxiang/Desktop/電力專案",
+    "commit": "173d8147b2ca6fd9ece36fe763ef3dcd6e48f9e8",
+    "trackedFilesDirty": false,
+    "statusAvailable": true,
+    "untrackedFilesExcluded": true,
+    "statusScope": "tracked files only; generated and other untracked files are excluded"
+  },
+  "runtime": {
+    "version": "26.2.0.3281582 (R2026b) Prerelease Update 1",
+    "release": "2026b",
+    "computer": "MACA64"
+  },
+  "solver": {
+    "name": "intlinprog",
+    "interface": "MATLAB problem-based optimization",
+    "toolboxVersion": "26.2"
+  },
+  "release": {
+    "manifestPath": "/Users/guichenxiang/Desktop/電力專案/StoreNet/src/../data/RELEASE_MANIFEST.sha256",
+    "manifestExists": true,
+    "manifestSha256": "a3d901b627546061b63264c438b361674ac6cd11df60eff919a6258dfd35ecec"
+  }
+}

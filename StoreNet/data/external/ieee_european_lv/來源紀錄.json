@@ -1,0 +1,38 @@
+{
+  "retrieved": "2026-09-06",
+  "repository": "https://github.com/tshort/OpenDSS",
+  "commit": "5005c668a72d20775f4c2d060feebb2866ba1d38",
+  "note": "IEEE European LV OpenDSS implementation from historical EPRI source mirror; upstream files unmodified. Load shapes omitted because actual StoreNet profiles replace them.",
+  "files": [
+    {
+      "file": "Master.dss",
+      "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/Master.dss",
+      "sha256": "959fd0f0e9f033c269b3c66228db444138dfbdbc40d39d11d88656cb2b5e9853"
+    },
+    {
+      "file": "Lines.txt",
+      "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/Lines.txt",
+      "sha256": "adc097cf570a32d9190c977dbcca1a66ceb7d8d2517d39b0690e319c67e3311d"
+    },
+    {
+      "file": "LineCode.txt",
+      "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/LineCode.txt",
+      "sha256": "0702d4a8a0b7f31adabe9a58e576c641614e59d1e181f96ad9589345071e4da4"
+    },
+    {
+      "file": "Loads.txt",
+      "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/Loads.txt",
+      "sha256": "c07b99a8b8ebd4ed5339689c7d43637443a09fac4334b1c427e9e4be484b7f6e"
+    },
+    {
+      "file": "Transformers.txt",
+      "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/Transformers.txt",
+      "sha256": "d951d5bd01b13eb6a1e92abc6b90d45c9c546b13c87237025e0eb0a5026dd1d1"
+    },
+    {
+      "file": "Buscoords.txt",
+      "url": "https://raw.githubusercontent.com/tshort/OpenDSS/5005c668a72d20775f4c2d060feebb2866ba1d38/Distrib/IEEETestCases/LVTestCase/Buscoords.txt",
+      "sha256": "b9fff83078dc6905962a5659ed76a13677b70251c142c3d34e76efcfe727570d"
+    }
+  ]
+}

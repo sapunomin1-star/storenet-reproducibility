@@ -1,0 +1,6 @@
+scenario,SH_BM,VPP_BM,PS,PSDT,LL,SB_SC
+20_percent_power,26.76,43.42,15.30,24.17,15.25,NaN
+20_percent_capacity,16.18,26.45,15.33,18.04,14.86,NaN
+nominal,36.41,45.85,15.30,43.63,15.39,23.72
+annual_average,31.89,39.358,13.16,36.90,0.54,17.59
+
