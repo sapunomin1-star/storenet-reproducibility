@@ -228,7 +228,8 @@ def expected_release_paths(repository: Path) -> set[str]:
         data_root / "energy plots.py",
         data_root / "power plots.py",
     ]
-    return {str(path.relative_to(repository.resolve())) for path in expected_files}
+    # The published inventory uses forward slashes on every operating system.
+    return {path.relative_to(repository.resolve()).as_posix() for path in expected_files}
 
 
 def verify_release_manifest(manifest_path: Path, repository: Path) -> list[dict[str, object]]:

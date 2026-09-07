@@ -417,11 +417,13 @@ class TestDataPaperFigureReproduction(unittest.TestCase):
             "PolicySignalAggregateMatchedFinitePoints"
         ].first()
         self.assertEqual(core_points.astype(int).to_dict(), {"Consumption": 67360, "Production": 67360})
+        # Reduction order differs across BLAS/platforms by about 1e-13.
+        # Keep an absolute 1e-12 tolerance, far below the 0.99 decision threshold.
         self.assertAlmostEqual(
-            float(core_aggregate["Production"]), 0.999999972619431, places=13
+            float(core_aggregate["Production"]), 0.999999972619431, delta=1e-12
         )
         self.assertAlmostEqual(
-            float(core_aggregate["Consumption"]), 0.999999991013640, places=13
+            float(core_aggregate["Consumption"]), 0.999999991013640, delta=1e-12
         )
         continuous_consumption = transpose.loc[
             transpose["WindowPolicy"].eq("continuous_24h")
