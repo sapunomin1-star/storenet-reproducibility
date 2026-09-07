@@ -20,7 +20,7 @@
 
 ## 2A. Mac：安裝 Python 環境與下載資料
 
-1. 開啟「終端機」。輸入 `cd `（後面留一個空白），把專案資料夾拖進視窗，再按 Enter。終端機就會切到正確位置。
+1. 按 `⌘ + 空白鍵`，搜尋並開啟「終端機」。輸入 `cd `（後面留一個空白），把專案資料夾拖進視窗，再按 Enter。終端機就會切到正確位置。
 2. 依序複製下面三行。只需要建立一次環境。
 
 ```bash
@@ -36,7 +36,7 @@ StoreNet/.venv-grid/bin/python StoreNet/tools/download_data.py
 ## 2B. Windows：安裝 Python 環境與下載資料
 
 1. 安裝 Python 3.12（含 Python Launcher）。
-   建議把解壓後的專案資料夾放在較短的路徑，例如 `C:\StoreNet`，避免完整研究結果的多層檔名超過 Windows 路徑限制。
+   建議直接解壓縮到較短的路徑，例如 `C:\StoreNet`，避免完整研究結果的多層檔名超過 Windows 路徑限制；若解壓後還有一層專案名稱，進入有 README.md 的那一層。
 2. 開啟已解壓的專案資料夾，在檔案總管的位址列輸入 `powershell` 並按 Enter。
 3. 依序複製下面三行。不需要管理員權限，也不需要執行 Activate.ps1。
 
@@ -160,4 +160,6 @@ render_external_validation("StoreNet/results/external_sensitivity_ausgrid_exclud
 | 圖 10 中文出現方框 | 使用有繁體中文字型的系統；Windows 可用微軟正黑體，Mac 可用蘋方 |
 | 下載失敗 | 重新執行；也可依 [資料下載頁](02_資料下載與來源.md) 手動下載到指定位置 |
 
-近期系統測試與範圍見 [GitHub Actions](https://github.com/sapunomin1-star/storenet-reproducibility/actions)。完整年度、月度和所有敏感度組合的求解時間會依硬體而異。
+本次已實測 Mac（Apple silicon）與 Windows（x64），使用 Python 3.12、MATLAB R2026a 及 Optimization Toolbox。兩種系統都通過資料下載、30 項 Python 測試、六個 Python 圖形入口、指定的 MATLAB 測試，以及代表日十個案例的目標值與電池限制檢查；[完整驗證紀錄](https://github.com/sapunomin1-star/storenet-reproducibility/actions/runs/34093613391)可直接查看。
+
+這次雲端測試沒有重新求解完整年度、月度和所有敏感度組合；這些長時間計算的既有結果仍保留在包內，重算時間會依硬體而異。
