@@ -48,4 +48,6 @@ PNG 是圖片；CSV 是數值表，可用 Excel 開啟。「程式」連結可�
 
 資料論文圖 5～10、方法論文代表日重跑後會更新同一個結果資料夾。方法論文月度、容量功率的重跑位置另外寫在執行步驟中。
 
+策略可能有多組同樣好的解，因此換 MATLAB 版本重跑時，曲線和尖峰可能不同；[操作說明](02_中文程式導覽/01_Mac與Windows操作.md#method-figures)有實際例子。報告原圖與當時的數值已另行保存。
+
 [來源與授權](THIRD_PARTY_NOTICES.md) · [系統測試](https://github.com/sapunomin1-star/storenet-reproducibility/actions)
